@@ -7,52 +7,52 @@ const IntroAbout = () => {
     {
       id: 1,
       cardNo: "card-one",
-      title: "Happier",
-      subtitle: "Customers",
+      title: "40%",
+      subtitle: "Del Mercado",
     },
     {
       id: 2,
-      title: "30+",
+      title: "+50 años",
       cardNo: "card-two",
-      subtitle: "Insurance Item",
+      subtitle: "De experiencia",
     },
     {
       id: 3,
-      title: "Saller Leads",
+      title: "Líder",
       cardNo: "card-three",
-      subtitle: "Who are listing soon",
+      subtitle: "En Responsabilidad civil",
     },
   ];
 
   return (
     <>
-      <ModalVideo
+      {/*<ModalVideo
         channel="youtube"
         autoplay
         isOpen={isOpen}
         videoId="rDYdeq3JW_E"
         onClose={() => setOpen(false)}
-      />
+      />*/}
 
       <div className="row">
         <div className="col-xl-5 col-md-6 order-md-last">
           <div className="text-wrapper md-pb-70">
-            <img
+            {/*<img
               src="/images/icon/icon_103.svg"
               alt="icon"
               className="lazy-img cursor-pointer"
               onClick={() => setOpen(true)}
-            />
+            />*/}
             <p className="tx-dark pt-30 pb-30 md-pb-15" data-aos="fade-up">
-              The team signed <span className="fw-500">~$7,000,000</span> in new
-              business in July. Accelerator has been a large part of that.
+              National Unity Insurance Company es el <span className="fw-500">Líder</span> en el mercado de Responsabilidad Civil para autos 
+              y camiones que circulan en los <span className="fw-500">Estados Unidos y Canadá</span>.
             </p>
-            <h6
+            {/*<h6
               className="fs-20 tx-dark d-inline-block fst-italic position-relative ps-4"
               data-aos="fade-up"
             >
               Jessica Woodbeck
-            </h6>
+            </h6>*/}
           </div>
           {/* /.text-wrapper */}
         </div>

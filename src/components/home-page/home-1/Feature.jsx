@@ -1,7 +1,8 @@
 const Feature = () => {
   const features = [
     {
-      background: "#00AAF3",
+      background: '#00AAF320',
+      border: '#00AAF3',
       title: (
         <>
           Elige la cobertura de acuerdo a tus necesidades y presupuesto.
@@ -14,7 +15,8 @@ const Feature = () => {
       delay: "100",
     },
     {
-      background: "#00D6E5",
+      background: "#00D6E520",
+      border: '#00D6E5',
       title: (
         <>
           Ingresa tu información personal, método de pago y datos de tu vehículo.
@@ -27,7 +29,8 @@ const Feature = () => {
       delay: "200",
     },
     {
-      background: "#71FACB",
+      background: "#71FACB20",
+      border: "#71FACB",
       title: (
         <>
           Viaja seguro con cobertura en TODO Estados Unidos y Canadá
@@ -43,9 +46,11 @@ const Feature = () => {
 
   return (
     <>
-      <h2 class="tx-dark mb-20 mt-20 text-center">
-        Contrata tu Seguro de Auto para USA de manera fácil y segura
-      </h2>
+      <div data-aos="fade-up">
+        <h2 class="tx-dark mb-20 mt-20 text-center">
+          Contrata tu Seguro de Auto para USA de manera fácil y segura
+        </h2>
+      </div>
       {features.map((feature, index) => (
         <div
           className="col-lg-4 col-sm-6"
@@ -55,7 +60,7 @@ const Feature = () => {
         >
           <div
             className={`card-style-fifteen tran3s position-relative mt-35`}
-            style={{ background: feature.background }}
+            style={{ background: feature.background, border: `1px solid ${feature.border}` }}
           >
             <h4>{feature.title}</h4>
             <p>{feature.description}</p>

@@ -55,13 +55,13 @@ const Hero1 = () => {
       {/* End .container */}
 
       <img
-        src="/images/assets/hero-auto.webp"
+        src="/images/assets/hero-camion.png"
         alt="ilustration"
-        className="lazy-img illustration-one aos-animate"
+        className="hero-camion lazy-img illustration-one aos-animate"
         data-aos="fade-left"
       />
       <img
-        src="/images/assets/ils_12.png"
+        src="/images/assets/hero-auto.png"
         alt="ilustration"
         className="lazy-img illustration-two aos-animate"
         data-aos="fade-right"

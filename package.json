@@ -29,6 +29,7 @@
     "react-router-dom": "^6.21.3",
     "react-slick": "^0.30.0",
     "react-tabs": "^6.0.2",
+    "react-usa-map": "^1.5.0",
     "sass": "^1.70.0",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1"

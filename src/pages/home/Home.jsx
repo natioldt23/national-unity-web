@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Seo from "../../components/common/Seo";
 import Footer from "../../components/footer/Footer";
 import DefaulHeader from "../../components/header/DefaulHeader";
-import AppBanner from "../../components/home-page/home-1/AppBanner";
+import TiempoCruces from "../../components/home-page/home-1/TiempoCruces";
 import Banner from "../../components/home-page/home-1/Banner";
 import Block from "../../components/home-page/home-1/Block";
 import Blog from "../../components/home-page/home-1/Blog";
@@ -35,7 +35,7 @@ const Insurance = () => {
 				Feature Section Thirty Four
 			============================================== 
 			--> */}
-      <div className="fancy-feature-thirtyFour home-section">
+      <div className="fancy-feature-thirtyFour mt-50">
         <div className="container">
           <div className="row gx-xxl-5">
             <Feature />
@@ -47,7 +47,7 @@ const Insurance = () => {
 
       {/*
 			=====================================================
-				Feature Section Thirty Five
+				Facts Section Thirty Five
 			=====================================================
 			*/}
       <div className="fancy-feature-thirtyFive home-section">
@@ -68,7 +68,7 @@ const Insurance = () => {
       
       {/* 
 			=============================================
-				Feature Section Thirty Six
+				Productos Section Thirty Six
 			============================================== 
 			*/}
       <div className="fancy-feature-thirtySix mt-190 lg-mt-140">
@@ -111,7 +111,7 @@ const Insurance = () => {
 				Feature Section Thirty Seven
 			============================================== 
 			*/}
-      <div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
+      {/*<div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
         <div className="container">
           <div className="row">
             <div
@@ -126,24 +126,22 @@ const Insurance = () => {
                   </h2>
                 </div>
                 <WhyChoose />
-                {/* /.accordion-style-five */}
               </div>
             </div>
-            {/* End .col-6 */}
 
             <div className="col-xxl-5 col-lg-6 order-lg-first">
               <Block />
             </div>
           </div>
         </div>
-        {/* /.container */}
-      </div>
+      </div>*/}
       {/* /.fancy-feature-thirtySeven */}
+
       {/*=====================================================
 				Feedback Section Eleven
 			=====================================================
 			*/}
-      <div
+      {/*<div
         className="feedback-section-eleven position-relative mt-200 pt-100 pb-70 lg-mt-120 lg-pt-70 lg-pb-50"
         data-aos="fade-up"
       >
@@ -157,10 +155,8 @@ const Insurance = () => {
             <Testimonial />
           </div>
 
-          {/* /.slider-wrapper */}
         </div>
-        {/* /.inner-content */}
-      </div>
+      </div>*/}
       {/* /.feedback-section-eleven */}
       {/* =============================================
 				Feature Section Thirty Eight
@@ -168,7 +164,7 @@ const Insurance = () => {
 			*/}
       <div className="fancy-feature-thirtyEight mt-140 lg-mt-100">
         <div className="container">
-          <AppBanner />
+          <TiempoCruces />
         </div>
         {/* /.container */}
       </div>
@@ -177,7 +173,7 @@ const Insurance = () => {
 				Fancy Short Banner Thirteen
 			=====================================================
 			*/}
-      <div
+      {/*<div
         className="fancy-short-banner-thirteen pt-170 pb-170 mt-130 lg-mt-100 lg-pt-80 lg-pb-80 "
         data-aos="fade-up"
       >
@@ -208,12 +204,10 @@ const Insurance = () => {
                     <div className="form-style-two md-mb-40">
                       <ContactForm />
                     </div>
-                    {/* /.form-style-two */}
                   </div>
                 </div>
               </div>
             </div>
-            {/* End .row */}
 
             <div className="shapes shape-text fw-500 fs-20 tx-dark text-center">
               Fill the <br />
@@ -230,12 +224,12 @@ const Insurance = () => {
               className="lazy-img shapes shape-two"
             />
           </div>
-          {/* /.bg-wrapper */}
         </div>
-      </div>
+      </div>*/}
       {/* /.fancy-short-banner-thirteen */}
+
       {/* =============================================
-		   Blog Section Three
+		   Map Section
 		   ============================================== */}
       <div className="blog-section-three mt-140 mb-170 lg-mt-100 lg-mb-100">
         <div className="container">
@@ -246,16 +240,52 @@ const Insurance = () => {
                   className="title-style-one text-center text-sm-start pb-40 lg-pb-20"
                   data-aos="fade-right"
                 >
-                  <h2 className="main-title fw-500 tx-dark m0">Our Blog</h2>
+                  <h2 className="main-title fw-500 tx-dark m0">Mapa de Coberturas</h2>
                 </div>
                 {/* /.title-style-one */}
               </div>
             </div>
             {/* /.row */}
             <div className="row gx-xxl-5">
-              <Blog />
+              {/*<Blog />*/}
+              <div className="col">
+                Mapa usa
+              </div>
             </div>
             {/* /.row */}
+            {/*<div className="text-center xs-mt-40">
+              <Link
+                to="/blog/blog-v2"
+                className="btn-twentyTwo fw-500 tran3s"
+                data-aos="fade-left"
+              >
+                Go to Blog
+              </Link>
+            </div>*/}
+          </div>
+        </div>
+      </div>
+      {/* /.map-section */}
+
+      {/* =============================================
+		   Blog Section Three
+		   ============================================== */}
+      {/*<div className="blog-section-three mt-140 mb-170 lg-mt-100 lg-mb-100">
+        <div className="container">
+          <div className="position-relative">
+            <div className="row align-items-end">
+              <div className="col-sm-8">
+                <div
+                  className="title-style-one text-center text-sm-start pb-40 lg-pb-20"
+                  data-aos="fade-right"
+                >
+                  <h2 className="main-title fw-500 tx-dark m0">Our Blog</h2>
+                </div>
+              </div>
+            </div>
+            <div className="row gx-xxl-5">
+              <Blog />
+            </div>
             <div className="text-center xs-mt-40">
               <Link
                 to="/blog/blog-v2"
@@ -267,7 +297,7 @@ const Insurance = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>*/}
       {/* /.blog-section-three */}
       {/*
 			=====================================================
