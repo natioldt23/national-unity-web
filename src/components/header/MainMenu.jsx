@@ -5,6 +5,7 @@ import {
   portfolioItems,
   blogItems,
   contactItems,
+  segurosItems
 } from "../../data/menu";
 
 import { useLocation } from "react-router-dom";
@@ -254,6 +255,38 @@ const MainMenu = () => {
             </ul>
           </li>
           {/* End li (contact) */}
+
+          <li className="nav-item dropdown">
+            <a
+              className={
+                segurosItems.some((elm) => isActive(elm.link))
+                  ? "nav-link dropdown-toggle active-menu"
+                  : "nav-link dropdown-toggle"
+              }
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+            >
+              Seguros
+            </a>
+            <ul className="dropdown-menu">
+              {segurosItems.map((seguro, index) => (
+                <li key={index}>
+                  <Link
+                    to={seguro.link}
+                    className={`dropdown-item ${
+                      isActive(seguro.link) ? "active" : ""
+                    }`}
+                  >
+                    <span>{seguro.text}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </li>
+          {/* End li (seguros) */}
         </ul>
         {/* End ul */}
 

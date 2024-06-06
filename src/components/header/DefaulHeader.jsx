@@ -30,16 +30,10 @@ const DefaulHeader = () => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-0">
             <Link to="/" className="d-block">
-              <img src="/images/logo/logo_01.png" alt="logo" />
+              <img className="logo-nu" src="/images/logo/logo-nu.webp" alt="logo" w="100" h="100"/>
             </Link>
           </div>
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
-            <Link
-              to="/login"
-              className="login-btn-three rounded-circle tran3s me-3"
-            >
-              <i className="bi bi-person" />
-            </Link>
             <Link
               to="/contact/contact-v1"
               className="btn-twentyOne fw-500 tran3s d-none d-lg-block"

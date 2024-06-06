@@ -108,6 +108,12 @@ export const contactItems = [
   { link: "/contact/contact-v4", text: "Contact - L.Generation" },
 ];
 
+export const segurosItems = [
+  { link: "/seguros/auto", text: "Auto USA" },
+  { link: "/seguros/camion", text: "Camion USA" },
+  { link: "/seguros/moto", text: "Moto Usa" },
+];
+
 export const navItems = [
   {
     label: "Home",

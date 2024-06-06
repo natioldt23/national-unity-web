@@ -1,48 +1,51 @@
 const Feature = () => {
   const features = [
     {
-      background: "#fffee7",
+      background: "#00AAF3",
       title: (
         <>
-          Regulated by <br /> WICO.
+          Elige la cobertura de acuerdo a tus necesidades y presupuesto.
         </>
       ),
-      description: "100% Reliable",
-      icon: "images/icon/icon_100.svg",
+      description: "",
+      icon: "https://web.archive.org/web/20230130001614im_/https://www.nationalunity.com/wp-content/uploads/2021/11/elige.svg",
       width: "169",
       height: "165",
       delay: "100",
     },
     {
-      background: "#FBF1FF",
+      background: "#00D6E5",
       title: (
         <>
-          Get Instant support <br /> all day.
+          Ingresa tu información personal, método de pago y datos de tu vehículo.
         </>
       ),
       width: "202",
       height: "170",
-      description: "Claim Support",
-      icon: "images/icon/icon_101.svg",
+      description: "",
+      icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/informacion.svg",
       delay: "200",
     },
     {
-      background: "#EEFBFA",
+      background: "#71FACB",
       title: (
         <>
-          Unbiased advice <br /> from expert.
+          Viaja seguro con cobertura en TODO Estados Unidos y Canadá
         </>
       ),
       width: "175",
       height: "175",
-      description: "Consultation",
-      icon: "images/icon/icon_102.svg",
+      description: "",
+      icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/asegurado.svg",
       delay: "300",
     },
   ];
 
   return (
     <>
+      <h2 class="tx-dark mb-20 mt-20 text-center">
+        Contrata tu Seguro de Auto para USA de manera fácil y segura
+      </h2>
       {features.map((feature, index) => (
         <div
           className="col-lg-4 col-sm-6"

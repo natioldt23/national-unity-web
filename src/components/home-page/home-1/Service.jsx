@@ -2,23 +2,23 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    icon: "images/icon/icon_104.svg",
-    title: "Home Loan",
+    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/IconAuto.svg",
+    title: "Seguro de Auto USA",
     delayAnim: 0,
   },
   {
-    icon: "images/icon/icon_105.svg",
-    title: "Travel Insurance",
+    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/IconLlanta.svg",
+    title: "Cobertura Premium",
     delayAnim: 100,
   },
   {
-    icon: "images/icon/icon_106.svg",
-    title: "Insure the Car",
+    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/Iconmoto.svg",
+    title: "Seguro de Moto USA",
     delayAnim: 200,
   },
   {
-    icon: "images/icon/icon_107.svg",
-    title: "Health Insurance",
+    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/Iconcamion.svg",
+    title: "Seguro Camión USA",
     delayAnim: 300,
   },
 ];
@@ -37,8 +37,7 @@ const Service = () => {
             <div className="icon">
               <img src={service.icon} alt="" className="lazy-img m-auto" />
             </div>
-            <p className="fs-20 m0 pt-20">I want</p>
-            <h4 className="tx-dark">{service.title}</h4>
+            <h4 className="tx-dark pt-20">{service.title}</h4>
             <Link
               to="/pages-menu/service-details"
               className="read-more rounded-circle text-start tran3s"

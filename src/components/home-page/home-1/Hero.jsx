@@ -23,37 +23,30 @@ const Hero1 = () => {
             data-aos="fade-up"
           >
             <h1 className="hero-heading fw-500 tx-dark">
-              Everything for your <span>Home</span> &amp; Future.
+              Bienvenido a <span>National Unity</span>
             </h1>
             <p className="text-lg tx-dark mt-45 mb-50 lg-mt-30 lg-mb-40">
-              Instant everything. Incredible prices. Big heart.
+              Del otro lado estamos de tu lado.
             </p>
-            <form
-              className="search-area d-md-inline-flex m-auto"
-              onSubmit={handleSubmit}
-            >
-              <select className="nice-select form-select">
-                {options.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.display}
-                  </option>
-                ))}
-              </select>
-              <input
-                type="text"
-                className="zip-code-input"
-                placeholder="Your Zip code"
-              />
-              <button className="fw-500 text-white tran3s" type="submit">
-                Search
-              </button>
-            </form>
             {/* End form */}
+            <div className="d-flex hero-buttons">
+              <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
+                <button className="fw-500 text-white tran3s button-primary" type="submit">
+                  Cotiza en línea
+                </button>
+              </a>
+
+              <a href="https://www.nationalunity.com/national/uc/code/activa.asp" target="blank">
+                <button className="fw-500 text-white tran3s button-primary" type="submit">
+                  Activar Unity Card
+                </button>
+              </a>
+            </div>
 
             <div>
               <div className="approval-info d-inline-flex align-items-center mt-130 lg-mt-80">
-                <img src="/images/icon/icon_99.svg" alt="" className="me-1" />
-                <span>An UK insurer approved by the UICO.</span>
+                {/*<img src="/images/icon/icon_99.svg" alt="" className="me-1" />
+                <span>An UK insurer approved by the UICO.</span>*/}
               </div>
             </div>
           </div>
@@ -62,15 +55,15 @@ const Hero1 = () => {
       {/* End .container */}
 
       <img
-        src="/images/assets/ils_11.png"
+        src="/images/assets/hero-auto.webp"
         alt="ilustration"
-        className="lazy-img illustration-one"
+        className="lazy-img illustration-one aos-animate"
         data-aos="fade-left"
       />
       <img
         src="/images/assets/ils_12.png"
         alt="ilustration"
-        className="lazy-img illustration-two"
+        className="lazy-img illustration-two aos-animate"
         data-aos="fade-right"
       />
     </div>

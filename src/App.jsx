@@ -6,7 +6,7 @@ import ScrollToTop from "./components/common/ScrollTop";
 import "bootstrap/dist/js/bootstrap";
 import AgencyModern from "./pages/home/agency-modern";
 import { Route, Routes } from "react-router-dom";
-import Insurance from "./pages/home/insurance";
+import Home from "./pages/home/Home";
 import WebHosting from "./pages/home/web-hosting";
 import Education from "./pages/home/education";
 import Charity from "./pages/home/charity";
@@ -67,7 +67,7 @@ function App() {
     <div className="main-page-wrapper">
       <Routes>
         <Route path="/">
-          <Route index element={<Insurance />} />
+          <Route index element={<Home />} />
           <Route path="home/web-hosting" element={<WebHosting />} />
           <Route path="home/education" element={<Education />} />
           <Route path="home/charity" element={<Charity />} />

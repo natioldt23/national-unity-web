@@ -35,7 +35,7 @@ const Insurance = () => {
 				Feature Section Thirty Four
 			============================================== 
 			--> */}
-      <div className="fancy-feature-thirtyFour mt-50">
+      <div className="fancy-feature-thirtyFour home-section">
         <div className="container">
           <div className="row gx-xxl-5">
             <Feature />
@@ -44,12 +44,13 @@ const Insurance = () => {
         {/* <!-- /.container --> */}
       </div>
       {/* <!-- /.fancy-feature-thirtyFour --> */}
+
       {/*
 			=====================================================
 				Feature Section Thirty Five
 			=====================================================
 			*/}
-      <div className="fancy-feature-thirtyFive mt-90 md-mt-70">
+      <div className="fancy-feature-thirtyFive home-section">
         <div className="container" data-aos="fade-up">
           <Banner />
           {/* /.top-banner */}
@@ -64,6 +65,7 @@ const Insurance = () => {
         {/* /.bg-wrapper */}
       </div>
       {/* /.fancy-feature-thirtyFive */}
+      
       {/* 
 			=============================================
 				Feature Section Thirty Six
@@ -79,7 +81,7 @@ const Insurance = () => {
                   data-aos="fade-right"
                 >
                   <h2 className="main-title fw-500 tx-dark m0">
-                    Discover all our Services.
+                    Descubre todos nuestros productos.
                   </h2>
                 </div>
               </div>
@@ -89,20 +91,21 @@ const Insurance = () => {
             </div>
             {/* /.row */}
 
-            <div className="text-center md-mt-50">
+            {/*<div className="text-center md-mt-50">
               <Link
                 to="/pages-menu/service-v1"
                 className="btn-twentyTwo fw-500 tran3s"
                 data-aos="fade-left"
               >
-                View all Services
+                Ver nuestros Servicios
               </Link>
-            </div>
+            </div>*/}
           </div>
         </div>
         {/* /.container */}
       </div>
       {/* /.fancy-feature-thirtySix */}
+
       {/* 
 			=============================================
 				Feature Section Thirty Seven
