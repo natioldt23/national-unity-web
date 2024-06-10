@@ -2,30 +2,21 @@ const columns = [
   {
     title: "Links",
     links: [
-      { label: "Home", url: "/" },
-      { label: "Pricing", url: "/" },
-      { label: "About us", url: "/" },
-      { label: "Service", url: "/" },
-      { label: "Blog", url: "/" },
+      { label: "Inicio", url: "/" },
+      { label: "Asistencia Vial", url: "/asistencia-vial" },
+      { label: "Reportar un Accidente", url: "/" },
+      { label: "Contacto", url: "/" },
+      { label: "Pólitica de Privacidad", url: "/" },
+      { label: "Términos y condiciones", url: "/tyc" },
     ],
   },
   {
-    title: "Support",
+    title: "Productos",
     links: [
-      { label: "Item Support", url: "/" },
-      { label: "Forum", url: "/" },
-      { label: "Report Abuse", url: "/" },
-      { label: "Live", url: "/" },
-    ],
-  },
-  {
-    title: "Products",
-    links: [
-      { label: "Web hosting", url: "/" },
-      { label: "Cloud hosting", url: "/" },
-      { label: "WordPress hosting", url: "/" },
-      { label: "VPS hosting", url: "/" },
-      { label: "Dedicated hosting", url: "/" },
+      { label: "Seguros de Auto USA", url: "/" },
+      { label: "Cobertura Premium", url: "/" },
+      { label: "Seguros de Moto USA", url: "/" },
+      { label: "Seguros de Camión USA", url: "/" },
     ],
   },
 ];
@@ -45,6 +36,29 @@ const Footer2 = () => {
           </ul>
         </div>
       ))}
+      <div className="col-xl-3 col-lg-4 col-md-5 mb-30">
+        <h5 className="footer-title tx-dark fw-normal">Dirección</h5>
+        <p className="style-none footer-nav-link">
+          One Huebner Parke, 15303 Huebner Road San Antonio, TX 78248
+        </p>
+        <p className="style-none footer-nav-link">
+          MX 8am – 5pm CST <br /> 
+          <a href="tel:+52-800-062-0460">+52-800-062-0460</a>
+        </p>
+        <p className="style-none footer-nav-link">
+          USA 8am – 5pm CST <br />
+          <a href="tel:001-210-479-8886">001-210-479-8886</a>  
+        </p>
+        {/*<ul className="d-flex social-icon style-none">
+          {socialIcons.map((icon, index) => (
+            <li key={index}>
+              <a href={icon.link} target="_blank" rel="noopener noreferrer">
+                <i className={icon.iconClass} />
+              </a>
+            </li>
+          ))}
+        </ul>*/}
+      </div>
     </>
   );
 };

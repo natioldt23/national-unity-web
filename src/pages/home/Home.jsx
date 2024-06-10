@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import Seo from "../../components/common/Seo";
 import Footer from "../../components/footer/Footer";
+import DefaultFooter from "../../components/footer/DefaultFooter";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import TiempoCruces from "../../components/home-page/home-1/TiempoCruces";
+import Map from "../../components/home-page/home-1/Map";
 import Banner from "../../components/home-page/home-1/Banner";
 import Block from "../../components/home-page/home-1/Block";
 import Blog from "../../components/home-page/home-1/Blog";
@@ -231,38 +233,34 @@ const Insurance = () => {
       {/* =============================================
 		   Map Section
 		   ============================================== */}
-      <div className="blog-section-three mt-140 mb-170 lg-mt-100 lg-mb-100">
+      <div className="blog-section-three mt-140 mb-50 lg-mt-100">
         <div className="container">
-          <div className="position-relative">
-            <div className="row align-items-end">
-              <div className="col-sm-8">
+          <div className="row align-items-center">
+            <div className="col">
+              <div data-aos="fade-up">
                 <div
-                  className="title-style-one text-center text-sm-start pb-40 lg-pb-20"
-                  data-aos="fade-right"
+                  className="title-style-one text-center pb-40 lg-pb-20"
                 >
                   <h2 className="main-title fw-500 tx-dark m0">Mapa de Coberturas</h2>
                 </div>
                 {/* /.title-style-one */}
+
+                <Map />
               </div>
             </div>
-            {/* /.row */}
-            <div className="row gx-xxl-5">
-              {/*<Blog />*/}
-              <div className="col">
-                Mapa usa
-              </div>
-            </div>
-            {/* /.row */}
-            {/*<div className="text-center xs-mt-40">
-              <Link
-                to="/blog/blog-v2"
-                className="btn-twentyTwo fw-500 tran3s"
-                data-aos="fade-left"
-              >
-                Go to Blog
-              </Link>
-            </div>*/}
           </div>
+          {/* /.row */}
+
+          {/* /.row */}
+          {/*<div className="text-center xs-mt-40">
+            <Link
+              to="/blog/blog-v2"
+              className="btn-twentyTwo fw-500 tran3s"
+              data-aos="fade-left"
+            >
+              Go to Blog
+            </Link>
+          </div>*/}
         </div>
       </div>
       {/* /.map-section */}
@@ -303,32 +301,33 @@ const Insurance = () => {
 			=====================================================
 				Footer
 			=====================================================
+      footer-style-ten theme-basic-footer zn2 position-relative
 			*/}
-      <div className="footer-style-ten theme-basic-footer zn2 position-relative">
+      <div className="">
         <div className="container">
           <div className="inner-wrapper">
             <div className="row justify-content-between">
-              <div className="col-lg-3 footer-intro mb-40">
+              {/*<div className="col-lg-3 footer-intro mb-40">
                 <div className="logo">
                   <Link to="/">
-                    <img src="/images/logo/logo_02.png" alt="logo" width={95} />
+                    <img src="/images/logo/logo-nu.webp" alt="logo" width={95} />
                   </Link>
                 </div>
                 <p className="text-white opacity-75 fs-18 mt-15 mb-45 lg-mb-10">
                   Best Insurance Company.
                 </p>
                 <p className="text-white opacity-50 fs-15 m0 d-none d-lg-block">
-                  © {new Date().getFullYear()} - {new Date().getFullYear() + 1}{" "}
+                  © 1969 - {new Date().getFullYear()}{" "}
                   jano inc.
                 </p>
-              </div>
-              <Footer />
+              </div>*/}
+              <DefaultFooter />
             </div>
           </div>
           {/* /.inner-wrapper */}
         </div>
         {/* End .container */}
-        <img
+        {/*<img
           src="/images/assets/ils_13.png"
           alt="illustration"
           className="lazy-img illustration-one"
@@ -339,7 +338,7 @@ const Insurance = () => {
           alt="illustration"
           className="lazy-img illustration-two"
           data-aos="fade-right"
-        />
+        />*/}
       </div>
       {/* /.footer-style-ten */}
     </>

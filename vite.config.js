@@ -7,6 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      'usa-map-react': path.resolve(__dirname, 'node_modules/usa-map-react/dist/index.js')
     },
   },
 });

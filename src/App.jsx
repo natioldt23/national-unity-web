@@ -51,11 +51,13 @@ import BlogV1 from "./pages/blog/blog-v1";
 import BlogV2 from "./pages/blog/blog-v2";
 import BlogV3 from "./pages/blog/blog-v3";
 import DynamicBlogDetails from "./pages/blog/blog-single";
-import ContactV1 from "./pages/contact/contact-v1";
+import Contacto from "./pages/contact/Contacto";
+import AsistenciaVial from "./pages/asistencia-vial/AsistenciaVial";
 import ContactV2 from "./pages/contact/contact-v2";
 import ContactV3 from "./pages/contact/contact-v3";
 import ContactV4 from "./pages/contact/contact-v4";
 import ScrollTopBehaviour from "./components/common/ScrollTopBehavier";
+import TyC from "./pages/tyc/Tyc";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -128,7 +130,11 @@ function App() {
           <Route path="blog/blog-v3" element={<BlogV3 />} />
           <Route path="blog/:id" element={<DynamicBlogDetails />} />
 
-          <Route path="contact/contact-v1" element={<ContactV1 />} />
+          {/* Páginas de Main Menu */}
+          <Route path="asistencia-vial" element={<AsistenciaVial />} />
+          <Route path="contacto" element={<Contacto />} />
+          <Route path="tyc" element={<TyC />} />
+
           <Route path="contact/contact-v2" element={<ContactV2 />} />
           <Route path="contact/contact-v3" element={<ContactV3 />} />
           <Route path="contact/contact-v4" element={<ContactV4 />} />

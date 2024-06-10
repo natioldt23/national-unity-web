@@ -10483,7 +10483,14 @@ body .btn-twentySix:hover:after {
   padding: 0 35px;
 }
 
-.hero-buttons {
+.main-buttons {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.asistencia-buttons {
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -10498,13 +10505,81 @@ body .btn-twentySix:hover:after {
   display: none;
 }
 
+.road-assistance {
+  border-radius: 15% 0 15%;
+}
+
+path {
+  pointer-events: all;
+  fill: #0276dd;
+  transition: fill 0.4s ease;
+}
+
+path:hover {
+  cursor: pointer;
+  fill: #00DBB3 !important;
+  z-index: 1000;
+  border: 1px solid #fff;
+}
+
+#details-box {
+  box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.7);
+  opacity: 0%;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 24px;
+  position: fixed;
+  color: white !important;
+
+  background-color: black;
+  width: fit-content;
+  transform: translateX(-50%);
+  transition: opacity .4s ease;
+  z-index: 1;
+}
+
+.asistencia-feature .img-holder .card-one {
+  width: 200px;
+  top: 32%;
+  left: -16%;
+  animation: jumpFour 10s infinite linear;
+  align-self: end;
+}
+.asistencia-feature .img-holder .card-two {
+  width: 200px;
+  top: 2%;
+  right: -9%;
+  animation: jumpThree 10s infinite linear;
+}
+.asistencia-feature .img-holder .card-three {
+  width: 200px;
+  bottom: -6%;
+  right: -5%;
+  animation: jumpTwo 10s infinite linear;
+  align-self: center;
+}
+
+.asistencia-feature .img-holder .card-style {
+  background: #ffffff;
+  box-shadow: 0px 20px 20px rgba(0, 23, 103, 0.09);
+  border-radius: 8px;
+  padding: 30px 0;
+}
+
+
 @media (min-width: 1100px) {
   .logo-nu {
     width: 120px;
   }
 
-  .hero-buttons {
+  .main-buttons {
     flex-direction: row;
+    gap: 24px;
+  }
+
+  .asistencia-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
     gap: 24px;
   }
 

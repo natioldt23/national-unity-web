@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 const links = [
   {
-    title: "Privacy & Terms.",
+    title: "Términos y condiciones.",
     href: "/faq",
   },
   {
-    title: "Contact Us",
+    title: "Contáctanos",
     href: "/contact",
   },
 ];
@@ -77,13 +77,10 @@ const Footer = () => {
               Copyright © {new Date().getFullYear()}{" "}
               <a
                 style={{ color: "inherit" }}
-                href="https://themeforest.net/user/ib-themes"
-                target="_blank"
                 rel="noopener noreferrer"
               >
-                ib-themes
+                National Unity Insurance Company
               </a>
-              inc.
             </p>
           </div>
         </div>

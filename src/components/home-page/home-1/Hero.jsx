@@ -16,6 +16,18 @@ const Hero1 = () => {
 
   return (
     <div className="hero-banner-ten position-relative zn2">
+      <img
+        src="/images/assets/hero-camion.png"
+        alt="ilustration"
+        className="hero-camion lazy-img illustration-one"
+        data-aos="fade-left"
+      />
+      <img
+        src="/images/assets/hero-auto.png"
+        alt="ilustration"
+        className="lazy-img illustration-two"
+        data-aos="fade-right"
+      />
       <div className="container">
         <div className="row">
           <div
@@ -29,7 +41,7 @@ const Hero1 = () => {
               Del otro lado estamos de tu lado.
             </p>
             {/* End form */}
-            <div className="d-flex hero-buttons">
+            <div className="d-flex main-buttons">
               <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
                 <button className="fw-500 text-white tran3s button-primary" type="submit">
                   Cotiza en línea
@@ -54,18 +66,7 @@ const Hero1 = () => {
       </div>
       {/* End .container */}
 
-      <img
-        src="/images/assets/hero-camion.png"
-        alt="ilustration"
-        className="hero-camion lazy-img illustration-one aos-animate"
-        data-aos="fade-left"
-      />
-      <img
-        src="/images/assets/hero-auto.png"
-        alt="ilustration"
-        className="lazy-img illustration-two aos-animate"
-        data-aos="fade-right"
-      />
+      
     </div>
   );
 };

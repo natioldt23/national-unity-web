@@ -32,12 +32,14 @@
     "react-usa-map": "^1.5.0",
     "sass": "^1.70.0",
     "slick": "^1.12.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "usa-map-react": "^0.1.4"
   },
   "devDependencies": {
+    "@swc/core": "^1.5.25",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react-swc": "^3.5.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",

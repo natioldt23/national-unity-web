@@ -287,6 +287,39 @@ const MainMenu = () => {
             </ul>
           </li>
           {/* End li (seguros) */}
+
+          <li className="nav-item">
+            <Link
+              className="nav-link"
+              to='/contacto'
+            >
+              Contacto
+            </Link>
+            
+          </li>
+          {/* End li (contacto) */}
+
+          {/*<li className="nav-item">
+            <Link
+              className="nav-link"
+              to='/reportar-accidente'
+            >
+              Reportar accidente
+            </Link>
+            
+            </li>*/}
+          {/* End li (reportar-accidente) */}
+
+          <li className="nav-item">
+            <Link
+              className="nav-link"
+              to='/asistencia-vial'
+            >
+              AV
+            </Link>
+            
+            </li>
+          {/* End li (asistencia-vial) */}
         </ul>
         {/* End ul */}
 

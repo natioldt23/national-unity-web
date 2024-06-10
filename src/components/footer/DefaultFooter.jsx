@@ -12,7 +12,7 @@ const DefaultFooter = () => {
             <div className="col-xl-2 footer-intro mb-40">
               <div className="logo">
                 <Link to="/">
-                  <img src="/images/logo/logo_01.png" alt="brand" />
+                  <img src="/images/logo/logo-nu.webp" alt="brand" width={95} />
                 </Link>
               </div>
             </div>
@@ -20,14 +20,14 @@ const DefaultFooter = () => {
 
             <Footer2 />
 
-            <div className="col-xl-4 col-lg-5 mb-30 form-widget">
+            {/*<div className="col-xl-4 col-lg-5 mb-30 form-widget">
               <h5 className="footer-title tx-dark fw-normal">Newslettert</h5>
               <h6 className="pt-15 pb-20 md-pt-10">Join our newsletter</h6>
               <NewsLetter />
               <div className="fs-14 mt-10">
                 We only send interesting and relevant emails.
               </div>
-            </div>
+            </div>*/}
             {/* End .col-xl-4 */}
           </div>
           {/* End .row */}
@@ -37,11 +37,11 @@ const DefaultFooter = () => {
       {/* /.bg-wrapper */}
       <CopyrightFooter2 />
       {/* /.bottom-footer */}
-      <img
+      {/*<img
         src="/images/shape/shape_173.svg"
         alt="shape"
         className="lazy-img shapes shape-one"
-      />
+      />*/}
     </div>
   );
 };

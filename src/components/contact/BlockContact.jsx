@@ -2,24 +2,27 @@ const BlockContact = () => {
   const addressBlocks = [
     {
       icon: "/images/icon/icon_147.svg",
-      title: "Our Address",
-      content: "1012 Pebda Parkway, Mirpur 2 Dhaka, Bangladesh",
+      title: "Nuestra dirección",
+      content: "One Huebner Parke, 15303 Huebner Road San Antonio, TX 78248",
       delay: "100",
     },
     {
       icon: "/images/icon/icon_148.svg",
-      title: "Contact Info",
-      content: "Open a chat or give us call at",
-      link: "tel:310.841.5500",
+      title: "Información de contacto",
+      content: "Llámanos en México al",
+      link: "tel:+52-800-062-0460",
+      content2: 'o en USA al',
+      link2: "tel: 001-210-479-8886",
       delay: "200",
     },
     {
       icon: "/images/icon/icon_149.svg",
-      title: "Live Support",
-      content: "live chat service",
+      title: "Apoyo por Whatsapp",
+      content: "Servicio de chat en vivo",
       link: "www.janolivechat.com",
       delay: "300",
     },
+    
   ];
 
   return (
@@ -46,6 +49,19 @@ const BlockContact = () => {
                   }
                 >
                   {block.link.replace("tel:", "")}
+                </a>
+              )}
+            </p>
+            <p>
+              {block.content2} <br />
+              {block.link2 && (
+                <a
+                  href={block.link2}
+                  className={
+                    block.link2.includes("tel:") ? "call" : "webaddress"
+                  }
+                >
+                  {block.link2.replace("tel:", "")}
                 </a>
               )}
             </p>

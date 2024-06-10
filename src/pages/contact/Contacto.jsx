@@ -27,9 +27,16 @@ const ContactV1 = () => {
             <div className="col-lg-7 text-center m-auto" data-aos="fade-up">
               <div className="title-style-five mb-65 lg-mb-40">
                 <div className="sc-title-two fst-italic position-relative d-inline-block">
-                  Contact info
+                  Información de contacto
                 </div>
-                <h2 className="main-title fw-500 tx-dark">Get in Touch.</h2>
+                <h2 className="main-title fw-500 tx-dark">Pongámonos en contacto.</h2>
+                <div 
+                  className="col justify-content-center text-center"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <p className="mb-0">En un horario de Lunes a Viernes de 8am a 5pm.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -55,7 +62,7 @@ const ContactV1 = () => {
         </div>
         {/* End .container */}
 
-        <div className="container">
+        {/*<div className="container">
           <div className="row">
             <div className="col-lg-8 col-md-9 m-auto">
               <h2
@@ -67,12 +74,10 @@ const ContactV1 = () => {
             </div>
             <div className="col-xl-11 m-auto">
               <ContactForm />
-              {/* /.form-style-one */}
             </div>
           </div>
         </div>
-        {/* End .container */}
-        <Map />
+        <Map />*/}
       </div>
 
       {/* 
