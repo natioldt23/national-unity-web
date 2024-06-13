@@ -109,9 +109,9 @@ export const contactItems = [
 ];
 
 export const segurosItems = [
-  { link: "/seguros/auto", text: "Auto USA" },
-  { link: "/seguros/camion", text: "Camion USA" },
-  { link: "/seguros/moto", text: "Moto Usa" },
+  { link: "/seguros/seguro-auto", text: "Auto USA" },
+  { link: "/seguros/seguro-camion", text: "Camion USA" },
+  { link: "/seguros/seguro-moto", text: "Moto Usa" },
 ];
 
 export const navItems = [

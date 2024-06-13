@@ -10505,8 +10505,12 @@ body .btn-twentySix:hover:after {
   display: none;
 }
 
-.road-assistance {
+.road-assistance, .reportar-accidente-img {
   border-radius: 15% 0 15%;
+}
+
+.seguro-auto-hero {
+  width: 300px;
 }
 
 path {
@@ -10566,6 +10570,124 @@ path:hover {
   padding: 30px 0;
 }
 
+.tyc-icon {
+  width: 200px;
+}
+
+.tx-steps {
+  color: #000 !important;
+}
+
+.ul-step.list-item li {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 40px;
+  text-align: start;
+}
+
+.ul-step li:before {
+  content: url(/images/icon/icon_113.svg);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.step-number {
+  width: 85px;
+  height: 85px;
+  font-size: 26px;
+  color: #fff;
+  background: var(--prime-ten);
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  padding: 11px 0 0 23px;
+}
+
+.step-card:hover .step-number{
+  color: #fff;
+  background: var(--prime-ten);
+}
+
+.bg-gray {
+  background: #f6f9fb;
+}
+
+.beneficios-slider {
+  background: #FFF !important;
+}
+
+.beneficios-item {
+  height: 420px !important;
+  box-shadow: 0px 30px 15px rgba(19, 45, 73, 0.08);
+  padding: 50px 70px;
+}
+
+.cobertura-content {
+  color: #000 !important;
+}
+
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+
+  &__tab-list {
+    border-bottom: none !important;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+
+  &__tab {
+
+    display: inline-block;
+    border: none !important;
+    bottom: 0 !important;
+    position: relative;
+    list-style: none;
+    padding: 8px 16px !important;
+    cursor: pointer;
+  
+
+    &--selected {
+      background: #0276dd !important;
+      border-radius: 7px !important;
+
+      h4 {
+        color: #fff !important;
+        margin: 0;
+      }
+    }
+
+    &--disabled {
+      color: GrayText;
+      cursor: default;
+    }
+
+    &:focus {
+      outline: none;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        left: -4px;
+        right: -4px;
+        bottom: -5px;
+        background: #fff;
+      }
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+
+    &--selected {
+      display: block;
+    }
+  }
+}
+
 
 @media (min-width: 1100px) {
   .logo-nu {
@@ -10595,5 +10717,24 @@ path:hover {
     height: 500px;
     border-radius: 0 15% 0;
     display: block;
+  }
+
+  .tyc-icon {
+    width: 100%;
+  }
+
+  .step-card {
+    height: 400px !important;
+    padding: 75px 20px 90px !important;
+  }
+
+  /*.step-number {
+    bottom: 345px;
+    right: 590px;
+    padding: 35px 0 0 45px;
+  }*/
+
+  .seguro-auto-hero {
+    width: 600px;
   }
 }

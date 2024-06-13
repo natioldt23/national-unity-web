@@ -1,0 +1,48 @@
+const beneficiosAuto = [
+  {
+    id: 1,
+    title: "Gastos Médicos",
+    rating: 5,
+    text1: "Incluye Gastos médicos a ocupantes del vehículo asegurado por $2,000 USD por persona y hasta $10,000 USD por evento.",
+    text2: " ",
+    text3: " ",
+    text4: " ",
+    author: " ",
+    location: "",
+    image: "/images/icon/gastos_medicos.svg",
+  },
+  {
+    id: 2,
+    title: "Asistencia en el camino",
+    rating: 5,
+    text1: "- Gastos médicos por accidente o enfermedad",
+    text2: "- Renta de auto por robo, avería o accidente",
+    text3: "- Hotel por convalecencia por un máximo de $90 USD hasta 3 días consecutivos",
+    text4: "- Repatriación por fallecimiento",
+    author: "",
+    location: "",
+    image: "/images/icon/asistencia_camino.svg",
+  },
+  {
+    id: 3,
+    title: "Asistencia legal",
+    rating: 5,
+    text1: "En caso de accidente asistencia legal incluida.",
+    text2: " ",
+    text3: " ",
+    text4: " ",
+    author: "",
+    location: "",
+    image: "/images/icon/asistencia_legal.svg",
+  },
+  /*{
+    id: 4,
+    title: "Very Solid!!",
+    rating: 5,
+    text: "They not only understand what I say but read between the lines and also give me ideas of my own.",
+    author: "Rashed Kabir",
+    location: "Claifornia",
+    image: "/images/media/img_55.jpg",
+  },*/
+];
+export default beneficiosAuto;

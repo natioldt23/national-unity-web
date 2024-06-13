@@ -58,6 +58,8 @@ import ContactV3 from "./pages/contact/contact-v3";
 import ContactV4 from "./pages/contact/contact-v4";
 import ScrollTopBehaviour from "./components/common/ScrollTopBehavier";
 import TyC from "./pages/tyc/Tyc";
+import ReportarAccidente from "./pages/reportar-accidente/ReportarAccidente";
+import AutosUSA from "./pages/seguros/AutoUSA";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -134,6 +136,8 @@ function App() {
           <Route path="asistencia-vial" element={<AsistenciaVial />} />
           <Route path="contacto" element={<Contacto />} />
           <Route path="tyc" element={<TyC />} />
+          <Route path="reportar-accidente" element={<ReportarAccidente />} />
+          <Route path="seguros/seguro-auto" element={<AutosUSA />} />
 
           <Route path="contact/contact-v2" element={<ContactV2 />} />
           <Route path="contact/contact-v3" element={<ContactV3 />} />

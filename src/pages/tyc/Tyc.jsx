@@ -113,10 +113,10 @@ const TyC = () => {
       </div>*/}
       {/* /.fancy-feature-thirtySeven */}
 
-      <div className="service-details position-relative mt-50 mb-170 md-mt-50 lg-mb-120 asistencia-feature">
+      <div className="service-details position-relative mt-20 md-mt-20 asistencia-feature">
         <div className="container">
           <div className="row">
-            <div className="col-xl-9 col-lg-8" data-aos="fade-right">
+            <div className="col-xl-9 col-lg-8 d-flex align-items-center" data-aos="fade-right">
               <div className="service-details-meta">
                 <p className="text-lg tx-dark">
                   * Para las pólizas del producto larga estadía la Exclusión I.
@@ -127,13 +127,13 @@ const TyC = () => {
                 </p>
 
                 <div className="d-flex asistencia-buttons mt-50">
-                  <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
+                  <a href="https://www.nationalunity.com/F47C-202310.pdf" target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">
                       Terms and Conditions
                     </button>
                   </a>
 
-                  <a href="https://www.nationalunity.com/national/uc/code/activa.asp" target="blank">
+                  <a href="https://www.nationalunity.com/F47C-es-202310.pdf" target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">
                       Términos y Condiciones
                     </button>
@@ -144,20 +144,8 @@ const TyC = () => {
               {/* /.service-details-meta */}
             </div>
 
-            <div className="col-xl-3 col-lg-4">
-              <div className="d-flex asistencia-buttons flex-column">
-                <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
-                  <button className="fw-500 text-white tran3s button-primary" type="submit">
-                    Terms and Conditions
-                  </button>
-                </a>
-
-                <a href="https://www.nationalunity.com/national/uc/code/activa.asp" target="blank">
-                  <button className="fw-500 text-white tran3s button-primary" type="submit">
-                    Términos y Condiciones
-                  </button>
-                </a>
-              </div>
+            <div className="col-xl-3 col-lg-4 d-flex justify-content-center align-items-center md-pt-70 " data-aos="fade-left">
+              <img src="/images/assets/tyc.png" className="tyc-icon"/>
             </div>
             {/* End .col-xl-9 */}
 

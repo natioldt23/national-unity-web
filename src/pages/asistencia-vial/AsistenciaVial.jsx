@@ -22,29 +22,29 @@ const AsistenciaVial = () => {
       cardNo: "card-one",
       title: "40%",
       subtitle: "Del Mercado",
-      src: '/images/assets/gasolina.png'
+      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/LIQUIDOS_NU-01.svg",
     },
     {
       id: 2,
       title: "+50 años",
       cardNo: "card-two",
       subtitle: "De experiencia",
-      src: '/images/assets/gasolina.png'
+      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/LLANTA_NU-01.svg"
     },
     {
       id: 3,
       title: "Líder",
       cardNo: "card-three",
       subtitle: "En Responsabilidad civil",
-      src: '/images/assets/gasolina.png'
+      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/PILA_NU-01.svg"
     },
-    {
+    /*{
       id: 4,
       title: "Líder",
       cardNo: "card-one",
       subtitle: "En Responsabilidad civil",
-      src: '/images/assets/gasolina.png'
-    },
+      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/ATASCAMIENTO_NU-01.svg"
+    },*/
   ];
 
   const starRating = Array(5)
@@ -191,7 +191,7 @@ const AsistenciaVial = () => {
                     key={item.id}
                   >
                     <div className="">
-                      <img src={item.src} alt="" />
+                      <img src={item.src} alt="" width={60} />
                     </div>
                   </div>
                 ))}
@@ -227,6 +227,8 @@ const AsistenciaVial = () => {
                   src="images/media/road-assistance.jpg"
                   alt=""
                   className="lazy-img screen-two road-assistance"
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
                 />
               </div>
               {/* /.block-style-seven */}
