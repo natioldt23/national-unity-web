@@ -15,7 +15,7 @@ const Hero1 = () => {
   };
 
   return (
-    <div className="hero-banner-ten position-relative zn2">
+    <div className="hero-banner-ten position-relative">
       <img
         src="/images/assets/hero-camion.png"
         alt="ilustration"

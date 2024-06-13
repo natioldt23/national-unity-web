@@ -16,11 +16,6 @@ import 'react-tabs/style/react-tabs.css';
 import CoberturasAuto from "./CoberturasAuto";
 
 const AutosUSA = () => {
-  const features = [
-    { text: "Amazing communication." },
-    { text: "Best trending designing experience." },
-    { text: "Email & Live chat." },
-  ];
 
   const cardsData = [
     {
@@ -196,114 +191,6 @@ const AutosUSA = () => {
           <FaqAuto />
         </div>
         {/* /.container */}
-      </div>
-      {/* 
-			=============================================
-				Feature Section Thirty Seven
-			============================================== 
-			*/}
-      {/*<div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div
-                className="block-style-four pe-xxl-5 me-xxl-4 md-mb-70"
-                data-aos="fade-right"
-              >
-                <div className="title-style-six">
-                  <div className="sc-title-two text-uppercase">WHY US</div>
-                  <h2 className="main-title fw-500 tx-dark">
-                    Everything with Marketing.
-                  </h2>
-                </div>
-                <p className="fs-20 pt-20 pb-30 lg-pt-10 lg-pb-20">
-                  Turn your business into a sales machine today with lorem
-                  Things go wrong have questions.
-                </p>
-                <ul className="style-none list-item">
-                  {features.map((feature, index) => (
-                    <li key={index}>{feature.text}</li>
-                  ))}
-                </ul>
-                <div className="d-inline-flex align-items-center mt-35 lg-mt-20">
-                  <ul className="d-flex style-none rating">{starRating}</ul>
-                  <div className="fs-20 ms-2">
-                    <strong className="fw-500 tx-dark">4.8</strong>
-                    <span className="tx-dark fs-16 opacity-50">
-                      (30k Reviews)
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xxl-5 col-lg-6 ms-auto">
-              <Block />
-            </div>
-          </div>
-        </div>
-      </div>*/}
-      {/* /.fancy-feature-thirtySeven */}
-
-      <div className="service-details position-relative mt-50 mb-170 md-mt-50 lg-mb-120 asistencia-feature">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-9 col-lg-8" data-aos="fade-right">
-              <div className="service-details-meta">
-                <p className="text-lg tx-dark">
-                  Se recomienda tener a la mano la siguiente información antes de solicitar un servicio de 
-                  asistencia vial:
-                </p>
-                <ul className="style-none list-item md-mb-40 tx-dark">
-                  <li>Número de póliza completo</li>
-                  <li>Teléfono donde contactarlo</li>
-                  <li>Correo electrónico</li>
-                  <li>Correo electrónico</li>
-                </ul>
-
-                <p className="text-lg tx-dark">
-                  En caso de que usted requiera Asistencia Vial dentro de los Estados Unidos de América deberás
-                   llamar al:
-                </p>
-
-                <ul className="style-none list-item md-mb-40 tx-dark">
-                  <li>
-                    Sin costo desde USA:
-                    <a href="tel:18003085513">1-800-308-5513</a>
-                  </li>
-                  <li>
-                    Larga distancia dentro de USA:
-                    <a href="tel:2104799585">210-479-9585</a>
-                  </li>
-                  <li>
-                    Con Costo desde México:
-                    <a href="tel:0012104799585">001-210-479-9585</a>
-                  </li>
-                </ul>
-              </div>
-              {/* /.service-details-meta */}
-            </div>
-            {/* End .col-xl-9 */}
-
-            <div className="col-xl-3 col-lg-4" data-aos="fade-up">
-              <div className="img-holder d-lg-inline-flex position-relative zn2 flex-column gap-4 w-100">
-
-                {cardsData.map((item) => (
-                  <div
-                    className={`card-style ${item.cardNo} d-flex justify-content-center`}
-                    key={item.id}
-                  >
-                    <div className="">
-                      <img src={item.src} alt="" width={60} />
-                    </div>
-                  </div>
-                ))}
-                {/* /.card */}
-              </div>
-            </div>
-
-          </div>
-        </div>
       </div>
 
       {/* 
