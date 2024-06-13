@@ -121,7 +121,7 @@ const MainMenu = () => {
             >
               Pages
             </a>
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu dropdown-menu-shadow">
               {pagesItems.map((item, index) => (
                 <li className="dropdown-submenu dropdown" key={index}>
                   <a
@@ -271,7 +271,7 @@ const MainMenu = () => {
             >
               Seguros
             </a>
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu dropdown-menu-shadow">
               {segurosItems.map((seguro, index) => (
                 <li key={index}>
                   <Link

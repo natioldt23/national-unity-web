@@ -72,7 +72,7 @@ const TiempoCruces = () => {
             className="lazy-img main-img ms-auto"
           />*/}
           <img
-            src="images/media/puentes.jpg"
+            src="images/media/puentes.webp"
             alt=""
             className="lazy-img screen-two puentes"
           />

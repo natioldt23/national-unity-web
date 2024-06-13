@@ -17,13 +17,13 @@ const Hero1 = () => {
   return (
     <div className="hero-banner-ten position-relative">
       <img
-        src="/images/assets/hero-camion.png"
+        src="/images/assets/hero-camion.webp"
         alt="ilustration"
         className="hero-camion lazy-img illustration-one"
         data-aos="fade-left"
       />
       <img
-        src="/images/assets/hero-auto.png"
+        src="/images/assets/hero-auto.webp"
         alt="ilustration"
         className="lazy-img illustration-two"
         data-aos="fade-right"

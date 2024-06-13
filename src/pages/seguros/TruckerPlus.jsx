@@ -39,7 +39,7 @@ const TruckerPlus = () => {
           </ul>
           {/* End list */}
           <p className="fs-20 pt-30 pb-30 lg-pb-20">
-            ¡Cotiza tu seguro y añade Asistencia Plus al finalizar!
+            ¡Cotiza tu seguro y añade Trucker Plus al finalizar!
           </p>
          
         </div>
@@ -47,31 +47,9 @@ const TruckerPlus = () => {
       </div>
       {/* End col-6 */}
 
-      <div className="col-lg-6" data-aos="fade-left">
-        <div className="illustration-holder position-relative pt-50 pb-50 pe-md-5 lg-mt-80">
-          {/*<img
-            src="images/media/img_57.png"
-            alt=""
-            className="lazy-img main-img ms-auto"
-          />*/}
-          <img
-            src="images/media/puentes.jpg"
-            alt=""
-            className="lazy-img screen-two puentes"
-          />
-          <img
-            src="images/shape/shape_139.svg"
-            alt=""
-            className="lazy-img shapes shape-one"
-          />
-          {/*<img
-            src="images/shape/shape_140.svg"
-            alt=""
-            className="lazy-img shapes shape-two"
-        />*/}
-        </div>{" "}
-        {/* /.illustration-holder */}
-      </div>
+      <div class="col-lg-6 d-flex justify-content-center align-items-center aos-init aos-animate" data-aos="fade-left">
+        <img src="/images/assets/trucker-plus.webp" />
+        </div>
     </div>
   );
 };

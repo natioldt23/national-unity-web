@@ -10,11 +10,7 @@ import Partners from "../../components/services/Partners";
 import { Link } from "react-router-dom";
 
 const AsistenciaVial = () => {
-  const features = [
-    { text: "Amazing communication." },
-    { text: "Best trending designing experience." },
-    { text: "Email & Live chat." },
-  ];
+
 
   const cardsData = [
     {
@@ -224,7 +220,7 @@ const AsistenciaVial = () => {
                   Aquí puedes consultar los servicios de asistencia vial que ofrecemos
                 </p>
                 <img
-                  src="images/media/road-assistance.jpg"
+                  src="images/media/road-assistance.webp"
                   alt=""
                   className="lazy-img screen-two road-assistance"
                   data-aos="fade-right"
@@ -416,7 +412,7 @@ const AsistenciaVial = () => {
                   {/* End .col-6 */}
 
                   <div className="col-lg-4 d-flex ms-auto justify-content-center align-items-center text-lg-end">
-                    <img src="/images/assets/warning.png"/>
+                    <img src="/images/assets/warning.webp"/>
                   </div>
                 </div>
               </div>

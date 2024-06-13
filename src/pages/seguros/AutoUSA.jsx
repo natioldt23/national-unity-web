@@ -95,9 +95,9 @@ const AutosUSA = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xxl-5 col-lg-6" data-aos="fade-right">
+            <div className="col-xxl-5 col-lg-6 d-flex align-items-center" data-aos="fade-left">
             <img
-              src="/images/assets/seguro-auto-hero.png"
+              src="/images/assets/seguro-auto-hero.webp"
               alt="icon"
               className="lazy-img seguro-auto-hero"
             />

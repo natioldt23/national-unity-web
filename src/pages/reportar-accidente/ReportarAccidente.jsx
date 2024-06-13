@@ -168,7 +168,7 @@ const ReportarAccidente = () => {
             </div>
             {/* End .col-xl-9 */}
             <div className="col-xl-3 col-lg-4 d-flex justify-content-center align-items-center" data-aos="fade-left">
-              <img src="/images/assets/reportar-accidente.jpg" className="reportar-accidente-img"/>
+              <img src="/images/assets/reportar-accidente.webp" className="reportar-accidente-img"/>
             </div>
 
           </div>
@@ -293,7 +293,7 @@ const ReportarAccidente = () => {
                   {/* End .col-6 */}
 
                   <div className="col-lg-2 d-flex ms-auto justify-content-center align-items-center text-lg-end">
-                    <img src="/images/assets/warning.png"/>
+                    <img src="/images/assets/warning.webp"/>
                   </div>
                 </div>
               </div>

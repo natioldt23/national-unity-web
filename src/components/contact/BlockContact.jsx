@@ -1,13 +1,13 @@
 const BlockContact = () => {
   const addressBlocks = [
     {
-      icon: "/images/icon/icon_147.svg",
+      icon: "/images/icon/icon_178.svg",
       title: "Nuestra dirección",
       content: "One Huebner Parke, 15303 Huebner Road San Antonio, TX 78248",
       delay: "100",
     },
     {
-      icon: "/images/icon/icon_148.svg",
+      icon: "/images/icon/icon_179.svg",
       title: "Información de contacto",
       content: "Llámanos en México al",
       link: "tel:+52-800-062-0460",
@@ -16,7 +16,7 @@ const BlockContact = () => {
       delay: "200",
     },
     {
-      icon: "/images/icon/icon_149.svg",
+      icon: "/images/icon/icon_180.svg",
       title: "Apoyo por Whatsapp",
       content: "Servicio de chat en vivo",
       link: "www.janolivechat.com",
@@ -35,7 +35,7 @@ const BlockContact = () => {
           data-aos-delay={block.delay}
         >
           <div className="address-block-two text-center mb-40">
-            <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto">
+            <div className="icon border rounded-circle d-flex align-items-center justify-content-center m-auto">
               <img src={block.icon} alt="icon" />
             </div>
             <h5 className="title">{block.title}</h5>

@@ -145,7 +145,7 @@ const TyC = () => {
             </div>
 
             <div className="col-xl-3 col-lg-4 d-flex justify-content-center align-items-center md-pt-70 " data-aos="fade-left">
-              <img src="/images/assets/tyc.png" className="tyc-icon"/>
+              <img src="/images/assets/tyc.webp" className="tyc-icon"/>
             </div>
             {/* End .col-xl-9 */}
 
