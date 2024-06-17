@@ -63,6 +63,8 @@ import AutosUSA from "./pages/seguros/AutoUSA";
 import CamionUSA from "./pages/seguros/CamionUSA";
 import MotoUSA from "./pages/seguros/MotoUSA";
 import LargaEstadia from "./pages/seguros/LargaEstadia";
+import AutoRenta from "./pages/seguros/AutoRenta";
+import CoberturaPremium from "./pages/seguros/CoberturaPremium";
 
 function App() {
   useEffect(() => {
@@ -145,6 +147,8 @@ function App() {
           <Route path="seguros/seguro-camion" element={<CamionUSA />} />
           <Route path="seguros/seguro-moto" element={<MotoUSA />} />
           <Route path="seguros/seguro-larga-estadia" element={<LargaEstadia />} />
+          <Route path="seguros/seguro-auto-renta" element={<AutoRenta />} />
+          <Route path="seguros/cobertura-premium" element={<CoberturaPremium />} />
 
           <Route path="contact/contact-v2" element={<ContactV2 />} />
           <Route path="contact/contact-v3" element={<ContactV3 />} />

@@ -1,4 +1,4 @@
-const beneficiosAuto = [
+const beneficiosCamion = [
   {
     id: 1,
     title: "Coberturas",
@@ -39,4 +39,4 @@ const beneficiosAuto = [
     image: "/images/media/img_55.jpg",
   },*/
 ];
-export default beneficiosAuto;
+export default beneficiosCamion;

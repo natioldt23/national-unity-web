@@ -14,9 +14,11 @@ const columns = [
     title: "Productos",
     links: [
       { label: "Seguros de Auto USA", url: "/seguros/seguro-auto" },
-      { label: "Cobertura Premium", url: "/" },
-      { label: "Seguros de Moto USA", url: "/seguros/seguro-moto" },
       { label: "Seguros de Camión USA", url: "/seguros/seguro-camion" },
+      { label: "Seguros de Moto USA", url: "/seguros/seguro-moto" },
+      { label: "Larga Estadía USA", url: "/seguro-larga-estadiao" },
+      { label: "Auto Renta USA", url: "/seguro-auto-renta" },
+      { label: "Cobertura Premium", url: "/seguros/cobertura-premium" },
     ],
   },
 ];
