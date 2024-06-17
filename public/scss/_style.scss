@@ -2218,7 +2218,7 @@ body .btn-twentySix:hover:after {
 .footer-style-one .footer-nav-link a:hover,
 .footer-style-one .email:hover,
 .footer-style-one .mobile:hover {
-  color: var(--prime-one);
+  color: var(--prime-ten);
 }
 .footer-style-one .social-icon a {
   width: 35px;
@@ -8141,7 +8141,7 @@ body .btn-twentySix:hover:after {
   letter-spacing: 3px;
 }
 .footer-style-eleven .footer-nav-link a:hover {
-  color: var(--prime-two);
+  color: var(--prime-ten);
 }
 .footer-style-eleven .form-widget form input {
   border: 1px solid #000;
@@ -8174,7 +8174,7 @@ body .btn-twentySix:hover:after {
   transition: all 0.3s ease-in-out;
 }
 .footer-style-eleven .bottom-footer .social-icon a:hover {
-  color: var(--prime-two);
+  color: var(--prime-ten);
 }
 .footer-style-eleven .shape-one {
   left: 0;
@@ -10623,6 +10623,13 @@ path:hover {
   height: 420px !important;
   box-shadow: 0px 30px 15px rgba(19, 45, 73, 0.08);
   padding: 50px 70px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-out;
+}
+
+.beneficios-item:hover {
+  transition: 0.3s ease-in;
+  border: 1px solid #0276dd;
 }
 
 .cobertura-content {
@@ -10653,7 +10660,7 @@ path:hover {
       background: #0276dd !important;
       border-radius: 7px !important;
 
-      h4 {
+      p {
         color: #fff !important;
         margin: 0;
       }
@@ -10687,6 +10694,15 @@ path:hover {
     }
   }
 }
+
+.feedback_slider_seven.beneficios-slider {
+  .slick-slider {
+    button.slick-arrow {
+      display: none !important;
+    }
+  }
+}
+
 
 
 @media (min-width: 1100px) {

@@ -61,6 +61,9 @@ import TyC from "./pages/tyc/Tyc";
 import ReportarAccidente from "./pages/reportar-accidente/ReportarAccidente";
 import AutosUSA from "./pages/seguros/AutoUSA";
 import CamionUSA from "./pages/seguros/CamionUSA";
+import MotoUSA from "./pages/seguros/MotoUSA";
+import LargaEstadia from "./pages/seguros/LargaEstadia";
+
 function App() {
   useEffect(() => {
     Aos.init({
@@ -140,6 +143,8 @@ function App() {
           <Route path="reportar-accidente" element={<ReportarAccidente />} />
           <Route path="seguros/seguro-auto" element={<AutosUSA />} />
           <Route path="seguros/seguro-camion" element={<CamionUSA />} />
+          <Route path="seguros/seguro-moto" element={<MotoUSA />} />
+          <Route path="seguros/seguro-larga-estadia" element={<LargaEstadia />} />
 
           <Route path="contact/contact-v2" element={<ContactV2 />} />
           <Route path="contact/contact-v3" element={<ContactV3 />} />

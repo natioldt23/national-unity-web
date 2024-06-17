@@ -13,10 +13,12 @@ import FaqAuto from "./FaqAuto";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import CoberturasAuto from "./CoberturasAuto";
-import beneficiosAuto from "../../data/beneficios-auto";
+import beneficiosLarga from "../../data/beneficios-larga-estadia";
+import CoberturasLargaEstadia from "./CoberturasLargaEstadia";
+import FaqLargaEstadia from "./FaqLargaEstadia";
 
 
-const AutosUSA = () => {
+const LargaEstadia = () => {
 
   const cardsData = [
     {
@@ -80,12 +82,14 @@ const AutosUSA = () => {
                   Seguros
                 </div>
                 <h2 className="main-title fw-500 tx-dark">
-                  Seguro de Auto
+                  Larga Estadía
                 </h2>
+                <h3 className="fw-500 tx-dark">
+                  Seguro de Auto USA
+                </h3>
                 <p className="tx-dark text-lg pt-20">
-                  Cobertura para autos particulares no residentes, diseñada para cubrir la responsabilidad 
-                  por daños ocasionados a terceros en bienes y personas mientras se encuentre circulando en 
-                  los Estados Unidos de América y Canadá.
+                  Si vas a estudiar, trabajar o visitar a tu familia en USA por periodos prolongados 
+                  contrata tu seguro con nosotros.
                 </p>
                 <div>
                   <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
@@ -116,12 +120,12 @@ const AutosUSA = () => {
         <Tabs>
           <TabList className="react-tabs__tab-list">
             <Tab>
-              <p className="tx-light">
+              <p className="fw-500">
                 Cobertura SPLIT
               </p> 
             </Tab>
             <Tab>
-              <p>
+              <p className="fw-500">
                 Cobertura LUC
               </p>
             </Tab>
@@ -132,8 +136,11 @@ const AutosUSA = () => {
             <p className="tx-dark fs-5">
               Es una cobertura SPLIT de Responsabilidad Civil o daños a terceros, viene dividida para lesiones corporales, accidentes y daños materiales.
             </p>
+            <p className="tx-dark fs-5">
+              Si deseas mayor información de las coberturas da click aquí
+            </p>
             <div className="row">
-              <CoberturasAuto />
+              <CoberturasLargaEstadia />
             </div>
           </TabPanel>
           <TabPanel>
@@ -147,6 +154,9 @@ const AutosUSA = () => {
                     </li>
                     <li className="fs-5">
                       Esta cobertura puede utilizar hasta $100,000 USD de manera libre de limitantes en lesiones corporales o daños a bienes materiales.
+                    </li>
+                    <li className="fs-5">
+                    Tu cobertura excede el límite requerido por todos los estados de USA, cubrimos un máximo de $100,000 USD por evento en daños a terceros. 
                     </li>
                     <li className="fs-5">
                       Aplica para cualquier estado de ingreso a USA que selecciones.
@@ -166,11 +176,15 @@ const AutosUSA = () => {
           <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center">
             Beneficios
           </h2>
+          <p className="tx-dark fs-5">
+            Al contratar nuestro seguro de Responsabilidad Civil (RC), además de brindarte tranquilidad, 
+            te ofrecemos los siguientes beneficios:
+          </p>
         </div>
         <div>
           <div className="slider-wrapper">
             <div className="feedback_slider_seven beneficios-slider d-flex align-items-center flex-column flex-lg-row">
-            {beneficiosAuto.slice(0, 4).map((item) => (
+            {beneficiosLarga.slice(0, 4).map((item) => (
               <div className="item col-lg-4" key={item.id}>
                 <div className="feedback-block-eleven beneficios-item">
                   <div className="top-header d-flex align-items-center justify-content-between">
@@ -188,6 +202,7 @@ const AutosUSA = () => {
                   <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text2}</p>
                   <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text3}</p>
                   <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text4}</p>
+                  <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text5}</p>
                   <div className="d-flex align-items-center justify-content-between">
                     <div className="cost fw-500 tx-dark fs-20">
                       {item.author}
@@ -204,19 +219,12 @@ const AutosUSA = () => {
         {/* /.container */}
       </div>
 
-      <div className="fancy-feature-thirtyEight pt-100 pb-50 bg-gray">
-        <div className="container">
-          <AsistenciaPlus />
-        </div>
-        {/* /.container */}
-      </div>
-
       <div className="fancy-feature-thirtyEight pt-60 pb-50">
         <div className="container">
           <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center" data-aos="fade-up">
             Preguntas Frecuentes
           </h2>
-          <FaqAuto />
+          <FaqLargaEstadia />
         </div>
         {/* /.container */}
       </div>
@@ -231,4 +239,4 @@ const AutosUSA = () => {
   );
 };
 
-export default AutosUSA;
+export default LargaEstadia;

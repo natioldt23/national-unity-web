@@ -112,6 +112,10 @@ export const segurosItems = [
   { link: "/seguros/seguro-auto", text: "Auto USA" },
   { link: "/seguros/seguro-camion", text: "Camion USA" },
   { link: "/seguros/seguro-moto", text: "Moto Usa" },
+  { link: "/seguros/seguro-larga-estadia", text: "Larga Estadía Usa" },
+  { link: "/seguros/seguro-auto-renta", text: "Auto de Renta Usa" },
+  { link: "/seguros/cobertura-premium", text: "Cobertura Premium Usa" },
+  { link: "/seguros/unity-card", text: "Unity Card" },
 ];
 
 export const navItems = [

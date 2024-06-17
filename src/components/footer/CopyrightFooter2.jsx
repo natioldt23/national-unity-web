@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 const links = [
   {
     title: "Términos y condiciones.",
-    href: "/faq",
+    href: "/tyc",
   },
   {
     title: "Contáctanos",
-    href: "/contact",
+    href: "/contacto",
   },
 ];
 
@@ -16,13 +16,13 @@ const icons = [
     icon: "fab fa-facebook-f",
     href: "https://www.facebook.com/",
   },
-  {
+  /*{
     icon: "fab fa-twitter",
     href: "https://www.twitter.com/",
-  },
+  },*/
   {
     icon: "fab fa-linkedin-in",
-    href: "https://www.linkedin.com/",
+    href: "https://mx.linkedin.com/company/national-unity-insurance-company?trk=ppro_cprof",
   },
 ];
 

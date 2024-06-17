@@ -1,14 +1,14 @@
 import Slider from "react-slick";
-import beneficiosCamion from "../../data/beneficios-camion";
+
 
 const BeneficiosCamion = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    autoplay: true,
-    speed: 400,
+    autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 1,
+    vertical: true,
     responsive: [
       {
         breakpoint: 992,
@@ -27,7 +27,7 @@ const BeneficiosCamion = () => {
         breakpoint: 520,
         settings: {
           slidesToShow: 1,
-          dots: true,
+          dots: false,
         },
       },
     ],

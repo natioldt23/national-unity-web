@@ -15,7 +15,7 @@ const columns = [
     links: [
       { label: "Seguros de Auto USA", url: "/seguros/seguro-auto" },
       { label: "Cobertura Premium", url: "/" },
-      { label: "Seguros de Moto USA", url: "/" },
+      { label: "Seguros de Moto USA", url: "/seguros/seguro-moto" },
       { label: "Seguros de Camión USA", url: "/seguros/seguro-camion" },
     ],
   },

@@ -3,7 +3,12 @@ const FaqCamion = () => {
     {
       question: "¿Qué coberturas ofrecen?",
       answer:
-        "En Estados Unidos y Canadá es obligatorio contar con un Seguro de Responsabilidad Civil para Autos con placas mexicanas. El Seguro de Auto Turista es un requisito legal para los vehículos con placas turistas que transitan por calles y carreteras en Estados Unidos y Canadá.",
+        `
+          Responsabilidad Civil, 
+          Cargo, 
+          Trailer Interchange, 
+          General Liability
+        `,
     },
     {
       question: "¿Qué es la cobertura de Responsabilidad Civil?",
@@ -13,38 +18,62 @@ const FaqCamion = () => {
     {
       question: "¿Qué es la cobertura Cargo?",
       answer:
-        "El seguro de auto turista o extranjero es el seguro que cubre la responsabilidad civil de cualquier auto mexicano o de cualquier nacionalidad diferente a la de Estados Unidos y/o Canadá. Este documento es obligatorio para poder circular en ambos países.",
+        `
+        Esta cobertura es necesaria para proteger al transportista en caso de pérdida o daños a la carga (mercancía), la póliza incluye un límite máximo por unidad. Los límites que se ofrecen son de $25,000 hasta los $100,000 dls. En caso de requerir una cobertura mayor, deberá solicitar su aprobación al departamento de suscripción. El precio de esta cobertura depende principalmente del tipo de carga (mercancía) que transportan.
+
+        Esta cobertura es muy usual para entrar a:
+
+        Ferrocarril, 
+        Puertos Marítimos.
+        `,
     },
     {
       question:
-        "¿Qué es la cobertura Trailer Interchange ?",
+        "¿Qué es la cobertura Trailer Interchange?",
       answer:
-        "En caso de verse involucrado en un siniestro y resultar responsable de los daños ocasionados a un tercero, la póliza de seguro de responsabilidad civil de National Unity cubrirá los daños hasta por un monto máximo de la suma asegurada adquirida.",
-    },
-    {
-      question: "¿Cómo asegurar un auto en Estados Unidos?",
-      answer:
-        "Adquiere una póliza de seguros de responsabilidad civil de National Unity a través de un agente de seguros o haciendo clic aquí.",
-    },
-    {
-      question: "¿Cómo asegurar un auto en Estados Unidos?",
-      answer:
-        "El costo del seguro es variable de acuerdo a la vigencia, cobertura, y a las características individuales del conductor o conductores.",
+        `
+        Es una cobertura de Responsabilidad Civil para pérdidas o daños en cajas que no son propiedad del asegurado y solo están bajo su responsabilidad temporal mientras son transportadas. La cobertura es necesaria para cumplir con los requisitos del UIIA al entrar al ferrocarril o para cumplir con los requerimientos de la compañía a quien nuestro cliente le transporta cajas o equipos. Ejemplos:
+
+        Santa Fe Railroad, 
+        Union Paciﬁc, 
+        Burlington Northern, 
+        Kansas Southern, 
+        Puerto marítimo.
+        `,
     },
     {
       question: "¿Qué es la cobertura General Liability?",
       answer:
-        "Es un documento que garantiza la cobertura contratada y por la cual una compañía aseguradora se compromete con su asegurado.",
+        `
+        Cobertura de responsabilidad civil para los daños que el asegurado (vehículo comercial, chofer, cualquier representante del asegurado, etc.) ocasione en propiedad, local o terreno del negocio de su cliente, causados por negligencia, acción u omisión.
+
+        La cobertura es necesaria para cumplir con los requisitos del UIIA al entrar al ferrocarril tales como:
+        
+        Santa Fe Railroad, 
+        Union Paciﬁc, 
+        Burlington Northern, 
+        Kansas Southern.
+        `,
     },
     {
       question: "¿Ofrecen cobertura para camiones con carga Haz-mat?",
       answer:
-        "Es un documento que garantiza la cobertura contratada y por la cual una compañía aseguradora se compromete con su asegurado.Sí, tenemos cobertura para Haz-mat y non Haz-mat.",
+        "Sí, tenemos cobertura para Haz-mat y non Haz-mat.",
     },
     {
       question: "¿Qué es Trucker Plus?",
       answer:
-        "Es un documento que garantiza la cobertura contratada y por la cual una compañía aseguradora se compromete con su asegurado.",
+        `
+        Asistencia médica al conductor del vehículo asegurado. 
+
+        Incluye:
+        
+        Asistencia médica por accidente o enfermedad: USD$25,000, 
+        Asistencia médica COVID hasta los 65 años: Incluido, 
+        Repatriación de restos: USD$10,000, 
+        Medicamentos por hospitalización: Incluido, 
+        Lugar de Cobertura: USA.
+        `,
     },
     {
       question: "¿Cómo cotizo un seguro con National Unity?",
@@ -77,7 +106,10 @@ const FaqCamion = () => {
             data-bs-parent="#accordionOne"
           >
             <div className="accordion-body">
-              <p className="fw-500">{faq.answer}</p>
+              <p className="fw-500">
+                {faq.answer}
+                <br />
+              </p>
             </div>
           </div>
         </div>
