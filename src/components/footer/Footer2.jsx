@@ -6,7 +6,7 @@ const columns = [
       { label: "Asistencia Vial", url: "/asistencia-vial" },
       { label: "Reportar un Accidente", url: "/reportar-accidente" },
       { label: "Contacto", url: "/contacto" },
-      { label: "Pólitica de Privacidad", url: "/" },
+      { label: "Pólitica de Privacidad", url: "https://www.nationalunity.com/privacynu.pdf" },
       { label: "Términos y condiciones", url: "/tyc" },
     ],
   },
