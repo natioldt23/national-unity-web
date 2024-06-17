@@ -79,7 +79,7 @@ const TiempoCruces = () => {
           <img
             src="images/shape/shape_139.svg"
             alt=""
-            className="lazy-img shapes shape-one"
+            className="lazy-img shapes shape-one-puentes"
           />
           {/*<img
             src="images/shape/shape_140.svg"

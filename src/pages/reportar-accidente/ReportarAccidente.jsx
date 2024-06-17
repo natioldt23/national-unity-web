@@ -186,18 +186,16 @@ const ReportarAccidente = () => {
 
                 <article class="blog-meta-three mb-80 lg-mb-40 text-style aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                   <div class="post-data mt-40 lg-mt-30">
-                    <a class="mt-10 mb-25 lg-mb-20" href="/blog/9">
-                      <h4 class="tran3s blog-title xl tx-dark">
+                      <h4 class="xl tx-dark mt-10">
                         Importante
                       </h4>
-                      <div className="tx-dark">
+                      <div className="tx-dark mb-25 lg-mb-20">
                         El ajustador en Estados Unidos no acude al lugar del accidente. Todo se reporta vía telefónica, dependiendo de la seriedad y tipo de siniestro, la compañía determinará el procedimiento a seguir.
 
                         En caso de que nuestros asegurados llegaran a recibir una reclamación o demanda, deberán notificar a su agente de seguros o a National Unity Insurance Company de toda exigencia, citatorio o información que conozcan.
 
                         Recuerde que su póliza solo cubre autos y pick-ups de uso particular NO destinados al transporte y con placas mexicanas y/o fronterizas.
                       </div>
-                    </a>
                   </div>
                 </article>
               </div>

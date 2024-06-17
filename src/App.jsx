@@ -66,6 +66,7 @@ import LargaEstadia from "./pages/seguros/LargaEstadia";
 import AutoRenta from "./pages/seguros/AutoRenta";
 import CoberturaPremium from "./pages/seguros/CoberturaPremium";
 import UnityCard from "./pages/seguros/UnityCard";
+import NuestrosAgentes from "./pages/pages-menu/agentes/NuestrosAgentes";
 
 function App() {
   useEffect(() => {
@@ -151,6 +152,7 @@ function App() {
           <Route path="seguros/seguro-auto-renta" element={<AutoRenta />} />
           <Route path="seguros/cobertura-premium" element={<CoberturaPremium />} />
           <Route path="seguros/unity-card" element={<UnityCard />} />
+          <Route path="agentes" element={<NuestrosAgentes />} />
 
 
           <Route path="contact/contact-v2" element={<ContactV2 />} />

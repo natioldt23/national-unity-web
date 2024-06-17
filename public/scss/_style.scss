@@ -10509,6 +10509,10 @@ body .btn-twentySix:hover:after {
   border-radius: 15% 0 15%;
 }
 
+.shape-one-puentes {
+  display: none;
+}
+
 .asistencia-plus {
   width: 100% !important;
   border-radius: 15% 0 15%;
@@ -10782,5 +10786,15 @@ path:hover {
 
   .seguro-camion-hero {
     width: 800px;
+  }
+
+  .shape-one-puentes {
+    display: none;
+  }
+
+  .shape-one-puentes {
+    right: 139px;
+    top: -225px;
+    display: block;
   }
 }

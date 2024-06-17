@@ -36,7 +36,7 @@ const MainMenu = () => {
           <li className="d-block d-lg-none">
             <div className="logo">
               <Link to="/" className="d-block">
-                <img src="/images/logo/logo_01.png" alt="logo" />
+                <img src="/images/logo/logo-nu.webp" alt="logo" />
               </Link>
             </div>
           </li>

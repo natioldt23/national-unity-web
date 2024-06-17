@@ -3,6 +3,7 @@ const columns = [
     title: "Links",
     links: [
       { label: "Inicio", url: "/" },
+      { label: "Nuestros agentes en línea", url: "/agentes" },
       { label: "Asistencia Vial", url: "/asistencia-vial" },
       { label: "Reportar un Accidente", url: "/reportar-accidente" },
       { label: "Contacto", url: "/contacto" },
