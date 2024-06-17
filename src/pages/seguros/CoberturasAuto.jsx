@@ -41,7 +41,7 @@ const CoberturasAuto = () => {
           data-aos="fade-up"
           data-aos-delay={cobertura.delayAnim}
         >
-          <div className="card-style-sixteen tran3s text-center position-relative mt-30">
+          <div className="card-style-sixteen tran3s text-center position-relative mt-30 bg-body">
             <h4 className="tx-dark pt-20">{cobertura.title}</h4>
             <p className="cobertura-content fw-500">
               {cobertura.content1}

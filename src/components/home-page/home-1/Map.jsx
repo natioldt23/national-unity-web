@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react';
 import { USAMap } from 'usa-map-react';
 import { statesData } from '../../../data/statesData.js';
 
+// TODO: ARREGLAR CAJA DE INFO EN MOUSE
+
 const Map = () => {
   const detailsBoxRef = useRef(null);
 

@@ -102,9 +102,9 @@ const LargaEstadia = () => {
             </div>
             <div className="col-xxl-5 col-lg-6 d-flex align-items-center" data-aos="fade-left">
             <img
-              src="/images/assets/seguro-auto-hero.webp"
+              src="/images/assets/seguro-estadia-hero.webp"
               alt="icon"
-              className="lazy-img seguro-auto-hero"
+              className="lazy-img estadia-hero"
             />
             </div>
           </div>

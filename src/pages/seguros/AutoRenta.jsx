@@ -99,7 +99,7 @@ const AutoRenta = () => {
             </div>
             <div className="col-xxl-6 col-lg-6 d-flex align-items-center" data-aos="fade-left">
             <img
-              src="/images/assets/seguro-camion-hero.webp"
+              src="/images/assets/seguro-renta-hero.webp"
               alt="icon"
               className="lazy-img seguro-camion-hero"
             />
@@ -112,7 +112,7 @@ const AutoRenta = () => {
       </div>
       {/* /.fancy-feature-fiftyOne */}
 
-      <div class="feedback-section-eleven position-relative mt-0 pb-70 lg-pb-50 beneficios-slider" data-aos="fade-up">
+      <div class="feedback-section-eleven bg-gray position-relative mt-0 pt-30 lg-pt-20 pb-70 lg-pb-50 beneficios-slider" data-aos="fade-up">
         <div className="container">
           <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center">
             Cómo usar nuestro seguro auto de renta en USA

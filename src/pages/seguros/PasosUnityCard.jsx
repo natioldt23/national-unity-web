@@ -1,9 +1,9 @@
-const AsistenciaPlus = () => {
+const PasosUnityCard = () => {
   const features = [
-    "Gastos médicos por accidente o enfermedad",
-    "Renta de auto por robo, avería o accidente",
-    "Hotel por convalecencia por un máximo de $90 USD hasta 3 días consecutivos",
-    "Repatriación por fallecimiento"
+    "Llena los datos requeridos dento de la Unity Card",
+    "Raspa el código de acceso",
+    "Activa tu tarjeta escaneando el código QR, en nuestra página web o por teléfono al: 800 062 0400 (México) o al 1800 401 0929 (USA)",
+    "Finaliza la activación completando el formulario"
   ];
 
   {/*const buttons = [
@@ -26,32 +26,26 @@ const AsistenciaPlus = () => {
           <div className="title-style-one">
             {/*<div className="sc-title text-uppercase">MOBILE APP</div>*/}
             <h2 className="main-title fw-500 tx-dark m0">
-              Potencia tu cobertura con Asistencia Plus
+              Pasos para activar tu tarjeta
             </h2>
           </div>
-          <p className="fs-20 pt-30 pb-30 lg-pb-20">
-            ¿Qué cubre la Asistencia Plus? Es una protección que complementa tu necesidad de viajar seguro por Estados Unidos.
-          </p>
-          <ul className="style-none list-item">
+          
+          <ul className="style-none list-item pt-30">
             {features.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
           </ul>
           {/* End list */}
-          <p className="fs-20 pt-30 pb-30 lg-pb-20">
-            ¡Cotiza tu seguro y añade Asistencia Plus al finalizar!
-          </p>
-         
         </div>
         {/* /.block-style-seven */}
       </div>
       {/* End col-6 */}
 
       <div class="col-lg-6 d-flex justify-content-center align-items-center aos-init aos-animate" data-aos="fade-left">
-        <img className="asistencia-plus" src="/images/icon/asistencia_plus.svg"/>
+        <img className="asistencia-plus" src="/images/assets/unity-card-man.webp"/>
       </div>
     </div>
   );
 };
 
-export default AsistenciaPlus;
+export default PasosUnityCard;

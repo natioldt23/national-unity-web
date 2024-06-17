@@ -30,7 +30,6 @@ const MainMenu = () => {
       >
         <span />
       </button>
-      {/* End mobile collapse menu */}
 
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
@@ -41,11 +40,9 @@ const MainMenu = () => {
               </Link>
             </div>
           </li>
-          {/* End li */}
-
+          {/*}
           <li className="nav-item dropdown mega-dropdown-md">
             <a
-              // className="nav-link dropdown-toggle active-menu"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -59,7 +56,6 @@ const MainMenu = () => {
                   : "nav-link dropdown-toggle"
               }
 
-              // style={{color:'green'}}
             >
               Home
             </a>
@@ -99,11 +95,9 @@ const MainMenu = () => {
               </li>
             </ul>
           </li>
-          {/* End li (home mega menu) */}
 
           <li className="nav-item  dropdown">
             <a
-              // className="nav-link dropdown-toggle"
               className={
                 pagesItems.some((menu) =>
                   menu.subItems.some((elm) => isActive(elm.link))
@@ -156,7 +150,6 @@ const MainMenu = () => {
               ))}
             </ul>
           </li>
-          {/* End li (pages) */}
 
           <li className="nav-item dropdown">
             <a
@@ -189,11 +182,9 @@ const MainMenu = () => {
               ))}
             </ul>
           </li>
-          {/* End li (portfolio) */}
 
           <li className="nav-item dropdown">
             <a
-              // className="nav-link dropdown-toggle"
               className={
                 blogItems.some((elm) => isActive(elm.link))
                   ? "nav-link dropdown-toggle active-menu"
@@ -222,7 +213,6 @@ const MainMenu = () => {
               ))}
             </ul>
           </li>
-          {/* End li (blog) */}
 
           <li className="nav-item dropdown">
             <a
@@ -254,7 +244,17 @@ const MainMenu = () => {
               ))}
             </ul>
           </li>
-          {/* End li (contact) */}
+            */}
+
+          <li className="nav-item">
+            <Link
+              className="nav-link"
+              to='/'
+            >
+              Inicio
+            </Link>
+            
+          </li>
 
           <li className="nav-item dropdown">
             <a
@@ -288,18 +288,10 @@ const MainMenu = () => {
           </li>
           {/* End li (seguros) */}
 
-          <li className="nav-item">
-            <Link
-              className="nav-link"
-              to='/contacto'
-            >
-              Contacto
-            </Link>
-            
-          </li>
+          
           {/* End li (contacto) */}
 
-          {/*<li className="nav-item">
+          <li className="nav-item">
             <Link
               className="nav-link"
               to='/reportar-accidente'
@@ -307,7 +299,7 @@ const MainMenu = () => {
               Reportar accidente
             </Link>
             
-            </li>*/}
+          </li>
           {/* End li (reportar-accidente) */}
 
           <li className="nav-item">
@@ -315,11 +307,22 @@ const MainMenu = () => {
               className="nav-link"
               to='/asistencia-vial'
             >
-              AV
+              Asistencia Vial
             </Link>
             
             </li>
           {/* End li (asistencia-vial) */}
+
+          <li className="nav-item">
+            <Link
+              className="nav-link"
+              to='/contacto'
+            >
+              Contacto
+            </Link>
+          </li>
+          {/* End li (contacto) */}
+
         </ul>
         {/* End ul */}
 
