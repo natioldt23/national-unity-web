@@ -2,22 +2,18 @@ import { Link } from "react-router-dom";
 
 const steps = [
   {
-    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/IconAuto.svg",
     title: "1. Notificar a la policía sobre el accidente llamando al 911.",
     delayAnim: 0,
   },
   {
-    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/IconLlanta.svg",
     title: "2. Obtener los datos esenciales del conductor afectado:",
     delayAnim: 100,
   },
   {
-    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/Iconmoto.svg",
     title: "3. Reportar el accidente a través de nuestro formulario online o llamando a los siguientes teléfonos:",
     delayAnim: 200,
   },
   {
-    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/Iconcamion.svg",
     title: "4. Toma fotografías del accidente. Todo lo relevante para tener una documentación adecuada.",
     delayAnim: 300,
   },

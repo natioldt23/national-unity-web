@@ -2,25 +2,25 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/IconAuto.svg",
+    icon: "/images/icon/IconAuto.svg",
     title: "Seguro de Auto USA",
     delayAnim: 0,
     url: "/seguros/seguro-auto"
   },
   {
-    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/IconLlanta.svg",
+    icon: "/images/icon/IconLlanta.svg",
     title: "Cobertura Premium",
     delayAnim: 100,
     url: "/seguros/cobertura-premium"
   },
   {
-    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/Iconmoto.svg",
+    icon: "/images/icon/Iconmoto.svg",
     title: "Seguro de Moto USA",
     delayAnim: 200,
     url: "/seguros/seguro-moto"
   },
   {
-    icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/Iconcamion.svg",
+    icon: "/images/icon/Iconcamion.svg",
     title: "Seguro Camión USA",
     delayAnim: 300,
     url: "/seguros/seguro-camion"

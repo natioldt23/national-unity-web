@@ -9,7 +9,7 @@ const Feature = () => {
         </>
       ),
       description: "",
-      icon: "https://web.archive.org/web/20230130001614im_/https://www.nationalunity.com/wp-content/uploads/2021/11/elige.svg",
+      icon: "/images/icon/elige.svg",
       width: "169",
       height: "165",
       delay: "100",
@@ -25,7 +25,7 @@ const Feature = () => {
       width: "202",
       height: "170",
       description: "",
-      icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/informacion.svg",
+      icon: "/images/icon/informacion.svg",
       delay: "200",
     },
     {
@@ -39,7 +39,7 @@ const Feature = () => {
       width: "175",
       height: "175",
       description: "",
-      icon: "https://web.archive.org/web/20240404223656im_/https://www.nationalunity.com/wp-content/uploads/2021/11/asegurado.svg",
+      icon: "/images/icon/asegurado.svg",
       delay: "300",
     },
   ];
