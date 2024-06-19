@@ -19,7 +19,7 @@ const BlockContact = () => {
       icon: "/images/icon/icon_180.svg",
       title: "Apoyo por Whatsapp",
       content: "Servicio de chat en vivo",
-      link: "www.janolivechat.com",
+      link: "https://wa.me/8134039138",
       delay: "300",
     },
     

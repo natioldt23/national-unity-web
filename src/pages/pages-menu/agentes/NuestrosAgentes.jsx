@@ -71,7 +71,7 @@ const NuestrosAgentes = () => {
 				Feature Section Fifty One
 			============================================== 
 			*/}
-      <div className="fancy-feature-fiftyOne d-flex align-items-center vh-100 position-relative mt-150 mt-lg-0">
+      <div className="fancy-feature-fiftyOne d-flex align-items-center position-relative mt-150">
         <div className="container">
           <div className="row">
             <div className="col-xxl-7 col-lg-6" data-aos="fade-right">
@@ -102,112 +102,192 @@ const NuestrosAgentes = () => {
       </div>
       {/* /.fancy-feature-fiftyOne */}
 
-      <div className="fancy-feature-thirtyEight pt-50 pb-50">
-        <div className="container" data-aos="fade-up">
-        <Tabs>
-          <TabList className="react-tabs__tab-list">
-            <Tab>
-              <p className="tx-light">
-                Cobertura SPLIT
-              </p> 
-            </Tab>
-            <Tab>
-              <p>
-                Cobertura LUC
-              </p>
-            </Tab>
-          </TabList>
-
-          <TabPanel>
-            <h2 className="pb-30">Cobertura SPLIT (Dividida)</h2>
-            <p className="tx-dark fs-5">
-              Es una cobertura SPLIT de Responsabilidad Civil o daños a terceros, viene dividida para lesiones corporales, accidentes y daños materiales.
-            </p>
-            <div className="row">
-              <CoberturasAuto />
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <h2 className="pb-30">Cobertura LUC 100,000 (Combinada)</h2>
-            <div className="row">
-              <div className="col-lg-6">
-                <div className="block-style-seven" data-aos="fade-right">
-                  <ul className="style-none list-item">
-                    <li className="fs-5">
-                      Es una cobertura de Responsabilidad Civil o daños a terceros con Límite Único Combinado (LUC), por evento en daños a bienes y personas.
-                    </li>
-                    <li className="fs-5">
-                      Esta cobertura puede utilizar hasta $100,000 USD de manera libre de limitantes en lesiones corporales o daños a bienes materiales.
-                    </li>
-                    <li className="fs-5">
-                      Aplica para cualquier estado de ingreso a USA que selecciones.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </TabPanel>
-        </Tabs>
-        </div>
-        {/* /.container */}
-      </div>
-
-      <div class="feedback-section-eleven position-relative mt-50 pt-50 pb-70 lg-pb-50 beneficios-slider" data-aos="fade-up">
+      <div className="fancy-feature-thirtyEight pt-60 pb-50" data-aos="fade-up">
         <div className="container">
-          <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center">
-            Beneficios
-          </h2>
-        </div>
-        <div>
-          <div className="slider-wrapper">
-            <div className="feedback_slider_seven beneficios-slider d-flex align-items-center flex-column flex-lg-row">
-            {beneficiosAuto.slice(0, 4).map((item) => (
-              <div className="item col-lg-4" key={item.id}>
-                <div className="feedback-block-eleven beneficios-item">
-                  <div className="top-header d-flex align-items-center justify-content-between">
-                    <div className="d-flex justify-content-between align-items-center w-100">
-                      <h3 className="tx-dark m0">{item.title}</h3>
-                        <img
-                        src={item.image}
-                        alt="tesimonial avatar"
-                        className="rounded-circle"
-                        width={90}
-                      />
-                    </div>
-                  </div>
-                  <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text1}</p>
-                  <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text2}</p>
-                  <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text3}</p>
-                  <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text4}</p>
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="cost fw-500 tx-dark fs-20">
-                      {item.author}
-                      <span className="opacity-50 fw-normal">{item.location}</span>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="row">
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/23ca84adae4018f201597cb0a340a885/index.php">
+                <img src="/images/agentes/alpuente.jpg" alt="" />
+              </a>
             </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/1ce9398f18d7f32ccb2522dc8f07e530/index.php">
+                <img src="/images/agentes/aps.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/88a0d923336c547bcc423b173960c494/index.php">
+                <img src="/images/agentes/ata.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/47aa24da3b7756b23f58e2ee4f16c44c/index.php">
+                <img src="/images/agentes/AYA.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/9ff2b68936974e41ffc9e61cc18acee5/index.php">
+                <img src="/images/agentes/baidon.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/0b614f062b25d7c8ce79d78e3d548768/index.php">
+                <img src="/images/agentes/binational.jpg" alt="" />
+              </a>
+            </div>
+            {/*Fin fila de 6 */}
+
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/5bab4a230812820eb4bcd2192da333d9/index.php">
+                <img src="/images/agentes/bmaseguro.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/8ac1a39a924be3e55f5199be8323a7fd/index.php">
+                <img src="/images/agentes/bridgepoint.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/f8fd1d3406770aa96e64c6257b4b5a64/index.php">
+                <img src="/images/agentes/CCR.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/8dbe3a7a2ee2ddb967f24ca1cfdf52e9/index.php">
+                <img src="/images/agentes/dvu.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/ca74989524b9a867e83442b306222a12/index.php">
+                <img src="/images/agentes/heb.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/85b4950ca217ea1a92425b54087ac19d/index.php">
+                <img src="/images/agentes/jc.jpg" alt="" />
+              </a>
+            </div>
+            {/*Fin fila de 6 */}
+
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/8427cdf1c77ceba808ea579b4f04b311/index.php">
+                <img src="/images/agentes/kalifa.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/12a13482ad1d7db489b0a11c4203f37c/index.php">
+                <img src="/images/agentes/lah.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/69c71abe78fd0915e21729a8c1d7e2bd/index.php">
+                <img src="/images/agentes/logoleon.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/">
+                <img src="/images/agentes/LogoSalga.png" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/b6769fb6897300b3dfddc232635dccf9/index.php">
+                <img src="/images/agentes/mexpro.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/990d443f70a5a0a4f0e00946fa60acc6/index.php">
+                <img src="/images/agentes/morris.jpg" alt="" />
+              </a>
+            </div>
+            {/*Fin fila de 6 */}
+
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/1f47f18890635c4d66c8617826c9eabd/index.php">
+                <img src="/images/agentes/mxici.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/c1c45ec4d5101aedf6b1a11e9d96fffe/index.php">
+                <img src="/images/agentes/Palms.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/ad5ff8fc8e36261b777422abf56a65ff/index.php">
+                <img src="/images/agentes/palmsmex.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/08fd1c6a2df3353b0bdc4c2c019a4d1a/index.php">
+                <img src="/images/agentes/palnorte.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/bb0ed605e96a5dd8b0c0e49c648e4e7c/index.php">
+                <img src="/images/agentes/pronto.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/be013b839f8e2e3eae3866a6801a1245/index.php">
+                <img src="/images/agentes/rcparaautos.jpg" alt="" />
+              </a>
+            </div>
+            {/*Fin fila de 6 */}
+
+            
+            <div className="col-6 col-lg-2">
+              <a href="https://www.segurogringo.com/">
+                <img src="/images/agentes/seg.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/6750ec0726034f844bd8b76ae50ac21e/index.php">
+                <img src="/images/agentes/seguro-express-150x103.png" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/b959002017919d0a453bcaeb181d25cc/index.php">
+                <img src="/images/agentes/SeguroaUSA.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/edc2588f2ae54d6696b8be683d993d82/">
+                <img src="/images/agentes/segbinacional.png" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/9285abbf74b893635d2461164226a979/index.php">
+                <img src="/images/agentes/seguroenlineausa.jpeg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/0b9e27e98f2ce0dc1a5c1d3229c5de28/index.php">
+                <img src="/images/agentes/segurosusaymexico.jpg" alt="" />
+              </a>
+            </div>
+            {/*Fin fila de 6 */}
+
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/3c1a20dc53e89e97c5f8eae5aee0f9a0/index.php">
+                <img src="/images/agentes/SeguroVamos.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/b959002017919d0a453bcaeb181d25cc/">
+                <img src="/images/agentes/SuperSeguroUSA.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/f897900873d6671dc03a651dcc24f76c/index.php">
+                <img src="/images/agentes/va.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href="https://www.nuagentesonline.com/agents/259e232abd7c4e90dd228bebbe634d9b/index.php">
+                <img src="/images/agentes/vus.jpg" alt="" />
+              </a>
+            </div>
+            {/*Fin fila de 6 */}
           </div>
-        </div>
-        {/* /.container */}
-      </div>
-
-      <div className="fancy-feature-thirtyEight pt-100 pb-50 bg-gray">
-        <div className="container">
-          <AsistenciaPlus />
-        </div>
-        {/* /.container */}
-      </div>
-
-      <div className="fancy-feature-thirtyEight pt-60 pb-50">
-        <div className="container">
-          <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center" data-aos="fade-up">
-            Preguntas Frecuentes
-          </h2>
-          <FaqAuto />
         </div>
         {/* /.container */}
       </div>
