@@ -73,7 +73,7 @@ const AutoRenta = () => {
 				Feature Section Fifty One
 			============================================== 
 			*/}
-      <div className="fancy-feature-fiftyOne d-flex align-items-center vh-100 position-relative mt-150 mt-lg-0">
+      <div className="fancy-feature-fiftyOne d-flex align-items-center lg-vh-100 position-relative mt-150">
         <div className="container">
           <div className="row">
             <div className="col-xxl-6 col-lg-6" data-aos="fade-right">
