@@ -1,33 +1,55 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-const services = [
-  {
-    icon: "/images/icon/IconAuto.svg",
-    title: "Seguro de Auto USA",
-    delayAnim: 0,
-    url: "/seguros/seguro-auto"
-  },
-  {
-    icon: "/images/icon/IconLlanta.svg",
-    title: "Cobertura Premium",
-    delayAnim: 100,
-    url: "/seguros/cobertura-premium"
-  },
-  {
-    icon: "/images/icon/Iconmoto.svg",
-    title: "Seguro de Moto USA",
-    delayAnim: 200,
-    url: "/seguros/seguro-moto"
-  },
-  {
-    icon: "/images/icon/Iconcamion.svg",
-    title: "Seguro Camión USA",
-    delayAnim: 300,
-    url: "/seguros/seguro-camion"
-  },
-];
 
 const Service = () => {
+  const { t } = useTranslation()
+  
+  const home = t("home")
+  
+  const services = [
+    {
+      icon: "/images/icon/IconAuto.svg",
+      title: (
+        <>
+          {home.productoAuto}
+        </>
+      ),
+      delayAnim: 0,
+      url: "/seguros/seguro-auto"
+    },
+    {
+      icon: "/images/icon/IconLlanta.svg",
+      title: (
+        <>
+          {home.productoPremium}
+        </>
+      ),
+      delayAnim: 100,
+      url: "/seguros/cobertura-premium"
+    },
+    {
+      icon: "/images/icon/Iconmoto.svg",
+      title: (
+        <>
+          {home.productoMoto}
+        </>
+      ),
+      delayAnim: 200,
+      url: "/seguros/seguro-moto"
+    },
+    {
+      icon: "/images/icon/Iconcamion.svg",
+      title: (
+        <>
+          {home.productoCamion}
+        </>
+      ),
+      delayAnim: 300,
+      url: "/seguros/seguro-camion"
+    },
+  ];
+  
   return (
     <>
       {services.map((service, index) => (

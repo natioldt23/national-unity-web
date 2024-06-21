@@ -35,7 +35,7 @@ const MainMenu = () => {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav align-items-center">
           <li className="d-block d-lg-none">
             <div className="logo">
               <Link to="/" className="d-block">

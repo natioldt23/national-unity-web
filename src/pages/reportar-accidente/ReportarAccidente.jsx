@@ -9,52 +9,11 @@ import FaqAsistencia from "../../components/services/FaqAsistencia";
 import Partners from "../../components/services/Partners";
 import { Link } from "react-router-dom";
 import Steps from "@/components/reportarAccidente/Steps";
+import { useTranslation } from "react-i18next";
 
 const ReportarAccidente = () => {
-  const features = [
-    { text: "Amazing communication." },
-    { text: "Best trending designing experience." },
-    { text: "Email & Live chat." },
-  ];
-
-  const cardsData = [
-    {
-      id: 1,
-      cardNo: "card-one",
-      title: "40%",
-      subtitle: "Del Mercado",
-      src: '/images/assets/gasolina.png'
-    },
-    {
-      id: 2,
-      title: "+50 años",
-      cardNo: "card-two",
-      subtitle: "De experiencia",
-      src: '/images/assets/gasolina.png'
-    },
-    {
-      id: 3,
-      title: "Líder",
-      cardNo: "card-three",
-      subtitle: "En Responsabilidad civil",
-      src: '/images/assets/gasolina.png'
-    },
-    {
-      id: 4,
-      title: "Líder",
-      cardNo: "card-one",
-      subtitle: "En Responsabilidad civil",
-      src: '/images/assets/gasolina.png'
-    },
-  ];
-
-  const starRating = Array(5)
-    .fill()
-    .map((_, index) => (
-      <li key={index}>
-        <i className="fa-solid fa-star" />
-      </li>
-    ));
+  const { t } = useTranslation()
+  const accidente = t("accidente")
 
   return (
     <>
@@ -76,10 +35,10 @@ const ReportarAccidente = () => {
             <div className="col-xxl-7 col-lg-6" data-aos="fade-right">
               <div className="title-style-five mb-45 md-mb-10">
                 <div className="sc-title-two fst-italic position-relative">
-                  Servicios
+                  {accidente.accidenteEtiqueta}
                 </div>
                 <h2 className="main-title fw-500 tx-dark">
-                  Reportar Accidente
+                  {accidente.accidenteTitle}
                 </h2>
               </div>
             </div>
@@ -150,17 +109,15 @@ const ReportarAccidente = () => {
               <div className="service-details-meta">
                 <a href="https://www.nationalunity.com/national/reporte_accidente/package/html/main/" target="blank">
                   <button className="fw-500 text-white tran3s button-primary" type="submit">
-                    Reportar Accidente
+                    {accidente.accidenteTitle}
                   </button>
                 </a>
                 <p className="text-lg tx-dark pt-30">
-                  En Estados Unidos y Canadá es obligatorio contar con un seguro de Responsabilidad Civil 
-                  con cobertura ilimitada para todos los vehículos que transitan por sus caminos.
+                  {accidente.accidenteDescOne}
                 </p>
 
                 <p className="text-lg tx-dark">
-                  Si somos partícipes de un siniestro en USA existen una serie de pasos que debemos 
-                  seguir para reportar dicho accidente:
+                  {accidente.accidenteDescTwo}
                 </p>
 
               </div>
@@ -187,14 +144,10 @@ const ReportarAccidente = () => {
                 <article className="blog-meta-three mb-80 lg-mb-40 text-style aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                   <div className="post-data mt-40 lg-mt-30">
                       <h4 className="xl tx-dark mt-10">
-                        Importante
+                        {accidente.accidenteImportante}
                       </h4>
                       <div className="tx-dark mb-25 lg-mb-20">
-                        El ajustador en Estados Unidos no acude al lugar del accidente. Todo se reporta vía telefónica, dependiendo de la seriedad y tipo de siniestro, la compañía determinará el procedimiento a seguir.
-
-                        En caso de que nuestros asegurados llegaran a recibir una reclamación o demanda, deberán notificar a su agente de seguros o a National Unity Insurance Company de toda exigencia, citatorio o información que conozcan.
-
-                        Recuerde que su póliza solo cubre autos y pick-ups de uso particular NO destinados al transporte y con placas mexicanas y/o fronterizas.
+                        {accidente.accidenteImportanteDesc}
                       </div>
                   </div>
                 </article>
@@ -216,7 +169,7 @@ const ReportarAccidente = () => {
                   data-aos="fade-right"
                 >
                   <h2 className="main-title fw-500 tx-dark m0">
-                    Pasos a seguir para reportar un siniestro en USA:
+                    {accidente.accidentePasos}
                   </h2>
                 </div>
               </div>
@@ -275,15 +228,25 @@ const ReportarAccidente = () => {
                   <div className="col-lg-10">
                     <div className="text-wrapper text-center text-lg-start md-pb-30">
                       <h4 className="fw-500 text-white mb-2">
-                        Recuerda mantener los siguientes datos a la mano para reportar correctamente cualquier siniestro:
+                        {accidente.accidenteImportanteFooter}
                       </h4>
                       <div className="sc-title fs-18 pb-10 text-white">
                         <ul className="list-item">
-                          <li className="mb-2">Nombre del asegurado y del conductor afectado</li>
-                          <li className="mb-2">Número de póliza completo (letras y números)</li>
-                          <li className="mb-2">Número de contacto en México y Estados Unidos</li>
-                          <li className="mb-2">Lugar y hora del accidente</li>
-                          <li className="mb-2">Descripción de los hechos</li>
+                          <li className="mb-2">
+                            {accidente.accidenteImportanteFooter1}  
+                          </li>                        
+                          <li className="mb-2">
+                            {accidente.accidenteImportanteFooter2}
+                          </li>
+                          <li className="mb-2">
+                            {accidente.accidenteImportanteFooter3}
+                          </li>
+                          <li className="mb-2">
+                            {accidente.accidenteImportanteFooter4}
+                          </li>
+                          <li className="mb-2">
+                            {accidente.accidenteImportanteFooter5}
+                          </li>
                         </ul>
                       </div>
                     </div>

@@ -1,3 +1,6 @@
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
+
 const columns = [
   {
     title: "Links",
@@ -24,10 +27,40 @@ const columns = [
   },
 ];
 
+const columnsEng = [
+  {
+    title: "Links",
+    links: [
+      { label: "Home", url: "/" },
+      { label: "Our online agents", url: "/agentes" },
+      { label: "Roadside assistance", url: "/asistencia-vial" },
+      { label: "Report an Accident", url: "/reportar-accidente" },
+      { label: "Contact", url: "/contacto" },
+      { label: "Privacy Policy", url: "https://www.nationalunity.com/privacynu.pdf" },
+      { label: "Terms and conditions", url: "/tyc" },
+    ],
+  },
+  {
+    title: "Products",
+    links: [
+      { label: "Car Insurance USA", url: "/seguros/seguro-auto" },
+      { label: "Truck Insurance USA", url: "/seguros/seguro-camion" },
+      { label: "Motorcycle Insurance USA", url: "/seguros/seguro-moto" },
+      { label: "Long Term USA", url: "/seguro-larga-estadiao" },
+      { label: "Rental Car USA", url: "/seguro-auto-renta" },
+      { label: "Premium Coverage", url: "/seguros/cobertura-premium" },
+    ],
+  },
+];
+
 const Footer2 = () => {
+  const { lang } = useContext(LanguageContext)
+
   return (
     <>
-      {columns.map((column, index) => (
+      {
+        lang === 'es' ?
+        columns.map((column, index) => (
         <div className="col-xl-2 col-lg-3 col-sm-4 mb-30" key={index}>
           <h5 className="footer-title tx-dark fw-normal">{column.title}</h5>
           <ul className="footer-nav-link style-none">
@@ -38,9 +71,28 @@ const Footer2 = () => {
             ))}
           </ul>
         </div>
-      ))}
+        )) :
+        columnsEng.map((column, index) => (
+          <div className="col-xl-2 col-lg-3 col-sm-4 mb-30" key={index}>
+            <h5 className="footer-title tx-dark fw-normal">{column.title}</h5>
+            <ul className="footer-nav-link style-none">
+              {column.links.map((link, index) => (
+                <li key={index}>
+                  <a href={link.url}>{link.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
       <div className="col-xl-3 col-lg-4 col-md-5 mb-30">
-        <h5 className="footer-title tx-dark fw-normal">Dirección</h5>
+        <h5 className="footer-title tx-dark fw-normal">
+          {
+            lang === 'es' ?
+            'Dirección' : 
+            'Address'
+          }
+        </h5>
         <p className="style-none footer-nav-link">
           One Huebner Parke, 15303 Huebner Road San Antonio, TX 78248
         </p>

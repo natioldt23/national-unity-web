@@ -15,8 +15,13 @@ import IntroAbout from "../../components/home-page/home-1/IntroAbout";
 import Service from "../../components/home-page/home-1/Service";
 import Testimonial from "../../components/home-page/home-1/Testimonial";
 import WhyChoose from "../../components/home-page/home-1/WhyChoose";
+import { useTranslation } from "react-i18next";
 
 const Insurance = () => {
+  const { t } = useTranslation()
+
+  const home = t("home") 
+
   return (
     <>
       <Seo pageTitle="Insurance" />
@@ -83,7 +88,7 @@ const Insurance = () => {
                   data-aos="fade-right"
                 >
                   <h2 className="main-title fw-500 tx-dark m0">
-                    Descubre todos nuestros productos.
+                    {home.productsTitle}
                   </h2>
                 </div>
               </div>
@@ -241,7 +246,9 @@ const Insurance = () => {
                 <div
                   className="title-style-one text-center pb-40 lg-pb-20"
                 >
-                  <h2 className="main-title fw-500 tx-dark m0">Mapa de Coberturas</h2>
+                  <h2 className="main-title fw-500 tx-dark m0">
+                    {home.mapaCoberturas}
+                  </h2>
                 </div>
                 {/* /.title-style-one */}
 

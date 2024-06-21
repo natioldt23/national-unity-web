@@ -4,8 +4,13 @@ import ContactForm from "../../components/contact/ContactForm";
 import Map from "../../components/contact/Map";
 import DefaultFooter from "../../components/footer/DefaultFooter";
 import DefaulHeader from "../../components/header/DefaulHeader";
+import { useTranslation } from "react-i18next";
 
 const ContactV1 = () => {
+  const { t } = useTranslation()
+
+  const contacto = t("contacto")
+
   return (
     <>
       <Seo pageTitle="Contact" />
@@ -27,15 +32,19 @@ const ContactV1 = () => {
             <div className="col-lg-7 text-center m-auto" data-aos="fade-up">
               <div className="title-style-five mb-65 lg-mb-40">
                 <div className="sc-title-two fst-italic position-relative d-inline-block">
-                  Información de contacto
+                  {contacto.contactoEtiqueta}
                 </div>
-                <h2 className="main-title fw-500 tx-dark">Pongámonos en contacto.</h2>
+                <h2 className="main-title fw-500 tx-dark">
+                  {contacto.contactoTitle}
+                </h2>
                 <div 
                   className="col justify-content-center text-center"
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
-                  <p className="mb-0">En un horario de Lunes a Viernes de 8am a 5pm.</p>
+                  <p className="mb-0">
+                    {contacto.contactoDesc}
+                  </p>
                 </div>
               </div>
             </div>

@@ -15,49 +15,93 @@ import 'react-tabs/style/react-tabs.css';
 import TruckerPlus from "./TruckerPlus";
 import FaqCamion from "./FaqCamion";
 import beneficiosCamion from "../../data/beneficios-camion";
-import beneficiosPremium from "@/data/beneficios-cobertura-premium";
 import FaqPremium from "./FaqPremium";
+import { useTranslation } from "react-i18next";
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
 
 const CoberturaPremium = () => {
+  const { lang } = useContext(LanguageContext)
+  const { t } = useTranslation()
+  const premium = t("premium")
 
-  const cardsData = [
+  const beneficiosPremium = [
     {
       id: 1,
-      cardNo: "card-one",
-      title: "40%",
-      subtitle: "Del Mercado",
-      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/LIQUIDOS_NU-01.svg",
+      title: "$300,000 usd",
+      rating: 5,
+      text1: "Incrementa desde 100 mil, 200 mil hasta 300 mil USD para cobertura de responsabilidad civil.",
+      author: " ",
+      location: "",
+      image: "/images/icon/escudo_auto_NU.svg",
     },
     {
       id: 2,
-      title: "+50 años",
-      cardNo: "card-two",
-      subtitle: "De experiencia",
-      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/LLANTA_NU-01.svg"
+      title: "$15,000 usd",
+      rating: 5,
+      text1: "Obtén esta cobertura para gastos médicos.",
+      author: "",
+      location: "",
+      image: "/images/icon/gastos_medicos.svg",
     },
     {
       id: 3,
-      title: "Líder",
-      cardNo: "card-three",
-      subtitle: "En Responsabilidad civil",
-      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/PILA_NU-01.svg"
+      title: "Asistencia Plus",
+      rating: 5,
+      text1: "Gastos médicos, renta de auto por robo, avería o accidente, y más.",
+      author: "",
+      location: "",
+      image: "/images/icon/asistencia_plus.svg",
     },
     /*{
       id: 4,
-      title: "Líder",
-      cardNo: "card-one",
-      subtitle: "En Responsabilidad civil",
-      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/ATASCAMIENTO_NU-01.svg"
+      title: "Very Solid!!",
+      rating: 5,
+      text: "They not only understand what I say but read between the lines and also give me ideas of my own.",
+      author: "Rashed Kabir",
+      location: "Claifornia",
+      image: "/images/media/img_55.jpg",
     },*/
   ];
 
-  const starRating = Array(5)
-    .fill()
-    .map((_, index) => (
-      <li key={index}>
-        <i className="fa-solid fa-star" />
-      </li>
-    ));
+  const beneficiosPremiumEng = [
+    {
+      id: 1,
+      title: "$300,000 usd",
+      rating: 5,
+      text1: "Increases from 100,000, 200,000 to 300,000 USD for liability coverage.",
+      author: " ",
+      location: "",
+      image: "/images/icon/escudo_auto_NU.svg",
+    },
+    {
+      id: 2,
+      title: "$15,000 usd",
+      rating: 5,
+      text1: "Get this coverage for medical expenses.",
+      author: "",
+      location: "",
+      image: "/images/icon/gastos_medicos.svg",
+    },
+    {
+      id: 3,
+      title: "Plus Assistance",
+      rating: 5,
+      text1: "Medical expenses, car rental due to theft, breakdown or accident, and more.",
+      author: "",
+      location: "",
+      image: "/images/icon/asistencia_plus.svg",
+    },
+    /*{
+      id: 4,
+      title: "Very Solid!!",
+      rating: 5,
+      text: "They not only understand what I say but read between the lines and also give me ideas of my own.",
+      author: "Rashed Kabir",
+      location: "Claifornia",
+      image: "/images/media/img_55.jpg",
+    },*/
+  ];
 
   return (
     <>
@@ -79,18 +123,18 @@ const CoberturaPremium = () => {
             <div className="col-xxl-6 col-lg-6" data-aos="fade-right">
               <div className="title-style-five mb-45 md-mb-10">
                 <div className="sc-title-two fst-italic position-relative">
-                  Seguros
+                  {premium.premiumEtiqueta}
                 </div>
                 <h2 className="main-title fw-500 tx-dark">
-                  Cobertura Premium
+                  {premium.premiumTitle}
                 </h2>
                 <p className="tx-dark text-lg pt-20">
-                  Incrementa el monto de tus coberturas
+                  {premium.premiumDesc}
                 </p>
                 <div>
                   <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">
-                      Cotiza en línea
+                      {premium.premiumCotiza}
                     </button>
                   </a>
                 </div>
@@ -115,13 +159,15 @@ const CoberturaPremium = () => {
         <div className="container d-flex flex-column align-items-center">
           <img src="/images/icon/logo-cobertura-premium.svg" alt="" width={300}/>
           <p className=" text-lg tx-dark mt-100 mb-50 lg-mt-50 text-center">
-            El complemento perfecto, para quien ya cuenta con una póliza turista de cobertura primaria.
+            {premium.premiumItems}
           </p>
         </div>
         <div>
           <div className="slider-wrapper">
             <div className="feedback_slider_seven beneficios-slide d-flex flex-column flex-lg-row align-items-center">
-            {beneficiosPremium.slice(0, 4).map((item) => (
+            {
+              lang == 'es' ?
+              beneficiosPremium.slice(0, 4).map((item) => (
               <div className="item col-12 col-lg-4" key={item.id}>
                 <div className="feedback-block-eleven beneficios-item-premium">
                   <div className="top-header d-flex align-items-center justify-content-between">
@@ -135,17 +181,27 @@ const CoberturaPremium = () => {
                     </div>
                   </div>
                   <p className="tx-dark m-0 p-0">{item.text1}</p>
-                  <p className="tx-dark m-0 p-0">{item.text2}</p>
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="cost fw-500 tx-dark fs-20">
-                      {item.author}
-                      <span className="opacity-50 fw-normal">{item.location}</span>
-                    </div>
-                    
-                  </div>
                 </div>
               </div>
-            ))}
+              )) : 
+              beneficiosPremiumEng.slice(0, 4).map((item) => (
+                <div className="item col-12 col-lg-4" key={item.id}>
+                  <div className="feedback-block-eleven beneficios-item-premium">
+                    <div className="top-header d-flex align-items-center justify-content-between">
+                      <div className="d-flex justify-content-between align-items-center w-100">
+                        <h3 className="tx-dark m0">{item.title}</h3>
+                          <img
+                          src={item.image}
+                          alt="tesimonial avatar"
+                          width={90}
+                        />
+                      </div>
+                    </div>
+                    <p className="tx-dark m-0 p-0">{item.text1}</p>
+                  </div>
+                </div>
+              ))
+            }
             </div>
           </div>
         </div>
@@ -155,7 +211,7 @@ const CoberturaPremium = () => {
       <div className="fancy-feature-thirtyEight pt-60 pb-50">
         <div className="container">
           <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center" data-aos="fade-up">
-            Preguntas Frecuentes
+            {premium.premiumFaq}
           </h2>
           <FaqPremium />
         </div>

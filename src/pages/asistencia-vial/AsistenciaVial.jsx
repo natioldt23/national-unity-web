@@ -8,30 +8,30 @@ import Faq from "../../components/services/Faq";
 import FaqAsistencia from "../../components/services/FaqAsistencia";
 import Partners from "../../components/services/Partners";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
+
 
 const AsistenciaVial = () => {
-
+  const { t } = useTranslation()
+  const { lang } = useContext(LanguageContext)
+  const asistencia = t("asistencia")
 
   const cardsData = [
     {
       id: 1,
       cardNo: "card-one",
-      title: "40%",
-      subtitle: "Del Mercado",
       src: "https://www.nationalunity.com/wp-content/uploads/2023/10/LIQUIDOS_NU-01.svg",
     },
     {
       id: 2,
-      title: "+50 años",
       cardNo: "card-two",
-      subtitle: "De experiencia",
       src: "https://www.nationalunity.com/wp-content/uploads/2023/10/LLANTA_NU-01.svg"
     },
     {
       id: 3,
-      title: "Líder",
       cardNo: "card-three",
-      subtitle: "En Responsabilidad civil",
       src: "https://www.nationalunity.com/wp-content/uploads/2023/10/PILA_NU-01.svg"
     },
     /*{
@@ -42,14 +42,6 @@ const AsistenciaVial = () => {
       src: "https://www.nationalunity.com/wp-content/uploads/2023/10/ATASCAMIENTO_NU-01.svg"
     },*/
   ];
-
-  const starRating = Array(5)
-    .fill()
-    .map((_, index) => (
-      <li key={index}>
-        <i className="fa-solid fa-star" />
-      </li>
-    ));
 
   return (
     <>
@@ -71,10 +63,10 @@ const AsistenciaVial = () => {
             <div className="col-xxl-7 col-lg-6" data-aos="fade-right">
               <div className="title-style-five mb-45 md-mb-10">
                 <div className="sc-title-two fst-italic position-relative">
-                  Servicios
+                  {asistencia.asistenciaEtiqueta}
                 </div>
                 <h2 className="main-title fw-500 tx-dark">
-                  Asistencia Vial
+                  {asistencia.asistenciaTitle}
                 </h2>
               </div>
             </div>
@@ -144,32 +136,30 @@ const AsistenciaVial = () => {
             <div className="col-xl-9 col-lg-8" data-aos="fade-right">
               <div className="service-details-meta">
                 <p className="text-lg tx-dark">
-                  Se recomienda tener a la mano la siguiente información antes de solicitar un servicio de 
-                  asistencia vial:
+                  {asistencia.asistenciaInfo}
                 </p>
                 <ul className="style-none list-item md-mb-40 tx-dark">
-                  <li>Número de póliza completo</li>
-                  <li>Teléfono donde contactarlo</li>
-                  <li>Correo electrónico</li>
-                  <li>Correo electrónico</li>
+                  <li>{asistencia.asistenciaInfoOne}</li>
+                  <li>{asistencia.asistenciaInfoTwo}</li>
+                  <li>{asistencia.asistenciaInfoThree}</li>
+                  <li>{asistencia.asistenciaInfoFour}</li>
                 </ul>
 
                 <p className="text-lg tx-dark">
-                  En caso de que usted requiera Asistencia Vial dentro de los Estados Unidos de América deberás
-                   llamar al:
+                  {asistencia.asistenciaTel}
                 </p>
 
                 <ul className="style-none list-item md-mb-40 tx-dark">
                   <li>
-                    Sin costo desde USA:
+                    {asistencia.asistenciaTelOne}
                     <a href="tel:18003085513">1-800-308-5513</a>
                   </li>
                   <li>
-                    Larga distancia dentro de USA:
+                    {asistencia.asistenciaTelTwo}
                     <a href="tel:2104799585">210-479-9585</a>
                   </li>
                   <li>
-                    Con Costo desde México:
+                    {asistencia.asistenciaTelThree}
                     <a href="tel:0012104799585">001-210-479-9585</a>
                   </li>
                 </ul>
@@ -210,14 +200,16 @@ const AsistenciaVial = () => {
             <div className="col-lg-5">
               <div className="block-style-seven" data-aos="fade-right">
                 <div className="title-style-six">
-                  <div className="sc-title-two text-uppercase">Servicios</div>
+                  <div className="sc-title-two text-uppercase">
+                    {asistencia.asistenciaEtiqueta}
+                  </div>
                   <h2 className="main-title fw-500 tx-dark">
-                  Servicios incluidos
+                    {asistencia.asistenciaServicios}
                   </h2>
                 </div>
                 {/* /.title-style-ten */}
                 <p className="fs-20 pt-10 pb-30 lg-pb-20">
-                  Aquí puedes consultar los servicios de asistencia vial que ofrecemos
+                  {asistencia.asistenciaServiciosDesc}
                 </p>
                 <img
                   src="images/media/road-assistance.webp"
@@ -398,14 +390,15 @@ const AsistenciaVial = () => {
                   <div className="col-lg-8">
                     <div className="text-wrapper text-center text-lg-start md-pb-30">
                       <h2 className="main-title fw-500 text-white mb-2">
-                        Importante
+                        {asistencia.asistenciaImportante}
                       </h2>
                       <div className="sc-title fs-18 pb-10 text-white">
-                        Toda cobertura hasta un máximo de $100.00 dólares, otorgando 1 servicio en pólizas 
-                        de 1 a 179 días y 2 servicios en pólizas semestrales y anuales.
+                        {asistencia.asistenciaImportanteDesc}
                       </div>
                       <div className="text-white fw-500">
-                        <span>Servicio exclusivo dentro de los Estados Unidos.</span>
+                        <span>
+                          {asistencia.asistenciaImportanteSpan}
+                        </span>
                       </div>
                     </div>
                   </div>

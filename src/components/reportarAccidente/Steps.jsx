@@ -1,25 +1,10 @@
 import { Link } from "react-router-dom";
-
-const steps = [
-  {
-    title: "1. Notificar a la policía sobre el accidente llamando al 911.",
-    delayAnim: 0,
-  },
-  {
-    title: "2. Obtener los datos esenciales del conductor afectado:",
-    delayAnim: 100,
-  },
-  {
-    title: "3. Reportar el accidente a través de nuestro formulario online o llamando a los siguientes teléfonos:",
-    delayAnim: 200,
-  },
-  {
-    title: "4. Toma fotografías del accidente. Todo lo relevante para tener una documentación adecuada.",
-    delayAnim: 300,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Steps = () => {
+  const { t } = useTranslation()
+  const accidente = t("accidente")
+
   return (
     <>
 
@@ -32,7 +17,9 @@ const Steps = () => {
             {/*<div className="icon">
               <img src={step.icon} alt="" className="lazy-img m-auto" />
             </div>*/}
-            <p className="tx-steps pt-20">Notificar a la policía sobre el accidente llamando al 911.</p>
+            <p className="tx-steps pt-20">
+              {accidente.accidentePasosOne}
+            </p>
             <Link
               to="/pages-menu/service-details"
               className="step-number rounded-circle text-start tran3s"
@@ -52,13 +39,15 @@ const Steps = () => {
             {/*<div className="icon">
               <img src={step.icon} alt="" className="lazy-img m-auto" />
             </div>*/}
-            <p className="tx-steps pt-20">Obtener los datos esenciales del conductor afectado:</p>
+            <p className="tx-steps pt-20">
+              {accidente.accidentePasosTwo}
+            </p>
             <ul className="style-none list-item ul-step">
-              <li>Nombre</li>
-              <li>Dirección</li>
-              <li>Compañía aseguradora</li>
-              <li>Número de póliza</li>
-              <li>Nombre de testigo/s (si los hubiera)</li>
+              <li>{accidente.accidentePasosTwo1}</li>
+              <li>{accidente.accidentePasosTwo2}</li>
+              <li>{accidente.accidentePasosTwo3}</li>
+              <li>{accidente.accidentePasosTwo4}</li>
+              <li>{accidente.accidentePasosTwo5}</li>
             </ul>
             <Link
               to="/pages-menu/service-details"
@@ -79,19 +68,21 @@ const Steps = () => {
             {/*<div className="icon">
               <img src={step.icon} alt="" className="lazy-img m-auto" />
             </div>*/}
-            <p className="tx-steps pt-20">Reportar el accidente a través de nuestro formulario online o llamando a los siguientes teléfonos:</p>
+            <p className="tx-steps pt-20">
+              {accidente.accidentePasosThree}
+            </p>
             <ul className="style-none list-item ul-step">
               <li>
-                Desde USA 
+                {accidente.accidentePasosThree1} 
                 <br />
-                Llama sin costo al <a href="tel:18663296734">1-866-329-6734</a>
+                {accidente.accidentePasosThree1NoCost}<a href="tel:18663296734">1-866-329-6734</a>
                 <br />
-                Directo: <a href="tel:5128610992">512-861-0992</a>
+                {accidente.accidentePasosThree1Direct}<a href="tel:5128610992">512-861-0992</a>
               </li>
               <li>
-                Desde México
+                {accidente.accidentePasosThree2}
                 <br />
-                Llama al <a href="tel:0015128610992">001-512-861-0992</a>
+                {accidente.accidentePasosThree2Llama} <a href="tel:0015128610992">001-512-861-0992</a>
               </li>
             </ul>
             <Link
@@ -113,11 +104,13 @@ const Steps = () => {
             {/*<div className="icon">
               <img src={step.icon} alt="" className="lazy-img m-auto" />
             </div>*/}
-            <p className="tx-steps pt-20">Toma fotografías del accidente. Todo lo relevante para tener una documentación adecuada.</p>
+            <p className="tx-steps pt-20">
+              {accidente.accidentePasosFour}
+            </p>
             <ul className="style-none list-item ul-step">
-              <li>Vehículos</li>
-              <li>Daños causados</li>
-              <li>Lugar de impacto</li>
+              <li>{accidente.accidentePasosFour1}</li>
+              <li>{accidente.accidentePasosFour2}</li>
+              <li>{accidente.accidentePasosFour3}</li>
             </ul>
             <Link
               to="/pages-menu/service-details"

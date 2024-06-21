@@ -1,22 +1,24 @@
+import { useTranslation } from "react-i18next";
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
+
 const TiempoCruces = () => {
+  const { t } = useTranslation()
+  const home = t("home")
+
+  const { lang } = useContext(LanguageContext)
+
   const features = [
     "Actualización de información cada 15 minutos",
     "4 estados de entrada",
     "Promedio de tiempo de cruce para días por venir",
   ];
 
-  {/*const buttons = [
-    {
-      platform: "Google play",
-      icon: "images/icon/playstore.svg",
-      className: "windows-button",
-    },
-    {
-      platform: "App store",
-      icon: "images/icon/apple-black.svg",
-      className: "ios-button",
-    },
-  ];*/}
+  const featuresEng = [
+    "Information updated every 15 minutes",
+    "4 entry states",
+    "Average crossing time for upcoming days",
+  ];
 
   return (
     <div className="row align-items-center">
@@ -25,36 +27,29 @@ const TiempoCruces = () => {
           <div className="title-style-one">
             {/*<div className="sc-title text-uppercase">MOBILE APP</div>*/}
             <h2 className="main-title fw-500 tx-dark m0">
-              Tiempo de cruces
+              {home.crucesTitle}
             </h2>
           </div>
           <p className="fs-20 pt-30 pb-30 lg-pb-20">
-            Consulta el tiempo de cruce de los puentes internacionales a Estados Unidos.
+            {home.crucesSubtitle}
           </p>
           <ul className="style-none list-item">
-            {features.map((feature, index) => (
-              <li key={index}>{feature}</li>
-            ))}
+            {
+              lang === 'es' ?
+              features.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              )) : 
+              featuresEng.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))
+            }
           </ul>
           {/* End list */}
 
           <div className="d-sm-flex align-items-center mt-55 lg-mt-30">
-            {/*{buttons.map((button, index) => (
-              <a
-                href="#"
-                className={`d-flex align-items-center ${button.className}`}
-                key={index}
-              >
-                <img src={button.icon} alt="" className="lazy-img icon" />
-                <div>
-                  <span>Get it on</span>
-                  <strong>{button.platform}</strong>
-                </div>
-              </a>
-            ))}*/}
             <a href="https://www.nationalunity.com/national/Tiempo_Cruce/code/" target="blank">
               <button className="fw-500 text-white tran3s button-primary" type="submit">
-                Tiempo de Cruces
+                {home.crucesTitle}
               </button>
             </a>
           </div>

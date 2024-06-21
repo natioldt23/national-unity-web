@@ -1,26 +1,41 @@
 import { useState } from "react";
-import ModalVideo from "react-modal-video";
+import { useTranslation } from "react-i18next";
 
 const IntroAbout = () => {
-  const [isOpen, setOpen] = useState(false);
+  const { t } = useTranslation()
+
+  const home = t("home")
+
   const cardsData = [
     {
       id: 1,
       cardNo: "card-one",
       title: "40%",
-      subtitle: "Del Mercado",
+      subtitle: (
+        <>
+          {home.introAboutCardOne}
+        </>
+      ),
     },
     {
       id: 2,
       title: "+50 años",
       cardNo: "card-two",
-      subtitle: "De experiencia",
+      subtitle: (
+        <>
+          {home.introAboutCardTwo}
+        </>
+      ),
     },
     {
       id: 3,
       title: "Líder",
       cardNo: "card-three",
-      subtitle: "En Responsabilidad civil",
+      subtitle: (
+        <>
+          {home.introAboutCardThree}
+        </>
+      ),
     },
   ];
 
@@ -44,8 +59,11 @@ const IntroAbout = () => {
               onClick={() => setOpen(true)}
             />*/}
             <p className="tx-dark pt-30 pb-30 md-pb-15" data-aos="fade-up">
-              National Unity Insurance Company es el <span className="fw-500">Líder</span> en el mercado de Responsabilidad Civil para autos 
-              y camiones que circulan en los <span className="fw-500">Estados Unidos y Canadá</span>.
+              National Unity Insurance Company 
+              {home.introAboutPhraseOne}
+              <span className="fw-500"> {home.introAboutLider} </span> 
+              {home.introAboutPhraseTwo}
+              <span className="fw-500">{home.usaCan}</span>.
             </p>
             {/*<h6
               className="fs-20 tx-dark d-inline-block fst-italic position-relative ps-4"

@@ -1,30 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-const links = [
-  {
-    title: "Términos y condiciones.",
-    href: "/tyc",
-  },
-  {
-    title: "Contáctanos",
-    href: "/contacto",
-  },
-];
+import { useTranslation } from "react-i18next";
 
-const icons = [
-  {
-    icon: "fab fa-facebook-f",
-    href: "https://www.facebook.com/",
-  },
-  /*{
-    icon: "fab fa-twitter",
-    href: "https://www.twitter.com/",
-  },*/
-  {
-    icon: "fab fa-linkedin-in",
-    href: "https://mx.linkedin.com/company/national-unity-insurance-company?trk=ppro_cprof",
-  },
-];
 
 const LinkItem = ({ title, href }) => {
   return (
@@ -54,6 +31,42 @@ IconItem.propTypes = {
 };
 
 const Footer = () => {
+  const { t } = useTranslation()
+  const footer = t("footer")
+
+  const links = [
+    {
+      title: (
+        <>
+          {footer.terminosCondiciones}
+        </>
+      ),
+      href: "/tyc",
+    },
+    {
+      title: (
+        <>
+          {footer.contacto}
+        </>
+      ),
+      href: "/contacto",
+    },
+  ];
+  
+  const icons = [
+    {
+      icon: "fab fa-facebook-f",
+      href: "https://www.facebook.com/",
+    },
+    /*{
+      icon: "fab fa-twitter",
+      href: "https://www.twitter.com/",
+    },*/
+    {
+      icon: "fab fa-linkedin-in",
+      href: "https://mx.linkedin.com/company/national-unity-insurance-company?trk=ppro_cprof",
+    },
+  ];
   return (
     <div className="bottom-footer lg-pb-20 position-relative">
       <div className="container">
