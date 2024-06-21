@@ -184,9 +184,9 @@ const ReportarAccidente = () => {
             <div className="row">
               <div className="col-md-11 m-auto">
 
-                <article class="blog-meta-three mb-80 lg-mb-40 text-style aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                  <div class="post-data mt-40 lg-mt-30">
-                      <h4 class="xl tx-dark mt-10">
+                <article className="blog-meta-three mb-80 lg-mb-40 text-style aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                  <div className="post-data mt-40 lg-mt-30">
+                      <h4 className="xl tx-dark mt-10">
                         Importante
                       </h4>
                       <div className="tx-dark mb-25 lg-mb-20">
@@ -236,10 +236,10 @@ const ReportarAccidente = () => {
               </Link>
             </div>*/}
             {/*<div className="row mt-50">
-              <article class="blog-meta-three mb-80 lg-mb-40 text-style aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                <div class="post-data mt-40 lg-mt-30">
-                  <a class="mt-10 mb-25 lg-mb-20" href="/blog/9">
-                    <h4 class="tran3s blog-title xl tx-dark">
+              <article className="blog-meta-three mb-80 lg-mb-40 text-style aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div className="post-data mt-40 lg-mt-30">
+                  <a className="mt-10 mb-25 lg-mb-20" href="/blog/9">
+                    <h4 className="tran3s blog-title xl tx-dark">
                     Recuerda mantener los siguientes datos a la mano para reportar correctamente cualquier siniestro:
                     </h4>
                     <ul className="list-item text-lg">

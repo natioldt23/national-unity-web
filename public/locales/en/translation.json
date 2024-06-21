@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "navbarHome": "Home",
+    "seguros": "Insurance",
+    "reportarAccidente": "Report accident",
+    "asisVial": "Road Assistance",
+    "contacto": "Contact",
+    "accesoAgente": "Agent Access"
+  },
+  "home": {
+    "mainTitleHome": "Welcome to ",
+    "subTitleHome": "On the other side we are on your side.",
+    "cotizaEnLinea": "Quote online",
+    "activarUnityCard": "Activate Unity Card"
+  }
+}

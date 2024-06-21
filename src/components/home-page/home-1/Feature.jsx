@@ -47,7 +47,7 @@ const Feature = () => {
   return (
     <>
       <div data-aos="fade-up">
-        <h2 class="tx-dark mb-20 mt-20 text-center">
+        <h2 className="tx-dark mb-20 mt-20 text-center">
           Contrata tu Seguro de Auto para USA de manera fácil y segura
         </h2>
       </div>

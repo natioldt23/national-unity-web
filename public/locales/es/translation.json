@@ -1,0 +1,16 @@
+{
+  "navbar":{
+    "navbarHome": "Inicio",
+    "seguros": "Seguros",
+    "reportarAccidente": "Reportar accidente",
+    "asisVial": "Asistencia Vial",
+    "contacto": "Contacto",
+    "accesoAgente": "Acceso Agente"
+  },
+  "home": {
+    "mainTitleHome": "Bienvenido a ",
+    "subTitleHome": "Del otro lado estamos de tu lado.",
+    "cotizaEnLinea": "Cotiza en línea",
+    "activarUnityCard": "Activar Unity Card"
+  }
+}

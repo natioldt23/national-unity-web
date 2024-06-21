@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
 import {
-  menuItems,
-  pagesItems,
-  portfolioItems,
-  blogItems,
-  contactItems,
-  segurosItems
+  segurosItems,
+  segurosItemsEng
 } from "../../data/menu";
-
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
 
 const MainMenu = () => {
+  const { t, i18n } = useTranslation()
+  const { lang } = useContext(LanguageContext)
   const { pathname } = useLocation();
+
+  const navbarLang = t('navbar')
+
 
   const isActive = (link) => {
     return pathname.replace(/\/\d+$/, "") === link.replace(/\/\d+$/, "");
@@ -251,7 +254,7 @@ const MainMenu = () => {
               className="nav-link"
               to='/'
             >
-              Inicio
+              {navbarLang.navbarHome}
             </Link>
             
           </li>
@@ -269,10 +272,13 @@ const MainMenu = () => {
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
-              Seguros
+              {navbarLang.seguros}
             </a>
             <ul className="dropdown-menu dropdown-menu-shadow">
-              {segurosItems.map((seguro, index) => (
+              
+              {
+                lang === 'es'?
+                segurosItems.map((seguro, index) => (
                 <li key={index}>
                   <Link
                     to={seguro.link}
@@ -283,7 +289,20 @@ const MainMenu = () => {
                     <span>{seguro.text}</span>
                   </Link>
                 </li>
-              ))}
+                )) :
+                segurosItemsEng.map((seguro, index) => (
+                  <li key={index}>
+                    <Link
+                      to={seguro.link}
+                      className={`dropdown-item ${
+                        isActive(seguro.link) ? "active" : ""
+                      }`}
+                    >
+                      <span>{seguro.text}</span>
+                    </Link>
+                  </li>
+                  ))
+              }
             </ul>
           </li>
           {/* End li (seguros) */}
@@ -296,7 +315,7 @@ const MainMenu = () => {
               className="nav-link"
               to='/reportar-accidente'
             >
-              Reportar accidente
+              {navbarLang.reportarAccidente}
             </Link>
             
           </li>
@@ -307,7 +326,7 @@ const MainMenu = () => {
               className="nav-link"
               to='/asistencia-vial'
             >
-              Asistencia Vial
+              {navbarLang.asisVial}
             </Link>
             
             </li>
@@ -318,7 +337,7 @@ const MainMenu = () => {
               className="nav-link"
               to='/contacto'
             >
-              Contacto
+              {navbarLang.contacto}
             </Link>
           </li>
           {/* End li (contacto) */}

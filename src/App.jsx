@@ -1,5 +1,5 @@
 import Aos from "aos";
-import { useEffect } from "react";
+import { createContext, useEffect, useState } from "react";
 import "aos/dist/aos.css";
 import "./styles/index.scss";
 import ScrollToTop from "./components/common/ScrollTop";
@@ -68,7 +68,11 @@ import CoberturaPremium from "./pages/seguros/CoberturaPremium";
 import UnityCard from "./pages/seguros/UnityCard";
 import NuestrosAgentes from "./pages/pages-menu/agentes/NuestrosAgentes";
 
+export const LanguageContext = createContext()
+
 function App() {
+  const [lang, setLang] = useState('es')
+
   useEffect(() => {
     Aos.init({
       duration: 1200,
@@ -76,96 +80,101 @@ function App() {
   }, []);
 
   return (
-    <div className="main-page-wrapper">
-      <Routes>
-        <Route path="/">
-          <Route index element={<Home />} />
-          <Route path="home/web-hosting" element={<WebHosting />} />
-          <Route path="home/education" element={<Education />} />
-          <Route path="home/charity" element={<Charity />} />
-          <Route path="home/real-estate" element={<RealEstate />} />
-          <Route path="home/sass-product" element={<SassProduct />} />
-          <Route path="home/app-landing" element={<AppLanding />} />
-          <Route path="home/crypto" element={<Crypto />} />
-          <Route
-            path="home/personal-portfolio"
-            element={<PersonalPortfolio />}
-          />
-          <Route path="home/agency-modern" element={<AgencyModern />} />
-          <Route path="home/seo-agency" element={<SeoAgency />} />
-          <Route path="home/design-agency" element={<DesignAgency />} />
-          <Route path="home/lead-generation" element={<LeadGeneration />} />
+    <LanguageContext.Provider value={{
+      lang,
+      setLang
+    }}>
+      <div className="main-page-wrapper">
+        <Routes>
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="home/web-hosting" element={<WebHosting />} />
+            <Route path="home/education" element={<Education />} />
+            <Route path="home/charity" element={<Charity />} />
+            <Route path="home/real-estate" element={<RealEstate />} />
+            <Route path="home/sass-product" element={<SassProduct />} />
+            <Route path="home/app-landing" element={<AppLanding />} />
+            <Route path="home/crypto" element={<Crypto />} />
+            <Route
+              path="home/personal-portfolio"
+              element={<PersonalPortfolio />}
+            />
+            <Route path="home/agency-modern" element={<AgencyModern />} />
+            <Route path="home/seo-agency" element={<SeoAgency />} />
+            <Route path="home/design-agency" element={<DesignAgency />} />
+            <Route path="home/lead-generation" element={<LeadGeneration />} />
 
-          <Route path="pages-menu/about-us-v1" element={<AboutUsV1 />} />
-          <Route path="pages-menu/about-us-v2" element={<AboutUsV2 />} />
-          <Route path="pages-menu/about-us-v3" element={<AboutUsV3 />} />
-          <Route path="pages-menu/about-us-v4" element={<AboutUsV4 />} />
+            <Route path="pages-menu/about-us-v1" element={<AboutUsV1 />} />
+            <Route path="pages-menu/about-us-v2" element={<AboutUsV2 />} />
+            <Route path="pages-menu/about-us-v3" element={<AboutUsV3 />} />
+            <Route path="pages-menu/about-us-v4" element={<AboutUsV4 />} />
 
-          <Route path="pages-menu/service-v1" element={<ServiceV1 />} />
-          <Route path="pages-menu/service-v2" element={<ServiceV2 />} />
-          <Route path="pages-menu/service-v3" element={<ServiceV3 />} />
-          <Route path="pages-menu/service-v4" element={<ServiceV4 />} />
-          <Route
-            path="pages-menu/service-details"
-            element={<ServiceDetails />}
-          />
+            <Route path="pages-menu/service-v1" element={<ServiceV1 />} />
+            <Route path="pages-menu/service-v2" element={<ServiceV2 />} />
+            <Route path="pages-menu/service-v3" element={<ServiceV3 />} />
+            <Route path="pages-menu/service-v4" element={<ServiceV4 />} />
+            <Route
+              path="pages-menu/service-details"
+              element={<ServiceDetails />}
+            />
 
-          <Route path="pages-menu/team-v1" element={<TeamV1 />} />
-          <Route path="pages-menu/team-v2" element={<TeamV2 />} />
+            <Route path="pages-menu/team-v1" element={<TeamV1 />} />
+            <Route path="pages-menu/team-v2" element={<TeamV2 />} />
 
-          <Route path="pages-menu/pricing" element={<Pricing />} />
-          <Route path="pages-menu/pricing-v2" element={<PricingV2 />} />
-          <Route path="pages-menu/pricing-v3" element={<PricingV3 />} />
+            <Route path="pages-menu/pricing" element={<Pricing />} />
+            <Route path="pages-menu/pricing-v2" element={<PricingV2 />} />
+            <Route path="pages-menu/pricing-v3" element={<PricingV3 />} />
 
-          <Route path="pages-menu/features-v1" element={<FeaturesV1 />} />
-          <Route path="pages-menu/features-v2" element={<FeaturesV2 />} />
+            <Route path="pages-menu/features-v1" element={<FeaturesV1 />} />
+            <Route path="pages-menu/features-v2" element={<FeaturesV2 />} />
 
-          <Route path="pages-menu/faq" element={<Faq />} />
-          <Route path="pages-menu/testimonials" element={<Testimonials />} />
-          <Route path="login" element={<LogIn />} />
-          <Route path="signup" element={<SignUp />} />
-          <Route path="404" element={<NotFound />} />
+            <Route path="pages-menu/faq" element={<Faq />} />
+            <Route path="pages-menu/testimonials" element={<Testimonials />} />
+            <Route path="login" element={<LogIn />} />
+            <Route path="signup" element={<SignUp />} />
+            <Route path="404" element={<NotFound />} />
 
-          <Route path="portfolio/portfolio-v1" element={<PortfolioV1 />} />
-          <Route path="portfolio/portfolio-v2" element={<PortfolioV2 />} />
-          <Route path="portfolio/portfolio-v3" element={<PortfolioV3 />} />
-          <Route path="portfolio/portfolio-v4" element={<PortfolioV4 />} />
-          <Route path="portfolio/portfolio-v5" element={<PortfolioV5 />} />
-          <Route path="portfolio/portfolio-v6" element={<PortfolioV6 />} />
-          <Route path="portfolio/portfolio-v7" element={<PortfolioV7 />} />
-          <Route path="portfolio/:id" element={<DynamicPortfolioDetails />} />
+            <Route path="portfolio/portfolio-v1" element={<PortfolioV1 />} />
+            <Route path="portfolio/portfolio-v2" element={<PortfolioV2 />} />
+            <Route path="portfolio/portfolio-v3" element={<PortfolioV3 />} />
+            <Route path="portfolio/portfolio-v4" element={<PortfolioV4 />} />
+            <Route path="portfolio/portfolio-v5" element={<PortfolioV5 />} />
+            <Route path="portfolio/portfolio-v6" element={<PortfolioV6 />} />
+            <Route path="portfolio/portfolio-v7" element={<PortfolioV7 />} />
+            <Route path="portfolio/:id" element={<DynamicPortfolioDetails />} />
 
-          <Route path="blog/blog-v1" element={<BlogV1 />} />
-          <Route path="blog/blog-v2" element={<BlogV2 />} />
-          <Route path="blog/blog-v3" element={<BlogV3 />} />
-          <Route path="blog/:id" element={<DynamicBlogDetails />} />
+            <Route path="blog/blog-v1" element={<BlogV1 />} />
+            <Route path="blog/blog-v2" element={<BlogV2 />} />
+            <Route path="blog/blog-v3" element={<BlogV3 />} />
+            <Route path="blog/:id" element={<DynamicBlogDetails />} />
 
-          {/* Páginas de Main Menu */}
-          <Route path="asistencia-vial" element={<AsistenciaVial />} />
-          <Route path="contacto" element={<Contacto />} />
-          <Route path="tyc" element={<TyC />} />
-          <Route path="reportar-accidente" element={<ReportarAccidente />} />
-          <Route path="seguros/seguro-auto" element={<AutosUSA />} />
-          <Route path="seguros/seguro-camion" element={<CamionUSA />} />
-          <Route path="seguros/seguro-moto" element={<MotoUSA />} />
-          <Route path="seguros/seguro-larga-estadia" element={<LargaEstadia />} />
-          <Route path="seguros/seguro-auto-renta" element={<AutoRenta />} />
-          <Route path="seguros/cobertura-premium" element={<CoberturaPremium />} />
-          <Route path="seguros/unity-card" element={<UnityCard />} />
-          <Route path="agentes" element={<NuestrosAgentes />} />
+            {/* Páginas de Main Menu */}
+            <Route path="asistencia-vial" element={<AsistenciaVial />} />
+            <Route path="contacto" element={<Contacto />} />
+            <Route path="tyc" element={<TyC />} />
+            <Route path="reportar-accidente" element={<ReportarAccidente />} />
+            <Route path="seguros/seguro-auto" element={<AutosUSA />} />
+            <Route path="seguros/seguro-camion" element={<CamionUSA />} />
+            <Route path="seguros/seguro-moto" element={<MotoUSA />} />
+            <Route path="seguros/seguro-larga-estadia" element={<LargaEstadia />} />
+            <Route path="seguros/seguro-auto-renta" element={<AutoRenta />} />
+            <Route path="seguros/cobertura-premium" element={<CoberturaPremium />} />
+            <Route path="seguros/unity-card" element={<UnityCard />} />
+            <Route path="agentes" element={<NuestrosAgentes />} />
 
 
-          <Route path="contact/contact-v2" element={<ContactV2 />} />
-          <Route path="contact/contact-v3" element={<ContactV3 />} />
-          <Route path="contact/contact-v4" element={<ContactV4 />} />
+            <Route path="contact/contact-v2" element={<ContactV2 />} />
+            <Route path="contact/contact-v3" element={<ContactV3 />} />
+            <Route path="contact/contact-v4" element={<ContactV4 />} />
 
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-      <ScrollTopBehaviour />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+        <ScrollTopBehaviour />
 
-      <ScrollToTop />
-    </div>
+        <ScrollToTop />
+      </div>
+    </LanguageContext.Provider>
   );
 }
 

@@ -118,6 +118,16 @@ export const segurosItems = [
   { link: "/seguros/unity-card", text: "Unity Card" },
 ];
 
+export const segurosItemsEng = [
+  { link: "/seguros/seguro-auto", text: "Car USA" },
+  { link: "/seguros/seguro-camion", text: "Truck USA" },
+  { link: "/seguros/seguro-moto", text: "Motorcycle Usa" },
+  { link: "/seguros/seguro-larga-estadia", text: "Long Term Usa" },
+  { link: "/seguros/seguro-auto-renta", text: "Rental Car Usa" },
+  { link: "/seguros/cobertura-premium", text: "Premium Coverage Usa" },
+  { link: "/seguros/unity-card", text: "Unity Card" },
+];
+
 export const navItems = [
   {
     label: "Home",

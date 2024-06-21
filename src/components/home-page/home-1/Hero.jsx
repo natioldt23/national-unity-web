@@ -1,13 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Hero1 = () => {
-  const options = [
-    { value: 0, display: "Select insurance type.." },
-    { value: 1, display: "Life Insurance" },
-    { value: 2, display: "Health insurance" },
-    { value: 3, display: "Property insurance" },
-    { value: 4, display: "Motor insurance" },
-  ];
+  const { t } = useTranslation()
+  const homeLang = t("home")
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -35,22 +31,22 @@ const Hero1 = () => {
             data-aos="fade-up"
           >
             <h1 className="hero-heading fw-500 tx-dark">
-              Bienvenido a <span>National Unity</span>
+              {homeLang.mainTitleHome} <span>National Unity</span>
             </h1>
             <p className="text-lg tx-dark mt-45 mb-50 lg-mt-30 lg-mb-40">
-              Del otro lado estamos de tu lado.
+              {homeLang.subTitleHome}
             </p>
             {/* End form */}
             <div className="d-flex main-buttons">
               <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
                 <button className="fw-500 text-white tran3s button-primary" type="submit">
-                  Cotiza en línea
+                  {homeLang.cotizaEnLinea}
                 </button>
               </a>
 
               <a href="https://www.nationalunity.com/national/uc/code/activa.asp" target="blank">
                 <button className="fw-500 text-white tran3s button-primary" type="submit">
-                  Activar Unity Card
+                  {homeLang.activarUnityCard}
                 </button>
               </a>
             </div>

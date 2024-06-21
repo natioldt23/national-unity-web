@@ -111,7 +111,7 @@ const CoberturaPremium = () => {
       </div>
       {/* /.fancy-feature-fiftyOne */}
 
-      <div class="feedback-section-eleven position-relative mt-0 pt-70 lg-pt-50 pb-70 bg-gray lg-pb-50 beneficios-slider" data-aos="fade-up">
+      <div className="feedback-section-eleven position-relative mt-0 pt-70 lg-pt-50 pb-70 bg-gray lg-pb-50 beneficios-slider" data-aos="fade-up">
         <div className="container d-flex flex-column align-items-center">
           <img src="/images/icon/logo-cobertura-premium.svg" alt="" width={300}/>
           <p className=" text-lg tx-dark mt-100 mb-50 lg-mt-50 text-center">

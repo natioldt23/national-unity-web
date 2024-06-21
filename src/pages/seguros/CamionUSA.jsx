@@ -111,7 +111,7 @@ const CamionUSA = () => {
       </div>
       {/* /.fancy-feature-fiftyOne */}
 
-      <div class="feedback-section-eleven position-relative mt-0 pb-70 lg-pb-50 beneficios-slider" data-aos="fade-up">
+      <div className="feedback-section-eleven position-relative mt-0 pb-70 lg-pb-50 beneficios-slider" data-aos="fade-up">
         <div className="container">
           <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center">
             Beneficios

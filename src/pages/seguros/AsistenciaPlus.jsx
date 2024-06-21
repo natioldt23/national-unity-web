@@ -47,7 +47,7 @@ const AsistenciaPlus = () => {
       </div>
       {/* End col-6 */}
 
-      <div class="col-lg-6 d-flex justify-content-center align-items-center aos-init aos-animate" data-aos="fade-left">
+      <div className="col-lg-6 d-flex justify-content-center align-items-center aos-init aos-animate" data-aos="fade-left">
         <img className="asistencia-plus" src="/images/icon/asistencia_plus.svg"/>
       </div>
     </div>
