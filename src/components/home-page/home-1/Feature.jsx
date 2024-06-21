@@ -1,11 +1,17 @@
+import { useTranslation } from "react-i18next";
+
 const Feature = () => {
+  const { t } = useTranslation()
+
+  const home = t("home")
+
   const features = [
     {
       background: '#00AAF320',
       border: '#00AAF3',
       title: (
         <>
-          Elige la cobertura de acuerdo a tus necesidades y presupuesto.
+          {home.featureOne}
         </>
       ),
       description: "",
@@ -19,7 +25,7 @@ const Feature = () => {
       border: '#00D6E5',
       title: (
         <>
-          Ingresa tu información personal, método de pago y datos de tu vehículo.
+          {home.featureTwo}
         </>
       ),
       width: "202",
@@ -33,7 +39,7 @@ const Feature = () => {
       border: "#71FACB",
       title: (
         <>
-          Viaja seguro con cobertura en TODO Estados Unidos y Canadá
+          {home.featureThree}
         </>
       ),
       width: "175",
@@ -48,7 +54,7 @@ const Feature = () => {
     <>
       <div data-aos="fade-up">
         <h2 className="tx-dark mb-20 mt-20 text-center">
-          Contrata tu Seguro de Auto para USA de manera fácil y segura
+          {home.featureTitle}
         </h2>
       </div>
       {features.map((feature, index) => (
