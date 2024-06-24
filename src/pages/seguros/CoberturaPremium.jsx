@@ -14,7 +14,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import TruckerPlus from "./TruckerPlus";
 import FaqCamion from "./FaqCamion";
-import beneficiosCamion from "../../data/beneficios-camion";
+import {beneficiosCamion} from "../../data/beneficios-camion";
 import FaqPremium from "./FaqPremium";
 import { useTranslation } from "react-i18next";
 import { LanguageContext } from "@/App";

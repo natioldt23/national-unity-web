@@ -124,7 +124,8 @@ const AutoRenta = () => {
         <div>
           <div className="slider-wrapper">
             <div className="feedback_slider_seven beneficios-slide d-flex flex-column flex-lg-row align-items-center">
-            {pasosAutoRenta.slice(0, 4).map((item) => (
+            {
+              pasosAutoRenta.slice(0, 4).map((item) => (
               <div className="item col-12 col-lg-4" key={item.id}>
                 <div className="feedback-block-eleven beneficios-item-renta">
                   <div className="top-header d-flex align-items-center justify-content-between">
@@ -133,16 +134,10 @@ const AutoRenta = () => {
                     </div>
                   </div>
                   <p className="tx-dark m-0 p-0">{item.text1}</p>
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="cost fw-500 tx-dark fs-20">
-                      {item.author}
-                      <span className="opacity-50 fw-normal">{item.location}</span>
-                    </div>
-                    
-                  </div>
                 </div>
               </div>
-            ))}
+              ))
+            }
             </div>
           </div>
         </div>

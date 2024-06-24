@@ -13,7 +13,7 @@ import FaqAuto from "./FaqAuto";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import CoberturasAuto from "./CoberturasAuto";
-import beneficiosAuto from "../../data/beneficios-auto";
+import {beneficiosAuto} from "../../data/beneficios-auto";
 import PasosUnityCard from "./PasosUnityCard";
 
 

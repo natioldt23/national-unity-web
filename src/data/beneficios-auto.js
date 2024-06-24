@@ -1,4 +1,4 @@
-const beneficiosAuto = [
+export const beneficiosAuto = [
   {
     id: 1,
     title: "Gastos Médicos",
@@ -27,7 +27,7 @@ const beneficiosAuto = [
     id: 3,
     title: "Asistencia legal",
     rating: 5,
-    text1: "En caso de accidente asistencia legal incluida.",
+    text1: "En caso de accidente, asistencia legal incluida.",
     text2: " ",
     text3: " ",
     text4: " ",
@@ -45,4 +45,51 @@ const beneficiosAuto = [
     image: "/images/media/img_55.jpg",
   },*/
 ];
-export default beneficiosAuto;
+
+export const beneficiosAutoEng = [
+  {
+    id: 1,
+    title: "Medical Expenses",
+    rating: 5,
+    text1: "Includes Medical Expenses to occupants of the insured vehicle for $2,000 USD per person and up to $10,000 USD per event.",
+    text2: " ",
+    text3: " ",
+    text4: " ",
+    author: " ",
+    location: "",
+    image: "/images/icon/gastos_medicos.svg",
+  },
+  {
+    id: 2,
+    title: "Roadside assistance",
+    rating: 5,
+    text1: "- Medical expenses due to accident or illness",
+    text2: "- Car rental due to theft, breakdown or accident",
+    text3: "- Convalescence hotel for up to $90 USD for up to 3 consecutive days",
+    text4: "- Repatriation in case of death",
+    author: "",
+    location: "",
+    image: "/images/icon/asistencia_camino.svg",
+  },
+  {
+    id: 3,
+    title: "Legal assistance",
+    rating: 5,
+    text1: "In case of an accident, legal assistance is included.",
+    text2: " ",
+    text3: " ",
+    text4: " ",
+    author: "",
+    location: "",
+    image: "/images/icon/asistencia_legal.svg",
+  },
+  /*{
+    id: 4,
+    title: "Very Solid!!",
+    rating: 5,
+    text: "They not only understand what I say but read between the lines and also give me ideas of my own.",
+    author: "Rashed Kabir",
+    location: "Claifornia",
+    image: "/images/media/img_55.jpg",
+  },*/
+];

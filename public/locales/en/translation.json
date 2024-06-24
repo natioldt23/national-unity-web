@@ -62,7 +62,7 @@
   },
   "accidente":{
     "accidenteEtiqueta": "Services",
-    "accidenteTitle": "Report and Accident",
+    "accidenteTitle": "Report an Accident",
     "accidenteDescOne": "In the United States and Canada, it is mandatory to have unlimited liability insurance coverage for all vehicles traveling on their roads.",
     "accidenteDescTwo": "If we are involved in an accident in the USA, there are a series of steps that we must follow to report the accident:",
     "accidenteImportante": "Important",
@@ -106,5 +106,30 @@
     "premiumCotiza": "Quote online",
     "premiumItems": "The perfect complement for those who already have a primary coverage tourist policy.",
     "premiumFaq": "FAQ"
+  },
+  "carro": {
+    "carroEtiqueta": "Insurance",
+    "carroTitle": "Car Insurance",
+    "carroDesc": "Coverage for non-resident private automobiles, designed to cover liability for damages caused to third parties in property and persons while driving in the United States of America and Canada.",
+    "carroCotiza": "Quote online",
+    "carroAsistencia": "Enhance your coverage with Plus Assistance",
+    "carroAsistenciaDesc": "What does Plus Assistance cover? It is a protection that complements your need to travel safely in the United States.",
+    "carroAsistenciaEtiqueta": "Buy your insurance and add Plus Assistance at the end!",
+    "coberturaSplitEtiqueta": "SPLIT Coverage",
+    "coberturaSplit": "SPLIT Coverage",
+    "coberturaSplitDesc": "It is a SPLIT coverage for Third Party Liability or damage to third parties, divided into bodily injury, accident and property damage.",
+    "coberturaLucEtiqueta": "LUC Coverage",
+    "coberturaLuc": "Coverage LUC 100,000 (Combined)",
+    "coberturaLucDesc1": "It is a coverage of Civil Liability or damages to third parties with Combined Single Limit (CUL), per event in damages to property and persons.",
+    "coberturaLucDesc2": "This coverage can be used up to $100,000 USD free of limitations for bodily injury or property damage.",
+    "coberturaLucDesc3": "Applies to any U.S. entry status you select.",
+    "carroFaq": "FAQ"
+  },
+  "camion": {
+    "camionEtiqueta": "Insurance",
+    "camionTitle": "Truck Insruance",
+    "camionDesc": "Coverage for trucks, designed to cover liability for damages caused to third parties in property and persons while traveling in the United States of America.",
+    "camionCotiza": "Quote online",
+    "camionBeneficios": "Benefits"
   }
 }

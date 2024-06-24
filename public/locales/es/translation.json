@@ -106,5 +106,30 @@
     "premiumCotiza": "Cotiza en línea",
     "premiumItems": "El complemento perfecto, para quien ya cuenta con una póliza turista de cobertura primaria.",
     "premiumFaq": "Preguntas Frecuentes"
+  },
+  "carro": {
+    "carroEtiqueta": "Seguros",
+    "carroTitle": "Seguro de Auto",
+    "carroDesc": "Cobertura para autos particulares no residentes, diseñada para cubrir la responsabilidad por daños ocasionados a terceros en bienes y personas mientras se encuentre circulando en los Estados Unidos de América y Canadá.",
+    "carroCotiza": "Cotiza en línea",
+    "carroAsistencia": "Potencia tu cobertura con Asistencia Plus",
+    "carroAsistenciaDesc": "¿Qué cubre la Asistencia Plus? Es una protección que complementa tu necesidad de viajar seguro por Estados Unidos.",
+    "carroAsistenciaEtiqueta": "¡Cotiza tu seguro y añade Asistencia Plus al finalizar!",
+    "coberturaSplitEtiqueta": "Cobertura SPLIT",
+    "coberturaSplit": "Cobertura SPLIT (Dividida)",
+    "coberturaSplitDesc": "Es una cobertura SPLIT de Responsabilidad Civil o daños a terceros, viene dividida para lesiones corporales, accidentes y daños materiales.",
+    "coberturaLucEtiqueta": "Cobertura LUC",
+    "coberturaLuc": "Cobertura LUC 100,000 (Combinada)",
+    "coberturaLucDesc1": "Es una cobertura de Responsabilidad Civil o daños a terceros con Límite Único Combinado (LUC), por evento en daños a bienes y personas.",
+    "coberturaLucDesc2": "Esta cobertura puede utilizar hasta $100,000 USD de manera libre de limitantes en lesiones corporales o daños a bienes materiales.",
+    "coberturaLucDesc3": "Aplica para cualquier estado de ingreso a USA que selecciones.",
+    "carroFaq": "Preguntas Frecuentes"
+  },
+  "camion": {
+    "camionEtiqueta": "Seguros",
+    "camionTitle": "Seguro de Camión",
+    "camionDesc": "Cobertura para camiones, diseñada para cubrir la responsabilidad por daños ocasionados a terceros en bienes y personas mientras se encuentre circulando en los Estados Unidos de América.",
+    "camionCotiza": "Cotiza en línea",
+    "camionBeneficios": "Beneficios"
   }
 }

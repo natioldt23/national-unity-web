@@ -1,4 +1,9 @@
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
+
 const FaqAuto = () => {
+  const { lang } = useContext(LanguageContext)
+
   const faqData = [
     {
       question: "¿Es obligatorio contratar un seguro de auto en Estados Unidos?",
@@ -38,10 +43,51 @@ const FaqAuto = () => {
     },
   ];
 
+  const faqDataEng = [
+    {
+      question: "Is it mandatory to purchase auto insurance in the United States?",
+      answer:
+        "In the United States and Canada it is mandatory to have Liability Insurance for vehicles with Mexican license plates. Tourist Auto Insurance is a legal requirement for vehicles with tourist plates that travel on streets and highways in the United States and Canada.",
+    },
+    {
+      question: "What are the types of auto insurance in the United States?",
+      answer:
+        "At National Unity we have different liability coverage alternatives.",
+    },
+    {
+      question: "What is Foreign Auto Insurance?",
+      answer:
+        "The tourist or foreign car insurance is the insurance that covers the civil liability of any Mexican car or of any nationality other than that of the United States and/or Canada. This document is mandatory to be able to circulate in both countries.",
+    },
+    {
+      question:
+        "How does auto liability insurance work in the United States?",
+      answer:
+        "In the event of being involved in a loss and being liable for damages caused to a third party, National Unity's liability insurance policy will cover damages up to a maximum amount of the sum insured purchased.",
+    },
+    /*{
+      question: "¿Cómo asegurar un auto en Estados Unidos?",
+      answer:
+        "Adquiere una póliza de seguros de responsabilidad civil de National Unity a través de un agente de seguros o haciendo clic aquí.",
+    },*/
+    {
+      question: "How much does auto insurance cost in the United States?",
+      answer:
+        "The cost of insurance varies according to the term, coverage, and the individual characteristics of the driver(s).",
+    },
+    {
+      question: "What is an insurance policy?",
+      answer:
+        "It is a document that guarantees the contracted coverage and by which an insurance company commits itself to its insured.",
+    },
+  ];
+
   return (
     <div className="accordion accordion-style-two" id="accordionOne" data-aos="fade-up">
 
-      {faqData.map((faq, index) => (
+      {
+        lang === 'es' ?
+        faqData.map((faq, index) => (
         <div className="accordion-item" key={index}>
           <div className="accordion-header" id={`heading${index}`}>
             <button
@@ -66,7 +112,34 @@ const FaqAuto = () => {
             </div>
           </div>
         </div>
-      ))}
+        )) : 
+        faqDataEng.map((faq, index) => (
+          <div className="accordion-item" key={index}>
+            <div className="accordion-header" id={`heading${index}`}>
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapse${index}`}
+                aria-expanded="false"
+                aria-controls={`collapse${index}`}
+              >
+                {faq.question}
+              </button>
+            </div>
+            <div
+              id={`collapse${index}`}
+              className="accordion-collapse collapse pt-15"
+              aria-labelledby={`heading${index}`}
+              data-bs-parent="#accordionOne"
+            >
+              <div className="accordion-body">
+                <p className="fw-500">{faq.answer}</p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
     </div>
   );
 };

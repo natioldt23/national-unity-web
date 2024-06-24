@@ -7040,6 +7040,7 @@ body .btn-twentySix:hover:after {
   border: 1px solid #e9e9e9;
   border-radius: 10px;
   overflow: hidden;
+  min-height: 430px; //ECB
 }
 .card-style-sixteen:hover {
   border-color: var(--prime-ten);

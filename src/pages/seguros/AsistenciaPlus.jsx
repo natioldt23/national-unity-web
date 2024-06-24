@@ -1,4 +1,13 @@
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
+import { useTranslation } from "react-i18next";
+
+
 const AsistenciaPlus = () => {
+  const { lang } = useContext(LanguageContext)
+  const { t } = useTranslation()
+  const carro = t("carro")
+
   const features = [
     "Gastos médicos por accidente o enfermedad",
     "Renta de auto por robo, avería o accidente",
@@ -6,18 +15,12 @@ const AsistenciaPlus = () => {
     "Repatriación por fallecimiento"
   ];
 
-  {/*const buttons = [
-    {
-      platform: "Google play",
-      icon: "images/icon/playstore.svg",
-      className: "windows-button",
-    },
-    {
-      platform: "App store",
-      icon: "images/icon/apple-black.svg",
-      className: "ios-button",
-    },
-  ];*/}
+  const featuresEng = [
+    "Medical expenses due to accident or illness",
+    "Car rental due to theft, breakdown or accident",
+    "Hotel for convalescence for up to $90 USD for up to 3 consecutive days",
+    "Repatriation due to death"
+  ];
 
   return (
     <div className="row align-items-center">
@@ -26,20 +29,26 @@ const AsistenciaPlus = () => {
           <div className="title-style-one">
             {/*<div className="sc-title text-uppercase">MOBILE APP</div>*/}
             <h2 className="main-title fw-500 tx-dark m0">
-              Potencia tu cobertura con Asistencia Plus
+              {carro.carroAsistencia}
             </h2>
           </div>
           <p className="fs-20 pt-30 pb-30 lg-pb-20">
-            ¿Qué cubre la Asistencia Plus? Es una protección que complementa tu necesidad de viajar seguro por Estados Unidos.
+            {carro.carroAsistenciaDesc}
           </p>
           <ul className="style-none list-item">
-            {features.map((feature, index) => (
-              <li key={index}>{feature}</li>
-            ))}
+            {
+              lang === 'es' ?
+              features.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              )) : 
+              featuresEng.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))
+            }
           </ul>
           {/* End list */}
           <p className="fs-20 pt-30 pb-30 lg-pb-20">
-            ¡Cotiza tu seguro y añade Asistencia Plus al finalizar!
+            {carro.carroAsistenciaEtiqueta}
           </p>
          
         </div>
