@@ -67,6 +67,8 @@ import AutoRenta from "./pages/seguros/AutoRenta";
 import CoberturaPremium from "./pages/seguros/CoberturaPremium";
 import UnityCard from "./pages/seguros/UnityCard";
 import NuestrosAgentes from "./pages/pages-menu/agentes/NuestrosAgentes";
+import { Zendesk } from "./components/chat/Zendesk";
+import { Whatsapp } from "./components/chat/Whatsapp";
 
 export const LanguageContext = createContext()
 
@@ -172,7 +174,9 @@ function App() {
         </Routes>
         <ScrollTopBehaviour />
 
-        <ScrollToTop />
+        {/*<ScrollToTop />*/}
+        <Zendesk />
+        <Whatsapp />
       </div>
     </LanguageContext.Provider>
   );

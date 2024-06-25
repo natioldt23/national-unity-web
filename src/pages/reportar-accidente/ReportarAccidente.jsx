@@ -221,7 +221,7 @@ const ReportarAccidente = () => {
         data-aos="fade-up"
       >
         <div className="container">
-          <div className="bg-wrapper pt-65 pb-65 lg-pt-40 lg-pb-40">
+          <div className="bg-wrapper pt-65 pb-65 lg-pt-40 lg-pb-40 warning">
             <div className="row">
               <div className="col-xl-10 col-md-11 m-auto">
                 <div className="row align-items-center">

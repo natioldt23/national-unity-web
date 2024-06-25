@@ -59,7 +59,7 @@ const Service = () => {
           data-aos="fade-up"
           data-aos-delay={service.delayAnim}
         >
-          <div className="card-style-sixteen tran3s text-center position-relative mt-30">
+          <div className="card-style-sixteen products-home tran3s text-center position-relative mt-30">
             <div className="icon">
               <img src={service.icon} alt="" className="lazy-img m-auto" />
             </div>

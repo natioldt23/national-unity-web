@@ -1,4 +1,4 @@
-const beneficiosLarga = [
+export const beneficiosLarga = [
   {
     id: 1,
     title: "Gastos Médicos",
@@ -48,4 +48,54 @@ const beneficiosLarga = [
     image: "/images/media/img_55.jpg",
   },*/
 ];
-export default beneficiosLarga;
+
+export const beneficiosLargaEng = [
+  {
+    id: 1,
+    title: "Medical Expenses",
+    rating: 5,
+    text1: "Includes Medical Expenses to occupants of the insured vehicle for $2,000 USD per person and up to $10,000 USD per event.",
+    text2: " ",
+    text3: " ",
+    text4: " ",
+    text5: " ",
+    author: " ",
+    location: "",
+    image: "/images/icon/gastos_medicos.svg",
+  },
+  {
+    id: 2,
+    title: "Roadside assistance",
+    rating: 5,
+    text1: "- Towing Service, up to $100 USD",
+    text2: "- Tire change due to puncture.",
+    text3: "- Quick battery charging.",
+    text4: "- Liquid replenishment: gasoline, water, oil.",
+    text5: "- Locksmith service.",
+    author: "",
+    location: "",
+    image: "/images/icon/asistencia_camino.svg",
+  },
+  {
+    id: 3,
+    title: "Legal assistance",
+    rating: 5,
+    text1: "In case of an accident, legal assistance is included.",
+    text2: " ",
+    text3: " ",
+    text4: " ",
+    text5: " ",
+    author: "",
+    location: "",
+    image: "/images/icon/asistencia_legal.svg",
+  },
+  /*{
+    id: 4,
+    title: "Very Solid!!",
+    rating: 5,
+    text: "They not only understand what I say but read between the lines and also give me ideas of my own.",
+    author: "Rashed Kabir",
+    location: "Claifornia",
+    image: "/images/media/img_55.jpg",
+  },*/
+];

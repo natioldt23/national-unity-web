@@ -28,7 +28,7 @@ const Hero1 = () => {
         <div className="row">
           <div
             className="col-lg-9 col-md-10 m-auto text-center"
-            data-aos="fade-up"
+            
           >
             <h1 className="hero-heading fw-500 tx-dark">
               {homeLang.mainTitleHome} <span>National Unity</span>

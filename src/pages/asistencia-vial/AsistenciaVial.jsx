@@ -168,7 +168,7 @@ const AsistenciaVial = () => {
             </div>
             {/* End .col-xl-9 */}
 
-            <div className="col-xl-3 col-lg-4" data-aos="fade-up">
+            <div className="col-xl-3 col-lg-4 asistencia-icons" data-aos="fade-up">
               <div className="img-holder d-lg-inline-flex position-relative zn2 flex-column gap-4 w-100">
 
                 {cardsData.map((item) => (
@@ -383,7 +383,7 @@ const AsistenciaVial = () => {
         data-aos="fade-up"
       >
         <div className="container">
-          <div className="bg-wrapper pt-65 pb-65 lg-pt-40 lg-pb-40">
+          <div className="bg-wrapper pt-65 pb-65 lg-pt-40 lg-pb-40 warning">
             <div className="row">
               <div className="col-xl-10 col-md-11 m-auto">
                 <div className="row align-items-center">

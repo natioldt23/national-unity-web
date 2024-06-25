@@ -38,7 +38,7 @@ const CamionUSA = () => {
 				Feature Section Fifty One
 			============================================== 
 			*/}
-      <div className="fancy-feature-fiftyOne d-flex align-items-center vh-100 position-relative mt-150 mt-lg-0">
+      <div className="fancy-feature-fiftyOne d-flex align-items-center seguros-hero position-relative mt-150">
         <div className="container">
           <div className="row">
             <div className="col-xxl-6 col-lg-6" data-aos="fade-right">
@@ -156,7 +156,7 @@ const CamionUSA = () => {
       <div className="fancy-feature-thirtyEight pt-60 pb-50">
         <div className="container">
           <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center" data-aos="fade-up">
-            Preguntas Frecuentes
+            {camion.camionFaq}
           </h2>
           <FaqCamion />
         </div>

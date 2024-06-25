@@ -1,4 +1,9 @@
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
+
 const FaqCamion = () => {
+  const { lang } = useContext(LanguageContext)
+
   const faqData = [
     {
       question: "¿Qué coberturas ofrecen?",
@@ -82,38 +87,153 @@ const FaqCamion = () => {
     },
   ];
 
+  const faqDataEng = [
+    {
+      question: "What coverages do you offer?",
+      answer:
+        `
+          Liability, 
+          Cargo, 
+          Trailer Interchange, 
+          General Liability
+        `,
+    },
+    {
+      question: "What is the Liability coverage?",
+      answer:
+        "Covers damages caused by the insured to third parties, whether property or persons.",
+    },
+    {
+      question: "What is the Cargo coverage?",
+      answer:
+        `
+        This coverage is necessary to protect the carrier in case of loss or damage to the cargo (merchandise), the policy includes a maximum limit per unit. The limits offered are $25,000 up to $100,000. In case of requiring a higher coverage, you must request approval from the underwriting department. The price of this coverage depends mainly on the type of cargo (merchandise) being transported.
+
+        This coverage is very usual to enter to:
+
+        Railroad, 
+        Sea Ports.
+        `,
+    },
+    {
+      question:
+        "What is the Trailer Interchange coverage?",
+      answer:
+        `
+        This is a Liability coverage for loss or damage to boxes that are not owned by the insured and are only under the temporary liability of the insured while being transported. Coverage is necessary to meet the requirements of the UIIA when entering the railroad or to meet the requirements of the company to whom our customer transports boxes or equipment. Examples:
+
+        Santa Fe Railroad, 
+        Union Paciﬁc, 
+        Burlington Northern, 
+        Kansas Southern, 
+        Seaport.
+        `,
+    },
+    {
+      question: "What is the General Liability coverage?",
+      answer:
+        `
+        Liability coverage for damage caused by the insured (commercial vehicle, driver, any representative of the insured, etc.) to property, premises or grounds of your client's business caused by negligence, act or omission.
+
+        Coverage is necessary to meet UIIA requirements when entering the railroad such as:
+        
+        Santa Fe Railroad, 
+        Union Paciﬁc, 
+        Burlington Northern, 
+        Kansas Southern.
+        `,
+    },
+    {
+      question: "Do you offer coverage for trucks with Haz-mat cargo?",
+      answer:
+        "Yes, we have coverage for Haz-mat and non Haz-mat.",
+    },
+    {
+      question: "What is Trucker Plus?",
+      answer:
+        `
+        Medical assistance to the driver of the insured vehicle. 
+
+        Includes:
+        
+        Medical assistance due to accident or illness: USD$25,000, 
+        COVID medical assistance up to 65 years of age: Included, 
+        Repatriation of remains: USD$10,000, 
+        Medications for hospitalization: Included, 
+        Place of Coverage: USA.
+        `,
+    },
+    {
+      question: "How do I quote insurance with National Unity?",
+      answer:
+        "Click 'Quote Online' and fill out the form.",
+    },
+  ];
+
   return (
     <div className="accordion accordion-style-two" id="accordionOne" data-aos="fade-up">
 
-      {faqData.map((faq, index) => (
-        <div className="accordion-item" key={index}>
-          <div className="accordion-header" id={`heading${index}`}>
-            <button
-              className="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target={`#collapse${index}`}
-              aria-expanded="false"
-              aria-controls={`collapse${index}`}
+      {
+        lang === 'es' ? 
+        faqData.map((faq, index) => (
+          <div className="accordion-item" key={index}>
+            <div className="accordion-header" id={`heading${index}`}>
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapse${index}`}
+                aria-expanded="false"
+                aria-controls={`collapse${index}`}
+              >
+                {faq.question}
+              </button>
+            </div>
+            <div
+              id={`collapse${index}`}
+              className="accordion-collapse collapse pt-15"
+              aria-labelledby={`heading${index}`}
+              data-bs-parent="#accordionOne"
             >
-              {faq.question}
-            </button>
-          </div>
-          <div
-            id={`collapse${index}`}
-            className="accordion-collapse collapse pt-15"
-            aria-labelledby={`heading${index}`}
-            data-bs-parent="#accordionOne"
-          >
-            <div className="accordion-body">
-              <p className="fw-500">
-                {faq.answer}
-                <br />
-              </p>
+              <div className="accordion-body">
+                <p className="fw-500">
+                  {faq.answer}
+                  <br />
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        )) : 
+        faqDataEng.map((faq, index) => (
+          <div className="accordion-item" key={index}>
+            <div className="accordion-header" id={`heading${index}`}>
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapse${index}`}
+                aria-expanded="false"
+                aria-controls={`collapse${index}`}
+              >
+                {faq.question}
+              </button>
+            </div>
+            <div
+              id={`collapse${index}`}
+              className="accordion-collapse collapse pt-15"
+              aria-labelledby={`heading${index}`}
+              data-bs-parent="#accordionOne"
+            >
+              <div className="accordion-body">
+                <p className="fw-500">
+                  {faq.answer}
+                  <br />
+                </p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
     </div>
   );
 };

@@ -1,4 +1,4 @@
-const pasoAutoRenta = [
+export const pasosAutoRenta = [
   {
     id: 1,
     title: "1. Compra en línea",
@@ -36,4 +36,42 @@ const pasoAutoRenta = [
     image: "/images/media/img_55.jpg",
   },*/
 ];
-export default pasoAutoRenta;
+
+export const pasosAutoRentaEng = [
+  {
+    id: 1,
+    title: "1. Buy online",
+    rating: 5,
+    text1: "Quote online with us and purchase your insurance that covers damages to third parties of the car you are going to rent in USA for a maximum of 30 days.",
+    author: " ",
+    location: "",
+    image: "",
+  },
+  {
+    id: 2,
+    title: "2. Book the car",
+    rating: 5,
+    text1: "You can reserve the car online or directly at the offices of the company where you will rent the car (Enterprise, Hertz, Budget, etc.).",
+    author: "",
+    location: "",
+    image: "",
+  },
+  {
+    id: 3,
+    title: "3. Rent your car and cancel the SLP or LIS option.",
+    rating: 5,
+    text1: "When you are about to finalize your car rental process either online or at the counter, decline the SLP (Supplemental Liability Protection) or LIS (Liability Insurance Supplement) option.",
+    author: "",
+    location: "",
+    image: "",
+  },
+  /*{
+    id: 4,
+    title: "Very Solid!!",
+    rating: 5,
+    text: "They not only understand what I say but read between the lines and also give me ideas of my own.",
+    author: "Rashed Kabir",
+    location: "Claifornia",
+    image: "/images/media/img_55.jpg",
+  },*/
+];

@@ -130,6 +130,54 @@
     "camionTitle": "Seguro de Camión",
     "camionDesc": "Cobertura para camiones, diseñada para cubrir la responsabilidad por daños ocasionados a terceros en bienes y personas mientras se encuentre circulando en los Estados Unidos de América.",
     "camionCotiza": "Cotiza en línea",
-    "camionBeneficios": "Beneficios"
+    "camionBeneficios": "Beneficios",
+    "camionTrucker": "Potencia tu cobertura con Trucker Plus.",
+    "camionTruckerDesc": "¿Qué es Trucker Plus? Es una protección que asegura a tu conductor.",
+    "camionTruckerEtiqueta": "¡Cotiza tu seguro y añade Trucker Plus al finalizar!",
+    "camionFaq": "Preguntas Frecuentes"
+  },
+  "longterm": {
+    "longtermEtiqueta": "Seguros",
+    "longtermTitle": "Larga Estadía",
+    "longtermSubtitle": "Seguro de Auto USA",
+    "longtermDesc": "Si vas a estudiar, trabajar o visitar a tu familia en USA por periodos prolongados contrata tu seguro con nosotros.",
+    "longtermCotiza": "Cotiza en línea",
+    "coberturaSplitEtiqueta": "Cobertura SPLIT",
+    "coberturaSplit": "Cobertura SPLIT (Dividida)",
+    "coberturaSplitDesc": "Es una cobertura SPLIT de Responsabilidad Civil o daños a terceros, viene dividida para lesiones corporales, accidentes y daños materiales.",
+    "coberturaLucEtiqueta": "Cobertura LUC",
+    "coberturaLuc": "Cobertura LUC 100,000 (Combinada)",
+    "coberturaLucDesc1": "Es una cobertura de Responsabilidad Civil o daños a terceros con Límite Único Combinado (LUC), por evento en daños a bienes y personas.",
+    "coberturaLucDesc2": "Esta cobertura puede utilizar hasta $100,000 USD de manera libre de limitantes en lesiones corporales o daños a bienes materiales.",
+    "coberturaLucDesc3": "Tu cobertura excede el límite requerido por todos los estados de USA, cubrimos un máximo de $100,000 USD por evento en daños a terceros.",
+    "coberturaLucDesc4": "Aplica para cualquier estado de ingreso a USA que selecciones.",
+    "longtermFaq": "Preguntas Frecuentes",
+    "longtermBeneficios": "Beneficios",
+    "longtermBeneficiosDesc": "Al contratar nuestro seguro de Responsabilidad Civil (RC), además de brindarte tranquilidad, te ofrecemos los siguientes beneficios:"
+  },
+  "rental": {
+    "rentalEtiqueta": "Seguros",
+    "rentalTitle": "Seguro para Autos de Renta en USA",
+    "rentalDesc": "Ahorra hasta un 40% comprando con nosotros tu seguro para daños a terceros en un auto rentado en USA.",
+    "rentalCotiza": "Cotiza en línea",
+    "rentalPasos": "Cómo usar nuestro seguro auto de renta en USA",
+    "rentalPasosDesc": "A continuación te indicamos los pasos a seguir para comprar con éxito tu seguro para el auto que rentarás.",
+    "rentalPasosListo": "¡Listo!",
+    "rentalPasosListoDesc": "Ya ahorraste hasta un 40% en la prima pagada.",
+    "rentalCobertura": "Cobertura",
+    "rentalCoberturaDesc": "Esta cobertura excede el límite requerido por todos los estados de USA, cubrimos $100,000 USD LUC por evento en daños a terceros en sus bienes y/o personas.",
+    "rentalFaq": "Preguntas Frecuentes"
+  },
+  "card": {
+    "cardEtiqueta": "Seguros",
+    "cardTitle": "Unity Card: tarjeta prepagada",
+    "cardDesc1": "Unity Card es la única tarjeta de seguro prepagada con asistencia en el camino para vehículos mexicanos que viajan a USA.",
+    "cardDesc2": "¡Cómprala en establecimientos autorizados y actívala de manera online!",
+    "cardActiva": "Activa tu Unity Card ahora",
+    "coberturaSplitEtiqueta": "Cobertura SPLIT",
+    "coberturaSplit": "Cobertura SPLIT (Dividida)",
+    "coberturaSplitDesc": "Es una cobertura SPLIT de Responsabilidad Civil (RC) o daños a terceros SPLIT, viene dividida para lesiones corporales, accidentes y daños materiales.",
+    "cardFaq": "Preguntas Frecuentes",
+    "cardPasos": "Pasos para activar tu tarjeta"
   }
 }

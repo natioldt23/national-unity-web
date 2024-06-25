@@ -130,6 +130,54 @@
     "camionTitle": "Truck Insruance",
     "camionDesc": "Coverage for trucks, designed to cover liability for damages caused to third parties in property and persons while traveling in the United States of America.",
     "camionCotiza": "Quote online",
-    "camionBeneficios": "Benefits"
+    "camionBeneficios": "Benefits",
+    "camionTrucker": "Enhance your coverage with Trucker Plus.",
+    "camionTruckerDesc": "What is Trucker Plus? It is a protection that secures your driver.",
+    "camionTruckerEtiqueta": "Book your insurance and add Trucker Plus at the end!",
+    "camionFaq": "FAQ"
+  },
+  "longterm": {
+    "longtermEtiqueta": "Insurace",
+    "longtermTitle": "Long-term stay",
+    "longtermSubtitle": "Car Insurance",
+    "longtermDesc": "If you are going to study, work or visit your family in the USA for extended periods of time, contract your insurance with us.",
+    "longtermCotiza": "Quote online",
+    "coberturaSplitEtiqueta": "SPLIT Coverage",
+    "coberturaSplit": "SPLIT Coverage",
+    "coberturaSplitDesc": "It is a SPLIT coverage for Third Party Liability or damage to third parties, divided into bodily injury, accident and property damage.",
+    "coberturaLucEtiqueta": "LUC Coverage",
+    "coberturaLuc": "Coverage LUC 100,000 (Combined)",
+    "coberturaLucDesc1": "It is a coverage of Civil Liability or damages to third parties with Combined Single Limit (CUL), per event in damages to property and persons.",
+    "coberturaLucDesc2": "This coverage can be used up to $100,000 USD free of limitations for bodily injury or property damage.",
+    "coberturaLucDesc3": "Your coverage exceeds the limit required by all US states, we cover a maximum of $100,000 USD per event in damages to third parties.",
+    "coberturaLucDesc4": "Applies to any U.S. entry status you select.",
+    "longtermFaq": "FAQ",
+    "longtermBeneficios": "Benefits",
+    "longtermBeneficiosDesc": "By contracting our Civil Liability (CR) insurance, in addition to giving you peace of mind, we offer you the following benefits:"
+  },
+  "rental": {
+    "rentalEtiqueta": "Insurance",
+    "rentalTitle": "Rental Car Insurance",
+    "rentalDesc": "Save up to 40% buying with us your insurance for third party damages in a rented car in the USA.",
+    "rentalCotiza": "Quote online",
+    "rentalPasos": "How to use our rental car insurance in USA",
+    "rentalPasosDesc": "Here are the steps to follow to successfully purchase insurance for the car you will be renting.",
+    "rentalPasosListo": "Ready!",
+    "rentalPasosListoDesc": "You already saved up to 40% on the premium paid.",
+    "rentalCobertura": "Coverage",
+    "rentalCoberturaDesc": "This coverage exceeds the limit required by all US states, we cover $100,000 USD LUC per event in damages to third parties in their property and/or persons.",
+    "rentalFaq": "FAQ"
+  },
+  "card": {
+    "cardEtiqueta": "Insurance",
+    "cardTitle": "Unity Card: prepaid card",
+    "cardDesc1": "Unity Card is the only prepaid insurance card with roadside assistance for Mexican vehicles traveling to the USA.",
+    "cardDesc2": "Buy it in authorized stores and activate it online!",
+    "cardActiva": "Activate your Unity Card now",
+    "coberturaSplitEtiqueta": "SPLIT Coverage",
+    "coberturaSplit": "SPLIT Coverage",
+    "coberturaSplitDesc": "It is a SPLIT coverage of Civil Liability (CR) or SPLIT third party damages, divided for bodily injury, accidents and property damage.",
+    "cardFaq": "FAQ",
+    "cardPasos": "How to activate your card"
   }
 }

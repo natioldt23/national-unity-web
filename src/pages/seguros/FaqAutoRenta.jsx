@@ -1,4 +1,9 @@
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
+
 const FaqAutoRenta = () => {
+  const { lang } = useContext(LanguageContext)
+
   const faqData = [
     {
       question: "¿Cómo púedo ahorrar al contratar este seguro?",
@@ -79,35 +84,144 @@ const FaqAutoRenta = () => {
     },
   ];
 
+  const faqDataEng = [
+    {
+      question: "How can I save by taking this insurance?",
+      answer:
+        "Depending on the state where you rent, you can save up to 40%.",
+    },
+    {
+      question: "What is a third party liability insurance?",
+      answer:
+        "A third party liability insurance is an insurance that covers damages caused to a third party, but not the insured's own damages.",
+    },
+    {
+      question: "Do I need the rental car information?",
+      answer:
+        "The data of the rented car is not needed since with the data of the Mexican owned car the insurance of the rented car is extended to the rented car.",
+    },
+    {
+      question:
+        "Will I be covered for damages to my own car or the rental car?",
+      answer:
+        `
+          This insurance does not cover the Mexican car or the rented car.
+
+          It only covers damages to third parties caused by the rented car in the United States.
+        `,
+    },
+    {
+      question: "What options do I have to cover damages to the rental car?",
+      answer:
+        "The rental car can be insured with the rental company, or check if their credit card has that benefit, in which case they can decline/cancel the rental agency's comprehensive coverage.",
+    },
+    {
+      question: "What coverage am I being offered?",
+      answer:
+        `
+        We offer Third Party Liability coverage with Combined Single Limit (CUL), per event for damage to property and persons. 
+        This coverage can use up to $100,000 USD LUC per occurrence. 
+        This coverage is greater than the minimum limit required by all US states.
+        `,
+    },
+    {
+      question: "Which insurance option should I cancel when renting the car?",
+      answer:
+        `
+        The third party insurance option, usually called Supplemental Liability Protection (SLP) or Liability Insurance Supplement (LIS), must be cancelled either online or at the counter. 
+        By canceling it and contracting with us you will already have a saving of 20% or 40% in this protection.
+        `,
+    },
+    {
+      question: "What is SLP and LIS?",
+      answer:
+        `
+        SLP stands for Supplemental Liability Protection and LIS for Liability Insurance Supplement.  
+        These are two ways of naming the insurance against third party damages when renting a car in the USA.
+        `,
+    },
+    {
+      question: "How many drivers can drive for your insurance to be valid?",
+      answer:
+        `
+        Drivers who register during the purchase process can drive with a maximum of 3 drivers.
+        `,
+    },
+    {
+      question: "What is the minimum age for the insurance to be valid?",
+      answer:
+        `
+        The minimum age of the driver must be 25 years old.
+        `,
+    },
+    {
+      question: "Do I need to print the policy or ID Card?",
+      answer:
+        `
+        It is not required to print the documents for the insurance to be valid. 
+        When purchasing you will be able to download the documents (Policy and ID Card) and they will also be sent to the email address you register at checkout.
+        `,
+    },
+  ];
+
   return (
     <div className="accordion accordion-style-two" id="accordionOne" data-aos="fade-up">
 
-      {faqData.map((faq, index) => (
-        <div className="accordion-item" key={index}>
-          <div className="accordion-header" id={`heading${index}`}>
-            <button
-              className="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target={`#collapse${index}`}
-              aria-expanded="false"
-              aria-controls={`collapse${index}`}
+      {
+        lang === 'es' ?
+        faqData.map((faq, index) => (
+          <div className="accordion-item" key={index}>
+            <div className="accordion-header" id={`heading${index}`}>
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapse${index}`}
+                aria-expanded="false"
+                aria-controls={`collapse${index}`}
+              >
+                {faq.question}
+              </button>
+            </div>
+            <div
+              id={`collapse${index}`}
+              className="accordion-collapse collapse pt-15"
+              aria-labelledby={`heading${index}`}
+              data-bs-parent="#accordionOne"
             >
-              {faq.question}
-            </button>
-          </div>
-          <div
-            id={`collapse${index}`}
-            className="accordion-collapse collapse pt-15"
-            aria-labelledby={`heading${index}`}
-            data-bs-parent="#accordionOne"
-          >
-            <div className="accordion-body">
-              <p className="fw-500">{faq.answer}</p>
+              <div className="accordion-body">
+                <p className="fw-500">{faq.answer}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        )) : 
+        faqDataEng.map((faq, index) => (
+          <div className="accordion-item" key={index}>
+            <div className="accordion-header" id={`heading${index}`}>
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapse${index}`}
+                aria-expanded="false"
+                aria-controls={`collapse${index}`}
+              >
+                {faq.question}
+              </button>
+            </div>
+            <div
+              id={`collapse${index}`}
+              className="accordion-collapse collapse pt-15"
+              aria-labelledby={`heading${index}`}
+              data-bs-parent="#accordionOne"
+            >
+              <div className="accordion-body">
+                <p className="fw-500">{faq.answer}</p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
     </div>
   );
 };

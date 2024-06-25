@@ -1,4 +1,9 @@
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
+
 const FaqLargaEstadia = () => {
+  const { lang } = useContext(LanguageContext)
+
   const faqData = [
     {
       question: "¿Es obligatorio contratar un seguro de auto en Estados Unidos?",
@@ -50,10 +55,63 @@ const FaqLargaEstadia = () => {
     },
   ];
 
+  const faqDataEng = [
+    {
+      question: "Is it mandatory to purchase auto insurance in the United States?",
+      answer:
+        "In the United States and Canada it is mandatory to have Liability Insurance for vehicles with Mexican license plates. Tourist Auto Insurance is a legal requirement for vehicles with tourist plates that travel on streets and highways in the United States and Canada.",
+    },
+    {
+      question: "What is Long Term Care insurance?",
+      answer:
+        "It is an insurance against third party damages for a car with Mexican plates driving in the United States for more than 28 consecutive days.",
+    },
+    {
+      question: "What is a Third Party Liability Insurance?",
+      answer:
+        "The Civil Liability coverage is an insurance that covers the damages caused to a third party, but not the insured's own damages.",
+    },
+    {
+      question:
+        "For whom is the Long Term coverage provided?",
+      answer:
+        "This coverage is for any person (student, worker or tourist) with a Mexican car that seeks to transit in the United States for more than 28 consecutive days.",
+    },
+    /*{
+      question: "¿Cómo asegurar un auto en Estados Unidos?",
+      answer:
+        "Adquiere una póliza de seguros de responsabilidad civil de National Unity a través de un agente de seguros o haciendo clic aquí.",
+    },*/
+    {
+      question: "What other benefits does it include?",
+      answer:
+        `
+        The insurance includes benefits for:
+
+        Medical expenses to the occupants of the insured vehicle, 
+        Roadside assistance in case of an incident, 
+        Legal assistance in case of need due to an accident.
+        `,
+    },
+    {
+      question: "What limits are offered for this coverage?",
+      answer:
+       `
+       100,000 LUC: 
+        Damage to persons and property ($100,000 USD per event),
+       30/60/25 SPLIT:  
+       Damage to persons ($30,000 USD per person / $60,000 USD per event).
+       Damage to property ($25,000 USD per person).
+       `,
+    },
+  ];
+
   return (
     <div className="accordion accordion-style-two" id="accordionOne" data-aos="fade-up">
 
-      {faqData.map((faq, index) => (
+      {
+        lang === 'es' ?
+        faqData.map((faq, index) => (
         <div className="accordion-item" key={index}>
           <div className="accordion-header" id={`heading${index}`}>
             <button
@@ -78,7 +136,34 @@ const FaqLargaEstadia = () => {
             </div>
           </div>
         </div>
-      ))}
+        )) : 
+        faqDataEng.map((faq, index) => (
+          <div className="accordion-item" key={index}>
+            <div className="accordion-header" id={`heading${index}`}>
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapse${index}`}
+                aria-expanded="false"
+                aria-controls={`collapse${index}`}
+              >
+                {faq.question}
+              </button>
+            </div>
+            <div
+              id={`collapse${index}`}
+              className="accordion-collapse collapse pt-15"
+              aria-labelledby={`heading${index}`}
+              data-bs-parent="#accordionOne"
+            >
+              <div className="accordion-body">
+                <p className="fw-500">{faq.answer}</p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
     </div>
   );
 };

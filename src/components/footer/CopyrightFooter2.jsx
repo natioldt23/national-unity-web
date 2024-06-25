@@ -56,12 +56,12 @@ const Footer = () => {
   const icons = [
     {
       icon: "fab fa-facebook-f",
-      href: "https://www.facebook.com/",
+      href: "https://www.facebook.com/NationalUnityIC/",
     },
-    /*{
-      icon: "fab fa-twitter",
-      href: "https://www.twitter.com/",
-    },*/
+    {
+      icon: "fab fa-instagram",
+      href: "https://www.instagram.com/nationalunity_seguros/",
+    },
     {
       icon: "fab fa-linkedin-in",
       href: "https://mx.linkedin.com/company/national-unity-insurance-company?trk=ppro_cprof",

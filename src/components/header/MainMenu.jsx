@@ -37,11 +37,11 @@ const MainMenu = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav align-items-center">
           <li className="d-block d-lg-none">
-            <div className="logo">
               <Link to="/" className="d-block">
-                <img src="/images/logo/logo-nu.webp" alt="logo" />
+                <div className="logo justify-content-center">
+                  <img src="/images/logo/logo-nu.webp" alt="logo" className="w-50"/>
+                </div>
               </Link>
-            </div>
           </li>
           {/*}
           <li className="nav-item dropdown mega-dropdown-md">
@@ -345,14 +345,14 @@ const MainMenu = () => {
         </ul>
         {/* End ul */}
 
-        {/* Mobile Content */}
+        {/* Mobile Content 
         <div className="mobile-content d-block d-lg-none">
           <div className="d-flex flex-column align-items-center justify-content-center mt-70">
             <Link
-              to="/contact/contact-v1"
-              className="btn-twentyOne fw-500 tran3s"
+              className="nav-link"
+              to='/contacto'
             >
-              Contact us
+              {navbarLang.contacto}
             </Link>
           </div>
         </div>

@@ -37,7 +37,7 @@ const AutosUSA = () => {
 				Feature Section Fifty One
 			============================================== 
 			*/}
-      <div className="fancy-feature-fiftyOne d-flex align-items-center vh-100 position-relative mt-150 mt-lg-0">
+      <div className="fancy-feature-fiftyOne d-flex align-items-center seguros-hero position-relative mt-150 mt-xxl-0">
         <div className="container">
           <div className="row">
             <div className="col-xxl-7 col-lg-6" data-aos="fade-right">
@@ -113,7 +113,7 @@ const AutosUSA = () => {
                       {carro.coberturaLucDesc2}
                     </li>
                     <li className="fs-5">
-                      {carro.coberturaoLucDesc3}
+                      {carro.coberturaLucDesc3}
                     </li>
                   </ul>
                 </div>

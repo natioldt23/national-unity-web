@@ -48,10 +48,12 @@ const DefaulHeader = () => {
               <img className="logo-nu" src="/images/logo/logo-nu.webp" alt="logo" w="100" h="100"/>
             </Link>
           </div>
-          <div>
+          <div className="language-btn">
             <button onClick={changeLanguage}>
               {
-                lang === 'es'? 'EN' : 'ES'
+                lang === 'es'? 
+                <img src="/images/assets/usaIcon.png" alt="usa-flag"/> : 
+                <img src="/images/assets/mexIcon.png" alt="mexico-flag"/>
               }
             </button>
           </div>

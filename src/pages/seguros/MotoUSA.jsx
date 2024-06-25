@@ -35,7 +35,7 @@ const MotoUSA = () => {
 				Feature Section Fifty One
 			============================================== 
 			*/}
-      <div className="fancy-feature-fiftyOne d-flex align-items-center vh-100 position-relative mt-150 mt-lg-0">
+      <div className="fancy-feature-fiftyOne d-flex align-items-center seguros-hero position-relative mt-150">
         <div className="container">
           <div className="row">
             <div className="col-xxl-7 col-lg-6" data-aos="fade-right">

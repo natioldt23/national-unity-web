@@ -117,7 +117,7 @@ const CoberturaPremium = () => {
 				Feature Section Fifty One
 			============================================== 
 			*/}
-      <div className="fancy-feature-fiftyOne d-flex align-items-center vh-100 position-relative mt-150 mt-lg-0">
+      <div className="fancy-feature-fiftyOne d-flex align-items-center seguros-hero position-relative mt-150 pb-100">
         <div className="container">
           <div className="row">
             <div className="col-xxl-6 col-lg-6" data-aos="fade-right">
@@ -140,12 +140,12 @@ const CoberturaPremium = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xxl-6 col-lg-6 d-flex align-items-center" data-aos="fade-left">
-            <img
-              src="/images/icon/logo-cobertura-premium.svg"
-              alt="icon"
-              className="lazy-img seguro-camion-hero"
-            />
+            <div className="col-xxl-6 col-lg-6 d-flex align-items-center pt-30 pt-lg-0" data-aos="fade-left">
+              <img
+                src="/images/icon/logo-cobertura-premium.svg"
+                alt="icon"
+                className="lazy-img seguro-camion-hero"
+              />
             </div>
           </div>
           {/* End .row */}
