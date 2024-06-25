@@ -37,42 +37,7 @@ const Insurance = () => {
 			============================================== 
 			--> */}
       <Hero />
-      {/* <!-- 
-			=============================================
-				Feature Section Thirty Four
-			============================================== 
-			--> */}
-      <div className="fancy-feature-thirtyFour mt-50">
-        <div className="container">
-          <div className="row gx-xxl-5">
-            <Feature />
-          </div>
-        </div>
-        {/* <!-- /.container --> */}
-      </div>
-      {/* <!-- /.fancy-feature-thirtyFour --> */}
 
-      {/*
-			=====================================================
-				Facts Section Thirty Five
-			=====================================================
-			*/}
-      <div className="fancy-feature-thirtyFive home-section">
-        <div className="container" data-aos="fade-up">
-          <Banner />
-          {/* /.top-banner */}
-        </div>
-        {/* End .container */}
-
-        <div className="bg-wrapper mt-150 pt-100 lg-mt-80 lg-pt-70">
-          <div className="container">
-            <IntroAbout />
-          </div>
-        </div>
-        {/* /.bg-wrapper */}
-      </div>
-      {/* /.fancy-feature-thirtyFive */}
-      
       {/* 
 			=============================================
 				Productos Section Thirty Six
@@ -112,6 +77,45 @@ const Insurance = () => {
         {/* /.container */}
       </div>
       {/* /.fancy-feature-thirtySix */}
+
+
+      {/* <!-- 
+			=============================================
+				Feature Section Thirty Four
+			============================================== 
+			--> */}
+      <div className="fancy-feature-thirtyFour mt-50">
+        <div className="container">
+          <div className="row gx-xxl-5">
+            <Feature />
+          </div>
+        </div>
+        {/* <!-- /.container --> */}
+      </div>
+      {/* <!-- /.fancy-feature-thirtyFour --> */}
+
+      {/*
+			=====================================================
+				Facts Section Thirty Five
+			=====================================================
+			*/}
+      <div className="fancy-feature-thirtyFive home-section">
+        <div className="container" data-aos="fade-up">
+          <Banner />
+          {/* /.top-banner */}
+        </div>
+        {/* End .container */}
+
+        <div className="bg-wrapper mt-150 pt-100 lg-mt-80 lg-pt-70">
+          <div className="container">
+            <IntroAbout />
+          </div>
+        </div>
+        {/* /.bg-wrapper */}
+      </div>
+      {/* /.fancy-feature-thirtyFive */}
+      
+      
 
       {/* 
 			=============================================

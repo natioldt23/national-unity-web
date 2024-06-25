@@ -35,7 +35,7 @@ const MainMenu = () => {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav align-items-center">
+        <ul className="navbar-nav align-items-center" style={{gap: '46px'}}>
           <li className="d-block d-lg-none">
               <Link to="/" className="d-block">
                 <div className="logo justify-content-center">
@@ -312,7 +312,7 @@ const MainMenu = () => {
 
           <li className="nav-item">
             <Link
-              className="nav-link"
+              className="nav-link text-center"
               to='/reportar-accidente'
             >
               {navbarLang.reportarAccidente}
@@ -323,7 +323,7 @@ const MainMenu = () => {
 
           <li className="nav-item">
             <Link
-              className="nav-link"
+              className="nav-link text-center"
               to='/asistencia-vial'
             >
               {navbarLang.asisVial}
@@ -345,14 +345,14 @@ const MainMenu = () => {
         </ul>
         {/* End ul */}
 
-        {/* Mobile Content 
+        {/* Mobile Content */}
         <div className="mobile-content d-block d-lg-none">
           <div className="d-flex flex-column align-items-center justify-content-center mt-70">
             <Link
-              className="nav-link"
-              to='/contacto'
+              to="https://www.nationalunity.com/indexlogin.asp"
+              className="btn-twentyOne fw-500 tran3s d-none d-lg-block"
             >
-              {navbarLang.contacto}
+              {navbarLang.accesoAgente}
             </Link>
           </div>
         </div>
