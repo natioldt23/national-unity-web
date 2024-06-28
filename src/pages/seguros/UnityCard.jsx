@@ -52,9 +52,6 @@ const UnityCard = () => {
                 <p className="tx-dark text-hero-banner pt-20">
                   {card.cardDesc1}
                 </p>
-                <p className="tx-dark text-hero-banner">
-                  {card.cardDesc2}
-                </p>
                 <div>
                   <a href="https://www.nationalunity.com/national/uc/code/activa.asp" target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">

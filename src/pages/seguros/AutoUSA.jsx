@@ -75,7 +75,7 @@ const AutosUSA = () => {
       </div>
       {/* /.fancy-feature-fiftyOne */}
 
-      <div className="fancy-feature-thirtyEight pt-50 pb-50 bg-gray" >
+      <div className="fancy-feature-thirtyEight pt-50 pb-50 bg-gray" data-aos="fade-up" >
         <div className="container">
         <Tabs>
           <TabList className="react-tabs__tab-list">

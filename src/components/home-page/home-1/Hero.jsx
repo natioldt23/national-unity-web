@@ -1,18 +1,9 @@
 import AOS from "aos";
-import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const Hero1 = () => {
   const { t } = useTranslation()
   const homeLang = t("home")
-
-  /*useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      once: true,
-      mirror: false
-    });
-  }, []);*/
 
   const handleSubmit = (event) => {
     event.preventDefault();

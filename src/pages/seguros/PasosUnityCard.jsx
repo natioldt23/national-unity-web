@@ -8,17 +8,17 @@ const PasosUnityCard = () => {
   const { lang } = useContext(LanguageContext)
 
   const features = [
-    "Llena los datos requeridos dentro de la Unity Card",
-    "Raspa el código de acceso",
-    "Activa tu tarjeta escaneando el código QR o en nuestra página web",
-    "Finaliza la activación completando el formulario"
+    "Raspa el código de acceso impreso en tu tarjeta Unity Card.",
+    "Ten a la mano los datos del conductor y del vehículo asegurar.",
+    "Activa tu tarjeta escaneando el código QR impreso en la tarjeta o en nuestra página web.",
+    "Finaliza la activación completando el formulario."
   ];
 
   const featuresEng = [
-    "Fill in the required data inside the Unity Card",
-    "Scratch off the access code",
-    "Activate your card by scanning the QR code or on our website",
-    "Complete the activation by filling out the form"
+    "Scratch off the access code printed on your Unity Card.",
+    "Have the driver's and the vehicle's data at hand to insure.",
+    "Activate your card by scanning the QR code printed on the card or on our website.",
+    "Complete the activation by filling out the form."
   ];
 
 

@@ -9,8 +9,7 @@ const FaqPremium = () => {
       question: "¿Cómo funciona el seguro de Unity Card?",
       answer:
         `
-        Compra tu seguro Unity Card en uno de nuestros establecimientos autorizados y actívala por 
-        internet.
+        Compra tu seguro Unity Card en uno de nuestros establecimientos autorizados y activala vía online o escaneando el QR impreso en la tarjeta Unity Card.
         `,
     },
     {
@@ -22,7 +21,7 @@ const FaqPremium = () => {
       question: "¿Dónde puedo activar mi póliza?",
       answer:
         `
-        Puedes activar tu póliza escaneando el QR impreso en la tarjeta o en nuestra página web www.unitycard.com.
+        Puedes activar tu póliza escaneando el QR impreso en la tarjeta, en nuestra página web www.unitycard.com 
         `,
     },
     {
@@ -30,18 +29,22 @@ const FaqPremium = () => {
         "¿Cuáles son los datos que necesito para activar mi póliza?",
       answer:
         `
-        Ten a la mano tu código de acceso que encuentras en tu tarjeta, los datos de tu vehículo, el
-        nombre completo del conductor , tú teléfono de contacto y un correo electrónico. 
-        
-        Código de Acceso (impreso en tu tarjeta), 
-        Nombre completo del conductor del vehículo, 
-        Teléfono de Contacto (10 dígitos), 
-        Placas del Vehículo, 
-        Año del Vehículo, 
-        Serie del Vehículo, 
-        Marca del Vehículo, 
-        Modelo del Vehículo,  
-        Correo electrónico, 
+        Ten a la mano el código de acceso, los datos de tu vehículo así como la información del conductor.
+
+        Datos solicitados;
+        Código de acceso (impreso en tu tarjeta)
+        Nombre completo del conductor del vehículo
+        Teléfono de contacto (10 dígitos)
+        Fecha de Nacimiento
+        Placas del vehículo
+        Año del vehículo
+        Serie del vehículo
+        Estado de Entrada
+        Marca del vehículo
+        Modelo del vehiculo
+        Correo electrónico
+        Fecha de Inicio de cobertura
+        Hora de Inicio de cobertura
         `,
     },
     {
@@ -49,7 +52,7 @@ const FaqPremium = () => {
       answer:
         `
           Descubre el código de acceso, que está impreso en tu tarjeta Unity Card.
-          Abre en internet la página de activación o escanea el QR de tu tarjeta.
+          Abre en internet la página de activación o escanea el QR desde tu tarjeta.
           Captura los datos requeridos.
           Listo, puedes descargar tu póliza al momento o bien se te enviará al correo
           registrado dentro de los próximos 30 minutos.
@@ -92,8 +95,7 @@ const FaqPremium = () => {
       question: "How does the Unity Card insurance work?",
       answer:
         `
-        Buy your Unity Card insurance in one of our authorized stores and activate it online or by phone. 
-        online.
+        Buy your Unity Card insurance in one of our authorized stores and activate it online or by scanning the QR printed on the Unity Card.
         `,
     },
     {
@@ -105,26 +107,30 @@ const FaqPremium = () => {
       question: "Where can I activate my policy?",
       answer:
         `
-        You can activate your policy by scanning the QR printed on the card or on our website www.unitycard.com.
-        `,
+        You can activate your policy by scanning the QR printed on the card, on our website www.unitycard.com.        
+         `,
     },
     {
       question:
         "What information do I need to activate my policy?",
       answer:
         `
-        Have at hand your access code that you find on your card, your vehicle data, the driver's full name, your contact phone number and an email address.
-        driver's full name, your contact phone number and an email address. 
-        
-        Access Code (printed on your card), 
-        Full name of the driver of the vehicle, 
-        Contact Phone (10 digits), 
-        Vehicle license plates, 
-        Vehicle Year, 
-        Vehicle Serial Number, 
-        Vehicle Make, 
-        Vehicle Model,  
-        E-mail address, 
+        Have your access code, vehicle and driver information ready.
+
+        Data requested;
+        Access code (printed on your card)
+        Full name of the driver of the vehicle
+        Contact phone number (10 digits)
+        Date of Birth
+        Vehicle license plates
+        Year of vehicle
+        Vehicle Serial Number
+        State of Entry
+        Vehicle Make
+        Vehicle Model
+        Email Address
+        Coverage Start Date
+        Coverage Start Time
         `,
     },
     {
