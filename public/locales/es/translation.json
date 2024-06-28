@@ -58,7 +58,8 @@
     "asistenciaServiciosDesc": "Aquí puedes consultar los servicios de asistencia vial que ofrecemos",
     "asistenciaImportante": "Importante",
     "asistenciaImportanteDesc": "Toda cobertura hasta un máximo de $100.00 dólares, otorgando 1 servicio en pólizas de 1 a 179 días y 2 servicios en pólizas semestrales y anuales.",
-    "asistenciaImportanteSpan": "Servicio exclusivo dentro de los Estados Unidos."
+    "asistenciaImportanteSpan": "Servicio exclusivo dentro de los Estados Unidos.",
+    "asistenciaWhatsapp": "Vía: "
   },
   "accidente":{
     "accidenteEtiqueta": "Servicios",
@@ -178,6 +179,7 @@
     "coberturaSplit": "Cobertura SPLIT (Dividida)",
     "coberturaSplitDesc": "Es una cobertura SPLIT de Responsabilidad Civil (RC) o daños a terceros SPLIT, viene dividida para lesiones corporales, accidentes y daños materiales.",
     "cardFaq": "Preguntas Frecuentes",
-    "cardPasos": "Pasos para activar tu tarjeta"
+    "cardPasos": "Pasos para activar tu tarjeta",
+    "beneficios": "Beneficios"
   }
 }

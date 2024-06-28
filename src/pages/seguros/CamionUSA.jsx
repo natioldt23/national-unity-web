@@ -49,7 +49,7 @@ const CamionUSA = () => {
                 <h2 className="main-title fw-500 tx-dark">
                   {camion.camionTitle}
                 </h2>
-                <p className="tx-dark text-lg pt-20">
+                <p className="tx-dark text-hero-banner pt-20">
                   {camion.camionDesc}
                 </p>
                 <div>
@@ -89,7 +89,7 @@ const CamionUSA = () => {
               lang === 'es' ? 
               beneficiosCamion.slice(0, 4).map((item) => (
                 <div className="item col-12 col-lg-4" key={item.id}>
-                  <div className="feedback-block-eleven beneficios-item">
+                  <div className="feedback-block-eleven beneficios-item-camion">
                     <div className="top-header d-flex align-items-center justify-content-between">
                       <div className="d-flex justify-content-between align-items-center w-100">
                         <h3 className="tx-dark m0">{item.title}</h3>
@@ -101,8 +101,8 @@ const CamionUSA = () => {
                         />
                       </div>
                     </div>
-                    <p className="tx-dark m-0 p-0">{item.text1}</p>
-                    <p className="tx-dark m-0 p-0">{item.text2}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: '20px'}}>{item.text1}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: '20px'}}>{item.text2}</p>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="cost fw-500 tx-dark fs-20">
                         {item.author}
@@ -115,7 +115,7 @@ const CamionUSA = () => {
               )) : 
               beneficiosCamionEng.slice(0, 4).map((item) => (
                 <div className="item col-12 col-lg-4" key={item.id}>
-                  <div className="feedback-block-eleven beneficios-item">
+                  <div className="feedback-block-eleven beneficios-item-camion">
                     <div className="top-header d-flex align-items-center justify-content-between">
                       <div className="d-flex justify-content-between align-items-center w-100">
                         <h3 className="tx-dark m0">{item.title}</h3>
@@ -127,8 +127,8 @@ const CamionUSA = () => {
                         />
                       </div>
                     </div>
-                    <p className="tx-dark m-0 p-0">{item.text1}</p>
-                    <p className="tx-dark m-0 p-0">{item.text2}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: '20px'}}>{item.text1}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: '20px'}}>{item.text2}</p>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="cost fw-500 tx-dark fs-20">
                         {item.author}

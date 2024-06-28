@@ -76,6 +76,7 @@ const BlockContact = () => {
               {block.link && (
                 <a
                   href={block.link}
+                  target="_blank"
                   className={
                     block.link.includes("tel:") ? "call" : "webaddress"
                   }
@@ -89,6 +90,7 @@ const BlockContact = () => {
               {block.link2 && (
                 <a
                   href={block.link2}
+                  target="_blank"
                   className={
                     block.link2.includes("tel:") ? "call" : "webaddress"
                   }
@@ -117,6 +119,7 @@ const BlockContact = () => {
                 {block.link && (
                   <a
                     href={block.link}
+                    target="_blank"
                     className={
                       block.link.includes("tel:") ? "call" : "webaddress"
                     }

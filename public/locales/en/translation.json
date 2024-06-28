@@ -58,7 +58,8 @@
     "asistenciaServiciosDesc": "Here you can consult the road assistance services that we offer.",
     "asistenciaImportante": "Important",
     "asistenciaImportanteDesc": "All coverage up to a maximum of $100.00 dollars, granting 1 service in policies from 1 to 179 days and 2 services in semi-annual and annual policies.",
-    "asistenciaImportanteSpan": "Exclusive service within the United States."
+    "asistenciaImportanteSpan": "Exclusive service within the United States.",
+    "asistenciaWhatsapp": "Via: "
   },
   "accidente":{
     "accidenteEtiqueta": "Services",
@@ -178,6 +179,7 @@
     "coberturaSplit": "SPLIT Coverage",
     "coberturaSplitDesc": "It is a SPLIT coverage of Civil Liability (CR) or SPLIT third party damages, divided for bodily injury, accidents and property damage.",
     "cardFaq": "FAQ",
-    "cardPasos": "How to activate your card"
+    "cardPasos": "How to activate your card",
+    "beneficios": "Benefits"
   }
 }

@@ -128,7 +128,7 @@ const CoberturaPremium = () => {
                 <h2 className="main-title fw-500 tx-dark">
                   {premium.premiumTitle}
                 </h2>
-                <p className="tx-dark text-lg pt-20">
+                <p className="tx-dark text-hero-banner pt-20">
                   {premium.premiumDesc}
                 </p>
                 <div>

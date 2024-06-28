@@ -35,7 +35,7 @@ const MainMenu = () => {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav align-items-center" style={{gap: '46px'}}>
+        <ul className="navbar-nav align-items-center navbar-gap">
           <li className="d-block d-lg-none">
               <Link to="/" className="d-block">
                 <div className="logo justify-content-center">
@@ -259,7 +259,7 @@ const MainMenu = () => {
             
           </li>
 
-          <li className="nav-item dropdown">
+          <li className="nav-item dropdown d-flex flex-column align-items-center d-lg-block">
             <a
               className={
                 segurosItems.some((elm) => isActive(elm.link))
@@ -269,8 +269,7 @@ const MainMenu = () => {
               href="#"
               role="button"
               data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
+              
             >
               {navbarLang.seguros}
             </a>

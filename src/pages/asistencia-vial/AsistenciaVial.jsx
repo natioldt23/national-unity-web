@@ -152,15 +152,21 @@ const AsistenciaVial = () => {
                 <ul className="style-none list-item md-mb-40 tx-dark">
                   <li>
                     {asistencia.asistenciaTelOne}
-                    <a href="tel:18003085513">1-800-308-5513</a>
+                    <a className="asistenciaVial-link" href="tel:18003085513">1-800-308-5513</a>
                   </li>
                   <li>
                     {asistencia.asistenciaTelTwo}
-                    <a href="tel:2104799585">210-479-9585</a>
+                    <a className="asistenciaVial-link" href="tel:2104799585">210-479-9585</a>
                   </li>
                   <li>
                     {asistencia.asistenciaTelThree}
-                    <a href="tel:0012104799585">001-210-479-9585</a>
+                    <a className="asistenciaVial-link" href="tel:0012104799585" target="_blank">001-210-479-9585</a>
+                  </li>
+                  <li>
+                    {asistencia.asistenciaWhatsapp} 
+                    <a href="https://api.whatsapp.com/send/?phone=5215587196412&text=Quiero+solicitar+una+ASISTENCIA+para+NATIONAL+UNITY+ROADSIDE+ASSISTANCE&type=&&type=" target="_blank" className="asistenciaVial-link">
+                       Whatsapp
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -389,9 +395,9 @@ const AsistenciaVial = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-8">
                     <div className="text-wrapper text-center text-lg-start md-pb-30">
-                      <h2 className="main-title fw-500 text-white mb-2">
+                      <h4 className="fw-500 text-white mb-2">
                         {asistencia.asistenciaImportante}
-                      </h2>
+                      </h4>
                       <div className="sc-title fs-18 pb-10 text-white">
                         {asistencia.asistenciaImportanteDesc}
                       </div>

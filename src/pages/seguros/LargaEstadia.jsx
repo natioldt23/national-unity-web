@@ -53,7 +53,7 @@ const LargaEstadia = () => {
                 <h3 className="fw-500 tx-dark">
                   {longterm.longtermSubtitl}
                 </h3>
-                <p className="tx-dark text-lg pt-20">
+                <p className="tx-dark text-hero-banner pt-20">
                   {longterm.longtermDesc}
                 </p>
                 <div>
@@ -136,7 +136,7 @@ const LargaEstadia = () => {
         {/* /.container */}
       </div>
 
-      <div className="feedback-section-eleven position-relative mt-50 pt-50 pb-70 lg-pb-50 beneficios-slider" data-aos="fade-up">
+      <div className="feedback-section-eleven position-relative mt-50 pt-50 pb-70 lg-pb-50 beneficios-slider bg-gray" data-aos="fade-up">
         <div className="container">
           <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center">
             {longterm.longtermBeneficios}
@@ -147,7 +147,7 @@ const LargaEstadia = () => {
         </div>
         <div>
           <div className="slider-wrapper">
-            <div className="feedback_slider_seven beneficios-slider d-flex align-items-center flex-column flex-lg-row">
+            <div className="feedback_slider_seven beneficios-slider d-flex align-items-center flex-column flex-lg-row bg-gray">
             {
               lang === 'es' ?
               beneficiosLarga.slice(0, 4).map((item) => (
@@ -164,11 +164,11 @@ const LargaEstadia = () => {
                         />
                       </div>
                     </div>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text1}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text2}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text3}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text4}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text5}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text1}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text2}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text3}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text4}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text5}</p>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="cost fw-500 tx-dark fs-20">
                         {item.author}
@@ -193,11 +193,11 @@ const LargaEstadia = () => {
                         />
                       </div>
                     </div>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text1}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text2}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text3}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text4}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text5}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text1}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text2}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text3}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text4}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text5}</p>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="cost fw-500 tx-dark fs-20">
                         {item.author}

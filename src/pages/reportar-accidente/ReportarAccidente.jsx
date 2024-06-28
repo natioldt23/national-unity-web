@@ -104,7 +104,7 @@ const ReportarAccidente = () => {
 
       <div className="service-details position-relative mt-25 lg-mb-120 asistencia-feature">
         <div className="container">
-          <div className="row align-items-center justify-content-center">
+          <div className="row align-items-start justify-content-center">
             <div className="col-xl-9 col-lg-8" data-aos="fade-right">
               <div className="service-details-meta">
                 <a href="https://www.nationalunity.com/national/reporte_accidente/package/html/main/" target="blank">
@@ -112,11 +112,11 @@ const ReportarAccidente = () => {
                     {accidente.accidenteTitle}
                   </button>
                 </a>
-                <p className="text-lg tx-dark pt-30">
+                <p className="text-hero-banner tx-dark pt-30">
                   {accidente.accidenteDescOne}
                 </p>
 
-                <p className="text-lg tx-dark">
+                <p className="text-hero-banner tx-dark">
                   {accidente.accidenteDescTwo}
                 </p>
 

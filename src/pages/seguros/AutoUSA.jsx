@@ -48,7 +48,7 @@ const AutosUSA = () => {
                 <h2 className="main-title fw-500 tx-dark">
                   {carro.carroTitle}
                 </h2>
-                <p className="tx-dark text-lg pt-20">
+                <p className="tx-dark text-hero-banner pt-20">
                   {carro.carroDesc}
                 </p>
                 <div>
@@ -75,8 +75,8 @@ const AutosUSA = () => {
       </div>
       {/* /.fancy-feature-fiftyOne */}
 
-      <div className="fancy-feature-thirtyEight pt-50 pb-50">
-        <div className="container" data-aos="fade-up">
+      <div className="fancy-feature-thirtyEight pt-50 pb-50 bg-gray" >
+        <div className="container">
         <Tabs>
           <TabList className="react-tabs__tab-list">
             <Tab>
@@ -125,7 +125,7 @@ const AutosUSA = () => {
         {/* /.container */}
       </div>
 
-      <div className="feedback-section-eleven position-relative mt-50 pt-50 pb-70 lg-pb-50 beneficios-slider" data-aos="fade-up">
+      <div className="feedback-section-eleven position-relative pb-70 lg-pb-50 beneficios-slider" data-aos="fade-up">
         <div className="container">
           <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center">
             Beneficios
@@ -150,10 +150,10 @@ const AutosUSA = () => {
                         />
                       </div>
                     </div>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text1}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text2}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text3}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text4}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text1}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text2}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text3}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text4}</p>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="cost fw-500 tx-dark fs-20">
                         {item.author}

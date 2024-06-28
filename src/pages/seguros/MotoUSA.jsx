@@ -46,7 +46,7 @@ const MotoUSA = () => {
                 <h2 className="main-title fw-500 tx-dark">
                   {moto.motoTitle}
                 </h2>
-                <p className="tx-dark text-lg pt-20">
+                <p className="tx-dark text-hero-banner pt-20">
                   {moto.motoDesc}
                 </p>
                 <div>

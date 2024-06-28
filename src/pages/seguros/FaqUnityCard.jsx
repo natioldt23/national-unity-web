@@ -10,7 +10,7 @@ const FaqPremium = () => {
       answer:
         `
         Compra tu seguro Unity Card en uno de nuestros establecimientos autorizados y actívala por 
-        internet o teléfono.
+        internet.
         `,
     },
     {
@@ -22,7 +22,7 @@ const FaqPremium = () => {
       question: "¿Dónde puedo activar mi póliza?",
       answer:
         `
-        Puedes activar tu póliza escaneando el QR impreso en la tarjeta, en nuestra página web www.unitycard.com o bien llamando al: 800 062 0400 (México) o al 1800 401 0929 (USA).
+        Puedes activar tu póliza escaneando el QR impreso en la tarjeta o en nuestra página web www.unitycard.com.
         `,
     },
     {
@@ -49,11 +49,10 @@ const FaqPremium = () => {
       answer:
         `
           Descubre el código de acceso, que está impreso en tu tarjeta Unity Card.
-          Abre en internet la página de activación o llama al 8000620400.
+          Abre en internet la página de activación o escanea el QR de tu tarjeta.
           Captura los datos requeridos.
           Listo, puedes descargar tu póliza al momento o bien se te enviará al correo
-          registrado dentro de los próximos 30 minutos. Si la activación es por teléfono, te
-          invitamos a descargar tu póliza en el módulo de consulta en www.unitycard.com
+          registrado dentro de los próximos 30 minutos.
         `,
     },
     {
@@ -94,7 +93,7 @@ const FaqPremium = () => {
       answer:
         `
         Buy your Unity Card insurance in one of our authorized stores and activate it online or by phone. 
-        online or by phone.
+        online.
         `,
     },
     {
@@ -106,7 +105,7 @@ const FaqPremium = () => {
       question: "Where can I activate my policy?",
       answer:
         `
-        You can activate your policy by scanning the QR printed on the card, on our website www.unitycard.com or by calling: 800 062 0400 (Mexico) or 1800 401 0929 (USA).
+        You can activate your policy by scanning the QR printed on the card or on our website www.unitycard.com.
         `,
     },
     {
@@ -133,11 +132,10 @@ const FaqPremium = () => {
       answer:
         `
         Find out the access code, which is printed on your Unity Card.
-        Open the activation page online or call 8000620400.
+        Open the activation page on the internet or scan the QR of your card.
         Enter the required data.
         Ready, you can download your policy immediately or it will be sent to your registered email within 30 minutes.
-        registered within 30 minutes. If the activation is by phone, we invite you to
-        We invite you to download your policy in the consultation module at www.unitycard.com
+        registered within 30 minutes.
         `,
     },
     {

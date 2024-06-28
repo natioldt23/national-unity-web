@@ -6947,7 +6947,7 @@ body .btn-twentySix:hover:after {
   background: #fff !important;
 }
 .card-style-fifteen h4 {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.35em;
 }
 .card-style-fifteen p {
@@ -6962,7 +6962,7 @@ body .btn-twentySix:hover:after {
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Feature Section Thirty Five ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .fancy-feature-thirtyFive .top-banner h2 {
-  font-size: 62px;
+  font-size: 46px;
   letter-spacing: -0.7px;
 }
 .fancy-feature-thirtyFive .top-banner .rating li {
@@ -6974,7 +6974,7 @@ body .btn-twentySix:hover:after {
   background: #f6f9fb;
 }
 .fancy-feature-thirtyFive .text-wrapper p {
-  font-size: 42px;
+  font-size: 36px;
   line-height: 1.57em;
 }
 .fancy-feature-thirtyFive .text-wrapper p span {
@@ -10509,6 +10509,10 @@ body .btn-twentySix:hover:after {
   border-radius: 15% 0 15%;
 }
 
+.reportar-accidente-img {
+  height: 250px;
+}
+
 .shape-one-puentes {
   display: none;
 }
@@ -10634,6 +10638,14 @@ path:hover {
   padding: 30px 70px 50px;
   border: 1px solid transparent;
   transition: 0.3s ease-out;
+}
+
+.beneficios-item-unity {
+  box-shadow: 0px 30px 15px rgba(19, 45, 73, 0.08);
+  padding: 30px 70px 50px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-out;
+  height: 470px;
 }
 
 .beneficios-item-renta {
@@ -10788,13 +10800,23 @@ path:hover {
   display: none;
 }
 
+.asistenciaVial-link {
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+
+.asistenciaVial-link:hover {
+  color: #0276dd;
+  text-decoration: underline;
+}
+
 @media (min-width: 1100px) {
   .language-btn {
     padding-left: 0px;
   } 
 
-  .beneficios-item {
-    height: 500px !important;
+  .beneficios-item-camion {
+    height: 400px !important;
   }
 
   .asistencia-icons {
@@ -10832,7 +10854,7 @@ path:hover {
   }
 
   .puentes {
-    height: 500px;
+    height: 400px;
     border-radius: 0 15% 0;
     display: block;
   }
@@ -10874,6 +10896,10 @@ path:hover {
     margin-top: 0px;
     height: 100vh;
   }
+
+  .reportar-accidente-img {
+    height: 400px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -10888,5 +10914,13 @@ path:hover {
 
   .hero-banner-ten {
     padding: 230px 0 90px;
+  }
+
+  .puentes {
+    height: 500px;
+  }
+
+  .text-hero-banner {
+    font-size: 22px !important;
   }
 }

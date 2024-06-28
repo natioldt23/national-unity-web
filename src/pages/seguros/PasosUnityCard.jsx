@@ -10,14 +10,14 @@ const PasosUnityCard = () => {
   const features = [
     "Llena los datos requeridos dentro de la Unity Card",
     "Raspa el código de acceso",
-    "Activa tu tarjeta escaneando el código QR, en nuestra página web o por teléfono al: 800 062 0400 (México) o al 1800 401 0929 (USA)",
+    "Activa tu tarjeta escaneando el código QR o en nuestra página web",
     "Finaliza la activación completando el formulario"
   ];
 
   const featuresEng = [
     "Fill in the required data inside the Unity Card",
     "Scratch off the access code",
-    "Activate your card by scanning the QR code on our website or by phone at: 800 062 0400 (Mexico) or 1800 401 0929 (USA).",
+    "Activate your card by scanning the QR code or on our website",
     "Complete the activation by filling out the form"
   ];
 
@@ -37,10 +37,10 @@ const PasosUnityCard = () => {
             {
               lang === 'es' ?
               features.map((feature, index) => (
-                <li key={index}>{feature}</li>
+                <li style={{fontSize: '20px'}} key={index}>{feature}</li>
               )) :
               featuresEng.map((feature, index) => (
-                <li key={index}>{feature}</li>
+                <li style={{fontSize: '20px'}} key={index}>{feature}</li>
               ))
             }
           </ul>

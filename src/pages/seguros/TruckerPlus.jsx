@@ -38,10 +38,10 @@ const TruckerPlus = () => {
             {
               lang === 'es'?
               features.map((feature, index) => (
-                <li key={index}>{feature}</li>
+                <li className="fs-4" key={index}>{feature}</li>
               )) : 
               featuresEng.map((feature, index) => (
-                <li key={index}>{feature}</li>
+                <li className="fs-4" key={index}>{feature}</li>
               ))
             }
           </ul>

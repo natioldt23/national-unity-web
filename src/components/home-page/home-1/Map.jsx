@@ -30,7 +30,23 @@ const Map = () => {
           <p style='margin: 0; text-align: center;'>${stateCoverage}</p>
         `;
         detailsBox.style.opacity = '100%';
-      } else {
+      } /*else if (e.target.tagName === 'g'){
+        const stateDC = e.target.dataset.name;
+
+        let stateCoverageDC;
+        statesData.forEach((stateData) => {
+          if (stateDC === stateData.name) {
+            stateCoverageDC = stateData.limit;
+          }
+        });
+
+        detailsBox.innerHTML = `
+          <h4 style='color: #FFF;'>${stateDC}</h4>
+          <p style='margin: 0; text-align: center;'>${stateCoverageDC}</p>
+        `;
+        detailsBox.style.opacity = '100%';
+
+      } */else {
         detailsBox.style.opacity = '0%';
       }
     };
