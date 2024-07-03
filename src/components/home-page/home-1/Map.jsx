@@ -55,7 +55,7 @@ const Map = () => {
       const x = e.clientX;
       const y = e.clientY;
       detailsBox.style.top = `${y + 20}px`;
-      detailsBox.style.left = `${x - 200}px`;
+      detailsBox.style.left = `${x -100}px`;
     };
 
     const handleMouseMoveMobile = (e) => {

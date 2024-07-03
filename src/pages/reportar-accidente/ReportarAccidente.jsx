@@ -107,6 +107,9 @@ const ReportarAccidente = () => {
           <div className="row align-items-start justify-content-center">
             <div className="col-xl-9 col-lg-8" data-aos="fade-right">
               <div className="service-details-meta">
+                <p className="text-hero-banner tx-dark pt-0">
+                  {accidente.accidenteCTA}
+                </p>
                 <a href="https://www.nationalunity.com/national/reporte_accidente/package/html/main/" target="blank">
                   <button className="fw-500 text-white tran3s button-primary" type="submit">
                     {accidente.accidenteTitle}

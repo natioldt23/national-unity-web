@@ -61,11 +61,11 @@ const UnityCard = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xxl-5 col-lg-6 d-flex align-items-center" data-aos="fade-left">
+            <div className="col-xxl-5 col-lg-6 d-flex align-items-center justify-content-center" data-aos="fade-left">
             <img
-              src="/images/assets/seguro-auto-hero.webp"
+              src="/images/assets/unity-card.webp"
               alt="icon"
-              className="lazy-img seguro-auto-hero"
+              width={320}
             />
             </div>
           </div>

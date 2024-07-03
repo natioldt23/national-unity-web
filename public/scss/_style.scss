@@ -10550,7 +10550,7 @@ path:hover {
 
   background-color: black;
   width: fit-content;
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);*/
   transition: opacity .4s ease;
   z-index: 1;
 }
@@ -10809,6 +10809,87 @@ path:hover {
   color: #0276dd;
   text-decoration: underline;
 }
+
+.form-title {
+  text-align: center;
+  padding: 16px 0;
+  color: #212427;
+}
+
+.form-desc {
+  color: #212427;
+}
+
+.form-modal {
+
+  div {
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gordita';
+    font-size: 16px;
+    color: #212427;
+  }
+
+  input {
+    padding: 4px 8px;
+    font-family: 'Gordita';
+    font-size: 16px;
+    color: #212427;
+  }
+
+  label {
+    font-weight: 500;
+    color: #212427;
+  }
+
+  .form-modal-enviar {
+    background-color: #0276dd;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 7px;
+    font-family: 'Gordita';
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .form-modal-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Agrega esto a tu archivo CSS */
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.ReactModal__Content--after-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ReactModal__Content--before-close {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
 
 @media (min-width: 1100px) {
   .language-btn {

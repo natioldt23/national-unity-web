@@ -52,13 +52,13 @@
     "asistenciaInfoFour": "Tipo de servicio solicitado",
     "asistenciaTel": "En caso de que usted requiera Asistencia Vial dentro de los Estados Unidos de América deberásllamar al:",
     "asistenciaTelOne": "Sin costo desde USA: ",
-    "asistenciaTelTwo": "Larga distancia dentro de USA: ",
+    "asistenciaTelTwo": "Larga distancia dentro de USA y Canadá: ",
     "asistenciaTelThree": "Con costo desde México: ",
     "asistenciaServicios": "Servicios incluidos",
     "asistenciaServiciosDesc": "Aquí puedes consultar los servicios de asistencia vial que ofrecemos",
     "asistenciaImportante": "Importante",
     "asistenciaImportanteDesc": "Toda cobertura hasta un máximo de $100.00 dólares, otorgando 1 servicio en pólizas de 1 a 179 días y 2 servicios en pólizas semestrales y anuales.",
-    "asistenciaImportanteSpan": "Servicio exclusivo dentro de los Estados Unidos.",
+    "asistenciaImportanteSpan": "Servicio exclusivo dentro de los Estados Unidos y Canadá.",
     "asistenciaWhatsapp": "Vía: "
   },
   "accidente":{
@@ -67,7 +67,7 @@
     "accidenteDescOne": "En Estados Unidos y Canadá es obligatorio contar con un seguro de Responsabilidad Civil con cobertura ilimitada para todos los vehículos que transitan por sus caminos.",
     "accidenteDescTwo": "Si somos partícipes de un siniestro en USA existen una serie de pasos que debemos seguir para reportar dicho accidente:",
     "accidenteImportante": "Importante",
-    "accidenteImportanteDesc": "El ajustador en Estados Unidos no acude al lugar del accidente. Todo se reporta vía telefónica, dependiendo de la seriedad y tipo de siniestro, la compañía determinará el procedimiento a seguir. En caso de que nuestros asegurados llegaran a recibir una reclamación o demanda, deberán notificar a su agente de seguros o a National Unity Insurance Company de toda exigencia, citatorio o información que conozcan. Recuerde que su póliza solo cubre autos y pick-ups de uso particular NO destinados al transporte y con placas mexicanas y/o fronterizas.",
+    "accidenteImportanteDesc": "El ajustador en Estados Unidos no acude al lugar del accidente. Todo se reporta vía telefónica o también en línea, dependiendo de la seriedad y tipo de siniestro, la compañía determinará el procedimiento a seguir. En caso de que nuestros asegurados llegaran a recibir una reclamación o demanda, deberán notificar a su agente de seguros o a National Unity Insurance Company de toda exigencia, citatorio o información que conozcan. Recuerde que su póliza solo cubre autos y pick-ups de uso particular NO destinados al transporte y con placas mexicanas y/o fronterizas.",
     "accidentePasos": "Pasos a seguir para reportar un siniestro en USA:",
     "accidentePasosOne": "Notificar a la policía sobre el accidente llamando al 911.",
     "accidentePasosTwo": "Obtener los datos esenciales del conductor afectado:",
@@ -91,7 +91,8 @@
     "accidenteImportanteFooter2": "Número de póliza completo (letras y números)",
     "accidenteImportanteFooter3": "Número de contacto en México y Estados Unidos",
     "accidenteImportanteFooter4": "Lugar y hora del accidente",
-    "accidenteImportanteFooter5": "Descripción de los hechos"
+    "accidenteImportanteFooter5": "Descripción de los hechos",
+    "accidenteCTA": "Reporta un accidente aquí: "
   },
   "moto": {
     "motoEtiqueta": "Seguros",
@@ -135,7 +136,15 @@
     "camionTrucker": "Potencia tu cobertura con Trucker Plus.",
     "camionTruckerDesc": "¿Qué es Trucker Plus? Es una protección que asegura a tu conductor.",
     "camionTruckerEtiqueta": "¡Cotiza tu seguro y añade Trucker Plus al finalizar!",
-    "camionFaq": "Preguntas Frecuentes"
+    "camionFaq": "Preguntas Frecuentes",
+    "camionModalTitle": "Cotiza tu seguro",
+    "camionModalDesc": "Déjanos tus datos para que un agente te ayude con tu cotización",
+    "camionModalName": "Nombre y Apellido",
+    "camionModalTel": "Teléfono",
+    "camionModalEmail": "Email",
+    "camionModalEmpresa": "Empresa",
+    "camionModalCerrar": "Cerrar",
+    "camionModalEnviar": "Enviar"
   },
   "longterm": {
     "longtermEtiqueta": "Seguros",

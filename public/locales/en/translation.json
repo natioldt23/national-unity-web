@@ -52,13 +52,13 @@
     "asistenciaInfoFour": "Type of service requested",
     "asistenciaTel": "In the event that you require Roadside Assistance within the United States of America you should call:",
     "asistenciaTelOne": "Toll-free from USA: ",
-    "asistenciaTelTwo": "Long distance within the USA: ",
+    "asistenciaTelTwo": "Long distance within the USA adn Canada: ",
     "asistenciaTelThree": "With cost from Mexico: ",
     "asistenciaServicios": "Included services",
     "asistenciaServiciosDesc": "Here you can consult the road assistance services that we offer.",
     "asistenciaImportante": "Important",
     "asistenciaImportanteDesc": "All coverage up to a maximum of $100.00 dollars, granting 1 service in policies from 1 to 179 days and 2 services in semi-annual and annual policies.",
-    "asistenciaImportanteSpan": "Exclusive service within the United States.",
+    "asistenciaImportanteSpan": "Exclusive service within the United States and Canada.",
     "asistenciaWhatsapp": "Via: "
   },
   "accidente":{
@@ -67,7 +67,7 @@
     "accidenteDescOne": "In the United States and Canada, it is mandatory to have unlimited liability insurance coverage for all vehicles traveling on their roads.",
     "accidenteDescTwo": "If we are involved in an accident in the USA, there are a series of steps that we must follow to report the accident:",
     "accidenteImportante": "Important",
-    "accidenteImportanteDesc": "The adjuster in the United States does not go to the place of the accident. Everything is reported via telephone, depending on the seriousness and type of loss, the company will determine the procedure to follow. In the event that our policyholders receive a claim or lawsuit, they should notify their insurance agent or National Unity Insurance Company of any demand, subpoena or information they know of. Remember that your policy only covers cars and pick-ups for private use NOT intended for transportation and with Mexican and/or border license plates.",
+    "accidenteImportanteDesc": "The adjuster in the United States does not go to the place of the accident. Everything is reported via telephone or also online, depending on the seriousness and type of loss, the company will determine the procedure to follow. In the event that our policyholders receive a claim or lawsuit, they should notify their insurance agent or National Unity Insurance Company of any demand, subpoena or information they know of. Remember that your policy only covers cars and pick-ups for private use NOT intended for transportation and with Mexican and/or border license plates.",
     "accidentePasos": "Steps to follow to report a loss in the USA:",
     "accidentePasosOne": "Notify the police of the accident by calling 911.",
     "accidentePasosTwo": "Obtain the essential data of the driver concerned:",
@@ -91,7 +91,8 @@
     "accidenteImportanteFooter2": "Complete policy number (letters and numbers)",
     "accidenteImportanteFooter3": "Contact number in Mexico and the United States",
     "accidenteImportanteFooter4": "Place and time of the accident",
-    "accidenteImportanteFooter5": "Description of the facts"
+    "accidenteImportanteFooter5": "Description of the facts",
+    "accidenteCTA": "Report an accident here: "
   },
   "moto": {
     "motoEtiqueta": "Insurance",
@@ -128,14 +129,22 @@
   },
   "camion": {
     "camionEtiqueta": "Insurance",
-    "camionTitle": "Truck Insruance",
+    "camionTitle": "Truck Insurance",
     "camionDesc": "Coverage for trucks, designed to cover liability for damages caused to third parties in property and persons while traveling in the United States of America.",
     "camionCotiza": "Quote online",
     "camionBeneficios": "Benefits",
     "camionTrucker": "Enhance your coverage with Trucker Plus.",
     "camionTruckerDesc": "What is Trucker Plus? It is a protection that secures your driver.",
     "camionTruckerEtiqueta": "Book your insurance and add Trucker Plus at the end!",
-    "camionFaq": "FAQ"
+    "camionFaq": "FAQ",
+    "camionModalTitle": "Quote your insurance",
+    "camionModalDesc": "Leave us your details for an agent to help you with your quotation",
+    "camionModalName": "First and Last Name",
+    "camionModalTel": "Phone Number",
+    "camionModalEmail": "Email",
+    "camionModalEmpresa": "Company",
+    "camionModalCerrar": "Close",
+    "camionModalEnviar": "Send"
   },
   "longterm": {
     "longtermEtiqueta": "Insurace",
