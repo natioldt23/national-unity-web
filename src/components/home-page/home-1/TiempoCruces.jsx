@@ -11,13 +11,13 @@ const TiempoCruces = () => {
   const features = [
     "Actualización de información cada 15 minutos",
     "4 estados de entrada",
-    "Promedio de tiempo de cruce para días por venir",
+    "Pronóstico de horarios de cruces",
   ];
 
   const featuresEng = [
     "Information updated every 15 minutes",
     "4 entry states",
-    "Average crossing time for upcoming days",
+    "Crossing schedule forecast",
   ];
 
   return (

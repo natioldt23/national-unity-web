@@ -24,7 +24,7 @@ const FaqCamion = () => {
       question: "¿Qué es la cobertura Cargo?",
       answer:
         `
-        Esta cobertura es necesaria para proteger al transportista en caso de pérdida o daños a la carga (mercancía), la póliza incluye un límite máximo por unidad. Los límites que se ofrecen son de $25,000 hasta los $100,000 dls. En caso de requerir una cobertura mayor, deberá solicitar su aprobación al departamento de suscripción. El precio de esta cobertura depende principalmente del tipo de carga (mercancía) que transportan.
+        Esta cobertura es necesaria para proteger al transportista en caso de pérdida o daños a la carga (mercancía), la póliza incluye un límite máximo por unidad. Los límites que se ofrecen son de $25,000 USD hasta los $100,000 USD. En caso de requerir una cobertura mayor, deberá solicitar su aprobación al departamento de suscripción. El precio de esta cobertura depende principalmente del tipo de carga (mercancía) que transportan.
 
         Esta cobertura es muy usual para entrar a:
 
@@ -73,11 +73,11 @@ const FaqCamion = () => {
 
         Incluye:
         
-        Asistencia médica por accidente o enfermedad: USD$25,000, 
+        Asistencia médica por accidente o enfermedad: $25,000 USD, 
         Asistencia médica COVID hasta los 65 años: Incluido, 
-        Repatriación de restos: USD$10,000, 
-        Medicamentos por hospitalización: Incluido, 
-        Lugar de Cobertura: USA.
+        Repatriación de restos: $10,000 USD, 
+        Medicamentos por hospitalización: Incluido. 
+        (Lugar de Cobertura: USA)
         `,
     },
     {
@@ -107,7 +107,7 @@ const FaqCamion = () => {
       question: "What is the Cargo coverage?",
       answer:
         `
-        This coverage is necessary to protect the carrier in case of loss or damage to the cargo (merchandise), the policy includes a maximum limit per unit. The limits offered are $25,000 up to $100,000. In case of requiring a higher coverage, you must request approval from the underwriting department. The price of this coverage depends mainly on the type of cargo (merchandise) being transported.
+        This coverage is necessary to protect the carrier in case of loss or damage to the cargo (merchandise), the policy includes a maximum limit per unit. The limits offered are $25,000 USD up to $100,000 USD. In case of requiring a higher coverage, you must request approval from the underwriting department. The price of this coverage depends mainly on the type of cargo (merchandise) being transported.
 
         This coverage is very usual to enter to:
 
@@ -156,11 +156,11 @@ const FaqCamion = () => {
 
         Includes:
         
-        Medical assistance due to accident or illness: USD$25,000, 
+        Medical assistance due to accident or illness: $25,000 USD, 
         COVID medical assistance up to 65 years of age: Included, 
-        Repatriation of remains: USD$10,000, 
-        Medications for hospitalization: Included, 
-        Place of Coverage: USA.
+        Repatriation of remains: $10,000 USD, 
+        Medications for hospitalization: Included.  
+        (Place of Coverage: USA)
         `,
     },
     {

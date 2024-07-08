@@ -1,7 +1,10 @@
 import AOS from "aos";
 import { useTranslation } from "react-i18next";
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
 
 const Hero1 = () => {
+  const { lang } = useContext(LanguageContext)
   const { t } = useTranslation()
   const homeLang = t("home")
 
@@ -38,7 +41,12 @@ const Hero1 = () => {
             </p>
             {/* End form */}
             <div className="d-flex main-buttons">
-              <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
+              <a href={
+                lang === 'es' ?
+                  "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/"
+                  : 
+                  "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/index.php?lang=en"
+              } target="blank">
                 <button className="fw-500 text-white tran3s button-primary" type="submit">
                   {homeLang.cotizaEnLinea}
                 </button>

@@ -18,6 +18,7 @@ import PasosUnityCard from "./PasosUnityCard";
 import { useTranslation } from "react-i18next";
 import { LanguageContext } from "@/App";
 import { useContext } from "react";
+import Map from "@/components/home-page/home-1/Map";
 
 const UnityCard = () => {
   const { t } = useTranslation()
@@ -49,7 +50,7 @@ const UnityCard = () => {
                 <h2 className="main-title fw-500 tx-dark">
                   {card.cardTitle}
                 </h2>
-                <p className="tx-dark text-hero-banner pt-20">
+                <p className="tx-dark text-hero-banner pt-30 pb-30">
                   {card.cardDesc1}
                 </p>
                 <div>
@@ -93,7 +94,7 @@ const UnityCard = () => {
               {card.coberturaSplitDesc}
             </p>
             <div className="row">
-              <CoberturasAuto />
+              <Map />
             </div>
           </TabPanel>
         </Tabs>

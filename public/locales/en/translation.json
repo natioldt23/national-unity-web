@@ -23,6 +23,7 @@
     "introAboutPhraseOne": " is the ",
     "introAboutPhraseTwo": " in the Liability market for cars and trucks circulating in the ",
     "introAboutLider": "Leader",
+    "introAboutYears": "+50 years",
     "usaCan": "United States and Canada",
     "productsTitle": "Discover all our products.",
     "productoAuto": "Car Insurance USA",
@@ -107,7 +108,15 @@
     "premiumDesc": "Increase your coverage amount",
     "premiumCotiza": "Quote online",
     "premiumItems": "The perfect complement for those who already have a primary coverage tourist policy.",
-    "premiumFaq": "FAQ"
+    "premiumFaq": "FAQ",
+    "premiumModalTitle": "Quote your insurance",
+    "premiumModalDesc": "Leave us your details for an agent to help you with your quotation",
+    "premiumModalName": "First and Last Name",
+    "premiumModalTel": "Phone Number",
+    "premiumModalEmail": "Email",
+    "premiumModalEmpresa": "Company",
+    "premiumModalCerrar": "Close",
+    "premiumModalEnviar": "Send"
   },
   "carro": {
     "carroEtiqueta": "Insurance",
@@ -125,7 +134,8 @@
     "coberturaLucDesc1": "It is a coverage of Civil Liability or damages to third parties with Combined Single Limit (CUL), per event in damages to property and persons.",
     "coberturaLucDesc2": "This coverage can be used up to $100,000 USD free of limitations for bodily injury or property damage.",
     "coberturaLucDesc3": "Applies to any U.S. entry status you select.",
-    "carroFaq": "FAQ"
+    "carroFaq": "FAQ",
+    "carroBeneficios": "Benefits"
   },
   "camion": {
     "camionEtiqueta": "Insurance",
@@ -154,7 +164,7 @@
     "longtermCotiza": "Quote online",
     "coberturaSplitEtiqueta": "SPLIT Coverage",
     "coberturaSplit": "SPLIT Coverage",
-    "coberturaSplitDesc": "It is a SPLIT coverage for Third Party Liability or damage to third parties, divided into bodily injury, accident and property damage.",
+    "coberturaSplitDesc": "It is a SPLIT coverage for Third Party Liability or damage to third parties, divided into bodily injury, accident and property damage. We offer coverage throughout the United States, meeting the minimum limits required by each state.",
     "coberturaLucEtiqueta": "LUC Coverage",
     "coberturaLuc": "Coverage LUC 100,000 (Combined)",
     "coberturaLucDesc1": "It is a coverage of Civil Liability or damages to third parties with Combined Single Limit (CUL), per event in damages to property and persons.",
@@ -185,9 +195,20 @@
     "cardActiva": "Activate your Unity Card now",
     "coberturaSplitEtiqueta": "SPLIT Coverage",
     "coberturaSplit": "SPLIT Coverage",
-    "coberturaSplitDesc": "It is a SPLIT coverage of Civil Liability (CR) or SPLIT third party damages, divided for bodily injury, accidents and property damage.",
+    "coberturaSplitDesc": "It is a SPLIT coverage for Third Party Liability or damage to third parties, divided into bodily injury, accident and property damage. We offer coverage throughout the United States, meeting the minimum limits required by each state.",
     "cardFaq": "FAQ",
     "cardPasos": "How to activate your card",
     "beneficios": "Benefits"
+  },
+  "tyc": {
+    "tycEtiqueta": "Services",
+    "tycTitle": "Terms and conditions",
+    "tycDesc1": "* For long-stay product policies, Exclusion I.",
+    "tycDesc2": "f) is eliminated by means of the NU-PALT Endorsement."
+  },
+  "agentes": {
+    "agentesTitle": "Select an agent",
+    "agentesDesc1": "Through our agents we offer you a close and personalized service.",
+    "agentesDesc2": "Select the agent you prefer, all of them will offer you the full benefits of the coverage and service you choose in your quote."
   }
 }

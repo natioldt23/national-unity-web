@@ -19,7 +19,11 @@ const IntroAbout = () => {
     },
     {
       id: 2,
-      title: "+50 años",
+      title: (
+        <>
+          {home.introAboutYears}
+        </>
+      ),
       cardNo: "card-two",
       subtitle: (
         <>
@@ -29,7 +33,11 @@ const IntroAbout = () => {
     },
     {
       id: 3,
-      title: "Líder",
+      title: (
+        <>
+          {home.introAboutLider}
+        </>
+      ),
       cardNo: "card-three",
       subtitle: (
         <>

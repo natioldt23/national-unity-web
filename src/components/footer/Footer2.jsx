@@ -5,7 +5,7 @@ const columns = [
   {
     title: "Links",
     links: [
-      { label: "Inicio", url: "/" },
+      { label: "Inicio", url: "#" },
       { label: "Nuestros agentes en línea", url: "/agentes" },
       { label: "Asistencia Vial", url: "/asistencia-vial" },
       { label: "Reportar un Accidente", url: "/reportar-accidente" },
@@ -32,7 +32,7 @@ const columnsEng = [
   {
     title: "Links",
     links: [
-      { label: "Home", url: "/" },
+      { label: "Home", url: "#" },
       { label: "Our online agents", url: "/agentes" },
       { label: "Roadside assistance", url: "/asistencia-vial" },
       { label: "Report an Accident", url: "/reportar-accidente" },

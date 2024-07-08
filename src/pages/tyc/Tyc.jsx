@@ -1,30 +1,11 @@
 import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
-import Service1 from "../../components/services/Service1";
-import Block from "../../components/services/Block";
-import Testimonial from "../../components/home-page/home-3/Testimonial";
-import Faq from "../../components/services/Faq";
-import FaqAsistencia from "../../components/services/FaqAsistencia";
-import Partners from "../../components/services/Partners";
-import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const TyC = () => {
-  const features = [
-    { text: "Amazing communication." },
-    { text: "Best trending designing experience." },
-    { text: "Email & Live chat." },
-  ];
-
-
-
-  const starRating = Array(5)
-    .fill()
-    .map((_, index) => (
-      <li key={index}>
-        <i className="fa-solid fa-star" />
-      </li>
-    ));
+  const { t } = useTranslation()
+  const tyc = t("tyc")
 
   return (
     <>
@@ -46,10 +27,10 @@ const TyC = () => {
             <div className="col-xxl-7 col-lg-6" data-aos="fade-right">
               <div className="title-style-five mb-45 md-mb-10">
                 <div className="sc-title-two fst-italic position-relative">
-                  Servicios
+                  {tyc.tycEtiqueta}
                 </div>
                 <h2 className="main-title fw-500 tx-dark">
-                  Términos y condiciones
+                  {tyc.tycTitle}
                 </h2>
               </div>
             </div>
@@ -65,65 +46,17 @@ const TyC = () => {
       </div>
       {/* /.fancy-feature-fiftyOne */}
 
-      {/* 
-			=============================================
-				Feature Section Thirty Seven
-			============================================== 
-			*/}
-      {/*<div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div
-                className="block-style-four pe-xxl-5 me-xxl-4 md-mb-70"
-                data-aos="fade-right"
-              >
-                <div className="title-style-six">
-                  <div className="sc-title-two text-uppercase">WHY US</div>
-                  <h2 className="main-title fw-500 tx-dark">
-                    Everything with Marketing.
-                  </h2>
-                </div>
-                <p className="fs-20 pt-20 pb-30 lg-pt-10 lg-pb-20">
-                  Turn your business into a sales machine today with lorem
-                  Things go wrong have questions.
-                </p>
-                <ul className="style-none list-item">
-                  {features.map((feature, index) => (
-                    <li key={index}>{feature.text}</li>
-                  ))}
-                </ul>
-                <div className="d-inline-flex align-items-center mt-35 lg-mt-20">
-                  <ul className="d-flex style-none rating">{starRating}</ul>
-                  <div className="fs-20 ms-2">
-                    <strong className="fw-500 tx-dark">4.8</strong>
-                    <span className="tx-dark fs-16 opacity-50">
-                      (30k Reviews)
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xxl-5 col-lg-6 ms-auto">
-              <Block />
-            </div>
-          </div>
-        </div>
-      </div>*/}
-      {/* /.fancy-feature-thirtySeven */}
-
       <div className="service-details position-relative mt-20 md-mt-20 asistencia-feature">
         <div className="container">
           <div className="row">
             <div className="col-xl-9 col-lg-8 d-flex align-items-center" data-aos="fade-right">
               <div className="service-details-meta">
                 <p className="text-lg tx-dark">
-                  * Para las pólizas del producto larga estadía la Exclusión I.
+                  {tyc.tycDesc1}
                 </p>
 
                 <p className="text-lg tx-dark">
-                  f) queda eliminada por medio del Endoso NU-PALT.
+                  {tyc.tycDesc2}
                 </p>
 
                 <div className="d-flex asistencia-buttons mt-50">

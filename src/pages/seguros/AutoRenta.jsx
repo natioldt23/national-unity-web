@@ -55,7 +55,12 @@ const AutoRenta = () => {
                   {rental.rentalDesc}
                 </p>
                 <div>
-                  <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
+                  <a href={
+                    lang === 'es' ?
+                      "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/"
+                      : 
+                      "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/index.php?lang=en"
+                  } target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">
                       {rental.rentalCotiza}
                     </button>
@@ -128,7 +133,12 @@ const AutoRenta = () => {
             {rental.rentalPasosListoDesc}
           </p>
           <div  className="d-flex justify-content-center pt-20">
-            <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
+            <a href={
+                lang === 'es' ?
+                  "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/"
+                  : 
+                  "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/index.php?lang=en"
+            } target="blank">
               <button className="fw-500 text-white tran3s button-primary" type="submit">
                 {rental.rentalCotiza}
               </button>

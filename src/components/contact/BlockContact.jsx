@@ -48,7 +48,7 @@ const BlockContact = () => {
     {
       icon: "/images/icon/icon_180.svg",
       title: "Whatsapp Support",
-      content: "Servicio de chat en vivo",
+      content: "Live chat service",
       link: "https://wa.me/8134039138",
       delay: "300",
     },

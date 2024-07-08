@@ -57,7 +57,12 @@ const LargaEstadia = () => {
                   {longterm.longtermDesc}
                 </p>
                 <div>
-                  <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
+                  <a href={
+                    lang === 'es' ?
+                      "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/"
+                      : 
+                      "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/index.php?lang=en"
+                  } target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">
                       {longterm.longtermCotiza}
                     </button>
@@ -97,7 +102,7 @@ const LargaEstadia = () => {
           </TabList>
 
           <TabPanel>
-            <h2 className="pb-30">Cobertura SPLIT (Dividida)</h2>
+            <h2 className="pb-30">{longterm.coberturaSplit}</h2>
             <p className="tx-dark fs-5">
               {longterm.coberturaSplitDesc}   
             </p>

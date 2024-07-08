@@ -43,7 +43,7 @@ const Insurance = () => {
 				Productos Section Thirty Six
 			============================================== 
 			*/}
-      <div className="fancy-feature-thirtySix mt-190 lg-mt-140">
+      <div className="fancy-feature-thirtySix mt-190 lg-mt-140 pb-40">
         <div className="container">
           <div className="wrapper position-relative">
             <div className="row">
@@ -84,7 +84,7 @@ const Insurance = () => {
 				Feature Section Thirty Four
 			============================================== 
 			--> */}
-      <div className="fancy-feature-thirtyFour mt-50">
+      <div className="fancy-feature-thirtyFour mt-190 lg-mt-100">
         <div className="container">
           <div className="row gx-xxl-5">
             <Feature />
@@ -99,7 +99,7 @@ const Insurance = () => {
 				Facts Section Thirty Five
 			=====================================================
 			*/}
-      <div className="fancy-feature-thirtyFive home-section">
+      <div className="fancy-feature-thirtyFive mt-190 lg-mt-100 pb-40">
         <div className="container" data-aos="fade-up">
           <Banner />
           {/* /.top-banner */}

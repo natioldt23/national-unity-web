@@ -1,24 +1,15 @@
 import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
-import Service1 from "../../components/services/Service1";
-import Block from "../../components/services/Block";
-import Testimonial from "../../components/home-page/home-3/Testimonial";
-import Faq from "../../components/services/Faq";
-import FaqAsistencia from "../../components/services/FaqAsistencia";
-import Partners from "../../components/services/Partners";
-import { Link } from "react-router-dom";
-import AsistenciaPlus from "./AsistenciaPlus";
-import FaqAuto from "./FaqAuto";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import CoberturasAuto from "./CoberturasAuto";
-import {beneficiosAuto} from "../../data/beneficios-auto";
 import FaqMoto from "./FaqMoto";
 import { useTranslation } from "react-i18next";
+import { LanguageContext } from "@/App";
+import { useContext } from "react";
 
 const MotoUSA = () => {
   const { t } = useTranslation()
+  const { lang } = useContext(LanguageContext)
   const moto = t("moto")
 
   return (
@@ -50,7 +41,12 @@ const MotoUSA = () => {
                   {moto.motoDesc}
                 </p>
                 <div>
-                  <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
+                  <a href={
+                    lang === 'es' ?
+                      "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/"
+                      : 
+                      "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/index.php?lang=en"
+                  } target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">
                       {moto.motoCotiza}
                     </button>

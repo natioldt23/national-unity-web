@@ -10469,7 +10469,7 @@ body .btn-twentySix:hover:after {
   left: 72%;
 }
 
-// CLASES AGREGADAS 
+//----------------------------------------NUEVAS CLASES AGREGADAS -------------------
 
 .logo-nu {
   width: 100px;
@@ -10533,6 +10533,19 @@ path {
 }
 
 path:hover {
+  cursor: pointer;
+  fill: #00DBB3 !important;
+  z-index: 1000;
+  border: 1px solid #fff;
+}
+
+circle {
+  pointer-events: all;
+  fill: #0276dd;
+  transition: fill 0.4s ease;
+}
+
+circle:hover {
   cursor: pointer;
   fill: #00DBB3 !important;
   z-index: 1000;
@@ -10640,6 +10653,13 @@ path:hover {
   transition: 0.3s ease-out;
 }
 
+.beneficios-item-car {
+  box-shadow: 0px 30px 15px rgba(19, 45, 73, 0.08);
+  padding: 30px 70px 50px;
+  border: 1px solid transparent;
+  transition: 0.3s ease-out;
+}
+
 .beneficios-item-unity {
   box-shadow: 0px 30px 15px rgba(19, 45, 73, 0.08);
   padding: 30px 70px 50px;
@@ -10664,7 +10684,10 @@ path:hover {
   transition: 0.3s ease-out;
 }
 
-.beneficios-item:hover {
+.beneficios-item:hover,
+.beneficios-item-premium:hover,
+.beneficios-item-renta:hover,
+.beneficios-item-unity:hover {
   transition: 0.3s ease-in;
   border: 1px solid #0276dd;
 }
@@ -10897,6 +10920,10 @@ path:hover {
   } 
 
   .beneficios-item-camion {
+    height: 400px !important;
+  }
+
+  .beneficios-item-car {
     height: 400px !important;
   }
 

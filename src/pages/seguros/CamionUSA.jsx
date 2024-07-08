@@ -28,7 +28,7 @@ const customStyles = {
 
 const CamionUSA = () => {
   const { t } = useTranslation();
-  const camion = t("camion");
+  const camion = t('camion');
   const { lang } = useContext(LanguageContext);
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -36,28 +36,53 @@ const CamionUSA = () => {
     nombre: '',
     telefono: '',
     email: '',
-    empresa: ''
+    empresa: '',
   });
 
   const openModal = () => setModalIsOpen(true);
-  const closeModal = () => setModalIsOpen(false);
+  const closeModal = () => {
+    setModalIsOpen(false);
+    // Resetear el formulario después de cerrar el modal
+    setFormData({
+      nombre: '',
+      telefono: '',
+      email: '',
+      empresa: '',
+    });
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí puedes implementar la lógica para enviar el correo
-    console.log(formData);
-    // Enviar los datos del formulario al servidor o correo electrónico
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-    // Cerrar el modal después de enviar los datos
-    closeModal();
+    try {
+      const response = await fetch('https://www.nuicservices.com/phpWeb/send-mail.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok ' + response.statusText);
+      }
+
+      const result = await response.text();
+      console.log(result);
+      // Cerrar el modal después de enviar el formulario
+      closeModal();
+    } catch (error) {
+      console.error('Error:', error);
+      closeModal();
+    }
   };
 
   return (
@@ -152,8 +177,12 @@ const CamionUSA = () => {
             />
           </div>
           <div className="form-modal-buttons">
-            <button className="form-modal-close" onClick={closeModal}>{camion.camionModalCerrar}</button>
-            <button className="form-modal-enviar" type="submit">{camion.camionModalEnviar}</button>
+            <button className="form-modal-close" onClick={closeModal}>
+              {camion.camionModalCerrar}
+            </button>
+            <button className="form-modal-enviar" type="submit">
+              {camion.camionModalEnviar}
+            </button>
           </div>
         </form>
       </Modal>

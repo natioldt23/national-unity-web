@@ -14,6 +14,7 @@ const Map = () => {
   useEffect(() => {
     const detailsBox = detailsBoxRef.current;
 
+    
     const handleMouseOver = (e) => {
       if (e.target.tagName === 'path') {
         const state = e.target.firstChild.innerHTML;
@@ -30,23 +31,14 @@ const Map = () => {
           <p style='margin: 0; text-align: center;'>${stateCoverage}</p>
         `;
         detailsBox.style.opacity = '100%';
-      } /*else if (e.target.tagName === 'g'){
-        const stateDC = e.target.dataset.name;
-
-        let stateCoverageDC;
-        statesData.forEach((stateData) => {
-          if (stateDC === stateData.name) {
-            stateCoverageDC = stateData.limit;
-          }
-        });
-
+      } else if (e.target.tagName === 'circle'){
         detailsBox.innerHTML = `
-          <h4 style='color: #FFF;'>${stateDC}</h4>
-          <p style='margin: 0; text-align: center;'>${stateCoverageDC}</p>
+          <h4 style='color: #FFF;'>Washington D.C.</h4>
+          <p style='margin: 0; text-align: center;'>25/50/10</p>
         `;
         detailsBox.style.opacity = '100%';
 
-      } */else {
+      } else {
         detailsBox.style.opacity = '0%';
       }
     };
@@ -54,8 +46,8 @@ const Map = () => {
     const handleMouseMove = (e) => {
       const x = e.clientX;
       const y = e.clientY;
-      detailsBox.style.top = `${y + 20}px`;
-      detailsBox.style.left = `${x -100}px`;
+      detailsBox.style.top = `${y + 10}px`;
+      detailsBox.style.left = `${x - 300}px`;
     };
 
     const handleMouseMoveMobile = (e) => {

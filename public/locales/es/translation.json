@@ -23,6 +23,7 @@
     "introAboutPhraseOne": " es el ",
     "introAboutPhraseTwo": " en el mercado de Responsabilidad Civil para autos y camiones que circulan en los ",
     "introAboutLider": "Líder",
+    "introAboutYears": "+50 años",
     "usaCan": "Estados Unidos y Canadá",
     "productsTitle": "Descubre todos nuestros productos.",
     "productoAuto": "Seguro de Auto USA",
@@ -45,12 +46,12 @@
   "asistencia": {
     "asistenciaEtiqueta": "Servicios",
     "asistenciaTitle": "Asistencia Vial",
-    "asistenciaInfo": "Se recomienda tener a la mano la siguiente información antes de solicitar un servicio deasistencia vial:",
+    "asistenciaInfo": "Se recomienda tener a la mano la siguiente información antes de solicitar un servicio de asistencia vial:",
     "asistenciaInfoOne": "Número de póliza completo",
     "asistenciaInfoTwo": "Teléfono donde contactarlo",
     "asistenciaInfoThree": "Correo electrónico",
     "asistenciaInfoFour": "Tipo de servicio solicitado",
-    "asistenciaTel": "En caso de que usted requiera Asistencia Vial dentro de los Estados Unidos de América deberásllamar al:",
+    "asistenciaTel": "En caso de que usted requiera Asistencia Vial dentro de los Estados Unidos de América deberás llamar al:",
     "asistenciaTelOne": "Sin costo desde USA: ",
     "asistenciaTelTwo": "Larga distancia dentro de USA y Canadá: ",
     "asistenciaTelThree": "Con costo desde México: ",
@@ -107,7 +108,15 @@
     "premiumDesc": "Incrementa el monto de tus coberturas",
     "premiumCotiza": "Cotiza en línea",
     "premiumItems": "El complemento perfecto, para quien ya cuenta con una póliza turista de cobertura primaria.",
-    "premiumFaq": "Preguntas Frecuentes"
+    "premiumFaq": "Preguntas Frecuentes",
+    "premiumModalTitle": "Cotiza tu seguro",
+    "premiumModalDesc": "Déjanos tus datos para que un agente te ayude con tu cotización",
+    "premiumModalName": "Nombre y Apellido",
+    "premiumModalTel": "Teléfono",
+    "premiumModalEmail": "Email",
+    "premiumModalEmpresa": "Empresa",
+    "premiumModalCerrar": "Cerrar",
+    "premiumModalEnviar": "Enviar"
   },
   "carro": {
     "carroEtiqueta": "Seguros",
@@ -125,7 +134,8 @@
     "coberturaLucDesc1": "Es una cobertura de Responsabilidad Civil o daños a terceros con Límite Único Combinado (LUC), por evento en daños a bienes y personas.",
     "coberturaLucDesc2": "Esta cobertura puede utilizar hasta $100,000 USD de manera libre de limitantes en lesiones corporales o daños a bienes materiales.",
     "coberturaLucDesc3": "Aplica para cualquier estado de ingreso a USA que selecciones.",
-    "carroFaq": "Preguntas Frecuentes"
+    "carroFaq": "Preguntas Frecuentes",
+    "carroBeneficios": "Beneficios"
   },
   "camion": {
     "camionEtiqueta": "Seguros",
@@ -181,13 +191,24 @@
   "card": {
     "cardEtiqueta": "Seguros",
     "cardTitle": "Unity Card: tarjeta prepagada",
-    "cardDesc1": "Adquierela hoy y activa cuando la necesites desde donde estés.",
+    "cardDesc1": "Adquiérela hoy y activa cuando la necesites desde donde estés.",
     "cardActiva": "Activa tu Unity Card ahora",
     "coberturaSplitEtiqueta": "Cobertura SPLIT",
     "coberturaSplit": "Cobertura SPLIT (Dividida)",
-    "coberturaSplitDesc": "Es una cobertura SPLIT de Responsabilidad Civil (RC) o daños a terceros SPLIT, viene dividida para lesiones corporales, accidentes y daños materiales.",
+    "coberturaSplitDesc": "Es una cobertura SPLIT de Responsabilidad Civil o daños a terceros, viene dividida para lesiones corporales, accidentes y daños materiales. Ofrecemos cobertura en todo Estados Unidos, ajustándonos a los límites mínimos exigidos por cada estado.",
     "cardFaq": "Preguntas Frecuentes",
     "cardPasos": "Pasos para activar tu tarjeta",
     "beneficios": "Beneficios"
+  },
+  "tyc": {
+    "tycEtiqueta": "Servicios",
+    "tycTitle": "Términos y condiciones",
+    "tycDesc1": "* Para las pólizas del producto larga estadía la Exclusión I.",
+    "tycDesc2": "f) queda eliminada por medio del Endoso NU-PALT."
+  },
+  "agentes": {
+    "agentesTitle": "Selecciona un agente",
+    "agentesDesc1": "A través de nuestros agentes te brindamos un servicio cercano y personalizado.",
+    "agentesDesc2": "Selecciona el agente que más prefieras, todos te ofrecerán los beneficios completos de la cobertura y servicio que elijas en tu cotización."
   }
 }

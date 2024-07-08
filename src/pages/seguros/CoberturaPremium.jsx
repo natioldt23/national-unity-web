@@ -1,24 +1,28 @@
 import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
-import Service1 from "../../components/services/Service1";
-import Block from "../../components/services/Block";
-import Testimonial from "../../components/home-page/home-3/Testimonial";
-import Faq from "../../components/services/Faq";
-import FaqAsistencia from "../../components/services/FaqAsistencia";
-import Partners from "../../components/services/Partners";
-import { Link } from "react-router-dom";
-import AsistenciaPlus from "./AsistenciaPlus";
-import FaqAuto from "./FaqAuto";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import TruckerPlus from "./TruckerPlus";
-import FaqCamion from "./FaqCamion";
-import {beneficiosCamion} from "../../data/beneficios-camion";
 import FaqPremium from "./FaqPremium";
 import { useTranslation } from "react-i18next";
 import { LanguageContext } from "@/App";
-import { useContext } from "react";
+import React, { useState, useContext } from "react";
+import Modal from "react-modal";
+
+// Estilos del modal
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    transition: '0.3s ease-in-out',
+    borderRadius: '7px',
+    fontFamily: 'gordita',
+    transition: 'opacity 300ms ease-in-out, transform 300ms ease-in-out'
+  }
+};
 
 const CoberturaPremium = () => {
   const { lang } = useContext(LanguageContext)
@@ -30,7 +34,7 @@ const CoberturaPremium = () => {
       id: 1,
       title: "$300,000 usd",
       rating: 5,
-      text1: "Incrementa desde 100 mil, 200 mil hasta 300 mil USD para cobertura de responsabilidad civil.",
+      text1: "Incrementa desde 100 mil, 200 mil y hasta 300 mil USD para cobertura de responsabilidad civil.",
       author: " ",
       location: "",
       image: "/images/icon/escudo_auto_NU.svg",
@@ -67,7 +71,7 @@ const CoberturaPremium = () => {
   const beneficiosPremiumEng = [
     {
       id: 1,
-      title: "$300,000 usd",
+      title: "$300,000 USD",
       rating: 5,
       text1: "Increases from 100,000, 200,000 to 300,000 USD for liability coverage.",
       author: " ",
@@ -76,7 +80,7 @@ const CoberturaPremium = () => {
     },
     {
       id: 2,
-      title: "$15,000 usd",
+      title: "$15,000 USD",
       rating: 5,
       text1: "Get this coverage for medical expenses.",
       author: "",
@@ -102,21 +106,66 @@ const CoberturaPremium = () => {
       image: "/images/media/img_55.jpg",
     },*/
   ];
+  
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    nombre: '',
+    telefono: '',
+    email: '',
+    empresa: '',
+  });
+
+  const openModal = () => setModalIsOpen(true);
+  const closeModal = () => {
+    setModalIsOpen(false);
+    // Resetear el formulario después de cerrar el modal
+    setFormData({
+      nombre: '',
+      telefono: '',
+      email: '',
+      empresa: '',
+    });
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const response = await fetch('https://www.nuicservices.com/phpWeb/send-mail-premium.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok ' + response.statusText);
+      }
+
+      const result = await response.text();
+      console.log(result);
+      // Cerrar el modal después de enviar el formulario
+      closeModal();
+    } catch (error) {
+      console.error('Error:', error);
+      closeModal();
+    }
+  };
+
 
   return (
     <>
       <Seo pageTitle="Service V1" />
-      {/* <!-- 
-      =============================================
-      Theme Default Menu
-      ============================================== 	
-      --> */}
       <DefaulHeader />
-      {/* 
-			=============================================
-				Feature Section Fifty One
-			============================================== 
-			*/}
       <div className="fancy-feature-fiftyOne d-flex align-items-center seguros-hero position-relative mt-150 pb-100">
         <div className="container">
           <div className="row">
@@ -132,11 +181,13 @@ const CoberturaPremium = () => {
                   {premium.premiumDesc}
                 </p>
                 <div>
-                  <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
-                    <button className="fw-500 text-white tran3s button-primary" type="submit">
-                      {premium.premiumCotiza}
-                    </button>
-                  </a>
+                  <button 
+                    className="fw-500 text-white tran3s button-primary" 
+                    type="submit"
+                    onClick={openModal}
+                  >
+                    {premium.premiumCotiza}
+                  </button>
                 </div>
               </div>
             </div>
@@ -148,12 +199,70 @@ const CoberturaPremium = () => {
               />
             </div>
           </div>
-          {/* End .row */}
         </div>
-        {/* /.container */}
-        
       </div>
-      {/* /.fancy-feature-fiftyOne */}
+
+      {/* Modal */}
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Cotiza tu seguro"
+        closeTimeoutMS={300}
+      >
+        <h3 className="form-title">{premium.premiumModalTitle}</h3>
+        <p className="form-desc">{premium.premiumModalDesc}</p>
+        <form className="form-modal" onSubmit={handleSubmit}>
+          <div className="form-modal-name">
+            <label>{premium.premiumModalName}</label>
+            <input
+              type="text"
+              name="nombre"
+              value={formData.nombre}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-modal-tel">
+            <label>{premium.premiumModalTel}</label>
+            <input
+              type="tel"
+              name="telefono"
+              value={formData.telefono}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-modal-email">
+            <label>{premium.premiumModalEmail}</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-modal-empresa">
+            <label>{premium.premiumModalEmpresa}</label>
+            <input
+              type="text"
+              name="empresa"
+              value={formData.empresa}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-modal-buttons">
+            <button className="form-modal-close" onClick={closeModal}>
+              {premium.premiumModalCerrar}
+            </button>
+            <button className="form-modal-enviar" type="submit">
+              {premium.premiumModalEnviar}
+            </button>
+          </div>
+        </form>
+      </Modal>
 
       <div className="feedback-section-eleven position-relative mt-0 pt-70 lg-pt-50 pb-70 bg-gray lg-pb-50 beneficios-slider" data-aos="fade-up">
         <div className="container d-flex flex-column align-items-center">

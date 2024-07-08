@@ -37,7 +37,7 @@ const BeneficiosAuto = () => {
       <Slider {...settings}>
         {beneficiosAuto.slice(0, 4).map((item) => (
           <div className="item" key={item.id}>
-            <div className="feedback-block-eleven beneficios-item">
+            <div className="feedback-block-eleven beneficios-item-car">
               <div className="top-header d-flex align-items-center justify-content-between">
                 <div className="d-flex justify-content-between align-items-center w-100">
                   <h3 className="tx-dark m0">{item.title}</h3>

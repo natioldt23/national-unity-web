@@ -52,7 +52,12 @@ const AutosUSA = () => {
                   {carro.carroDesc}
                 </p>
                 <div>
-                  <a href="https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" target="blank">
+                  <a href={
+                    lang === 'es' ?
+                      "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/"
+                      : 
+                      "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/index.php?lang=en"
+                  } target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">
                       {carro.carroCotiza}
                     </button>
@@ -128,7 +133,7 @@ const AutosUSA = () => {
       <div className="feedback-section-eleven position-relative pb-70 lg-pb-50 beneficios-slider" data-aos="fade-up">
         <div className="container">
           <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center">
-            Beneficios
+            {carro.carroBeneficios}
           </h2>
         </div>
         <div>
@@ -138,7 +143,7 @@ const AutosUSA = () => {
               lang === 'es' ?
               beneficiosAuto.slice(0, 4).map((item) => (
                 <div className="item col-lg-4" key={item.id}>
-                  <div className="feedback-block-eleven beneficios-item">
+                  <div className="feedback-block-eleven beneficios-item-car">
                     <div className="top-header d-flex align-items-center justify-content-between">
                       <div className="d-flex justify-content-between align-items-center w-100">
                         <h3 className="tx-dark m0">{item.title}</h3>
@@ -166,7 +171,7 @@ const AutosUSA = () => {
               )) : 
               beneficiosAutoEng.slice(0, 4).map((item) => (
                 <div className="item col-lg-4" key={item.id}>
-                  <div className="feedback-block-eleven beneficios-item">
+                  <div className="feedback-block-eleven beneficios-item-car">
                     <div className="top-header d-flex align-items-center justify-content-between">
                       <div className="d-flex justify-content-between align-items-center w-100">
                         <h3 className="tx-dark m0">{item.title}</h3>
@@ -178,10 +183,10 @@ const AutosUSA = () => {
                         />
                       </div>
                     </div>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text1}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text2}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text3}</p>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: "23px",}}>{item.text4}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text1}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text2}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text3}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text4}</p>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="cost fw-500 tx-dark fs-20">
                         {item.author}
