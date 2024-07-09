@@ -54,7 +54,7 @@ const UnityCard = () => {
                   {card.cardDesc1}
                 </p>
                 <div>
-                  <a href="https://www.nationalunity.com/national/uc/code/activa.asp" target="blank">
+                  <a href="./national/uc/code/activa.asp" target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">
                       {card.cardActiva}
                     </button>

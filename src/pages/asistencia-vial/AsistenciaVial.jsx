@@ -22,17 +22,17 @@ const AsistenciaVial = () => {
     {
       id: 1,
       cardNo: "card-one",
-      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/LIQUIDOS_NU-01.svg",
+      src: "/images/icon/LIQUIDOS_NU-01.svg",
     },
     {
       id: 2,
       cardNo: "card-two",
-      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/LLANTA_NU-01.svg"
+      src: "/images/icon/LLANTA_NU-01.svg"
     },
     {
       id: 3,
       cardNo: "card-three",
-      src: "https://www.nationalunity.com/wp-content/uploads/2023/10/PILA_NU-01.svg"
+      src: "/images/icon/PILA_NU-01.svg"
     },
     /*{
       id: 4,

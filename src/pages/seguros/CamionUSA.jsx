@@ -63,7 +63,7 @@ const CamionUSA = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('https://www.nuicservices.com/phpWeb/send-mail.php', {
+      const response = await fetch('./phpWeb/send-mail.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
