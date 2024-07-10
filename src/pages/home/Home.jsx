@@ -1,20 +1,13 @@
-import { Link } from "react-router-dom";
 import Seo from "../../components/common/Seo";
-import Footer from "../../components/footer/Footer";
 import DefaultFooter from "../../components/footer/DefaultFooter";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import TiempoCruces from "../../components/home-page/home-1/TiempoCruces";
 import Map from "../../components/home-page/home-1/Map";
 import Banner from "../../components/home-page/home-1/Banner";
-import Block from "../../components/home-page/home-1/Block";
-import Blog from "../../components/home-page/home-1/Blog";
-import ContactForm from "../../components/home-page/home-1/ContactForm";
 import Feature from "../../components/home-page/home-1/Feature";
 import Hero from "../../components/home-page/home-1/Hero";
 import IntroAbout from "../../components/home-page/home-1/IntroAbout";
 import Service from "../../components/home-page/home-1/Service";
-import Testimonial from "../../components/home-page/home-1/Testimonial";
-import WhyChoose from "../../components/home-page/home-1/WhyChoose";
 import { useTranslation } from "react-i18next";
 
 const Insurance = () => {

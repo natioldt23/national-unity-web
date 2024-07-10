@@ -58,12 +58,12 @@ const DefaulHeader = () => {
             </button>
           </div>
           <div className="right-widget ms-auto d-flex align-items-center order-lg-3">
-            <Link
-              to="./indexlogin.asp"
+            <a
+              href="./indexlogin.asp"
               className="btn-twentyOne fw-500 tran3s d-none d-lg-block"
             >
               {navbarLang.accesoAgente}
-            </Link>
+            </a>
           </div>{" "}
           {/* /.right-widget */}
           <MainMenu />

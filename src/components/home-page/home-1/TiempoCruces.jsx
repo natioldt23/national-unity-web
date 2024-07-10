@@ -47,7 +47,7 @@ const TiempoCruces = () => {
           {/* End list */}
 
           <div className="d-sm-flex align-items-center mt-55 lg-mt-30">
-            <a href="./national/Tiempo_Cruce/code/" target="blank">
+            <a href="/national/Tiempo_Cruce/code/" target="blank">
               <button className="fw-500 text-white tran3s button-primary" type="submit">
                 {home.crucesTitle}
               </button>

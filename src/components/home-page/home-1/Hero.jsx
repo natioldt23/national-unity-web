@@ -52,7 +52,7 @@ const Hero1 = () => {
                 </button>
               </a>
 
-              <a href="./national/uc/code/activa.asp" target="blank">
+              <a href="/national/uc/code/activa.asp" target="blank">
                 <button className="fw-500 text-white tran3s button-primary" type="submit">
                   {homeLang.activarUnityCard}
                 </button>

@@ -346,13 +346,13 @@ const MainMenu = () => {
 
         {/* Mobile Content */}
         <div className="mobile-content d-block d-lg-none">
-          <div className="d-flex flex-column align-items-center justify-content-center mt-70">
-            <Link
-              to="./indexlogin.asp"
-              className="btn-twentyOne fw-500 tran3s d-none d-lg-block"
+          <div className="d-flex flex-column align-items-center justify-content-center mt-20">
+            <a
+              href="./indexlogin.asp"
+              className="btn-twentyOne fw-500 tran3s d-block d-lg-none"
             >
               {navbarLang.accesoAgente}
-            </Link>
+            </a>
           </div>
         </div>
         {/* /.mobile-content */}

@@ -1,18 +1,9 @@
 import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
-import Service1 from "../../components/services/Service1";
-import Block from "../../components/services/Block";
-import Testimonial from "../../components/home-page/home-3/Testimonial";
-import Faq from "../../components/services/Faq";
-import FaqAsistencia from "../../components/services/FaqAsistencia";
-import Partners from "../../components/services/Partners";
-import { Link } from "react-router-dom";
-import AsistenciaPlus from "./AsistenciaPlus";
 import FaqUnityCard from "./FaqUnityCard";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import CoberturasAuto from "./CoberturasAuto";
 import {beneficiosAuto, beneficiosAutoEng} from "../../data/beneficios-auto";
 import PasosUnityCard from "./PasosUnityCard";
 import { useTranslation } from "react-i18next";
@@ -54,8 +45,8 @@ const UnityCard = () => {
                   {card.cardDesc1}
                 </p>
                 <div>
-                  <a href="./national/uc/code/activa.asp" target="blank">
-                    <button className="fw-500 text-white tran3s button-primary" type="submit">
+                  <a href="/national/uc/code/activa.asp" target="blank">
+                    <button className="fw-500 text-white tran3s button-primary">
                       {card.cardActiva}
                     </button>
                   </a>

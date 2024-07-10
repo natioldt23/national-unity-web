@@ -1,13 +1,6 @@
 import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
-import Service1 from "../../components/services/Service1";
-import Block from "../../components/services/Block";
-import Testimonial from "../../components/home-page/home-3/Testimonial";
-import Faq from "../../components/services/Faq";
-import FaqAsistencia from "../../components/services/FaqAsistencia";
-import Partners from "../../components/services/Partners";
-import { Link } from "react-router-dom";
 import AsistenciaPlus from "./AsistenciaPlus";
 import FaqAuto from "./FaqAuto";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';

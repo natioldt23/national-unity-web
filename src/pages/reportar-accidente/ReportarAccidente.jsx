@@ -1,13 +1,6 @@
 import Seo from "../../components/common/Seo";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
-import Service1 from "../../components/services/Service1";
-import Block from "../../components/services/Block";
-import Testimonial from "../../components/home-page/home-3/Testimonial";
-import Faq from "../../components/services/Faq";
-import FaqAsistencia from "../../components/services/FaqAsistencia";
-import Partners from "../../components/services/Partners";
-import { Link } from "react-router-dom";
 import Steps from "@/components/reportarAccidente/Steps";
 import { useTranslation } from "react-i18next";
 
@@ -54,54 +47,6 @@ const ReportarAccidente = () => {
       </div>
       {/* /.fancy-feature-fiftyOne */}
 
-      {/* 
-			=============================================
-				Feature Section Thirty Seven
-			============================================== 
-			*/}
-      {/*<div className="fancy-feature-thirtySeven mt-225 lg-mt-120">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div
-                className="block-style-four pe-xxl-5 me-xxl-4 md-mb-70"
-                data-aos="fade-right"
-              >
-                <div className="title-style-six">
-                  <div className="sc-title-two text-uppercase">WHY US</div>
-                  <h2 className="main-title fw-500 tx-dark">
-                    Everything with Marketing.
-                  </h2>
-                </div>
-                <p className="fs-20 pt-20 pb-30 lg-pt-10 lg-pb-20">
-                  Turn your business into a sales machine today with lorem
-                  Things go wrong have questions.
-                </p>
-                <ul className="style-none list-item">
-                  {features.map((feature, index) => (
-                    <li key={index}>{feature.text}</li>
-                  ))}
-                </ul>
-                <div className="d-inline-flex align-items-center mt-35 lg-mt-20">
-                  <ul className="d-flex style-none rating">{starRating}</ul>
-                  <div className="fs-20 ms-2">
-                    <strong className="fw-500 tx-dark">4.8</strong>
-                    <span className="tx-dark fs-16 opacity-50">
-                      (30k Reviews)
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xxl-5 col-lg-6 ms-auto">
-              <Block />
-            </div>
-          </div>
-        </div>
-      </div>*/}
-      {/* /.fancy-feature-thirtySeven */}
-
       <div className="service-details position-relative mt-25 lg-mb-120 asistencia-feature">
         <div className="container">
           <div className="row align-items-start justify-content-center">
@@ -110,7 +55,7 @@ const ReportarAccidente = () => {
                 <p className="text-hero-banner tx-dark pt-0">
                   {accidente.accidenteCTA}
                 </p>
-                <a href="./national/reporte_accidente/package/html/main/" target="blank">
+                <a href="/national/reporte_accidente/package/html/main/" target="blank">
                   <button className="fw-500 text-white tran3s button-primary" type="submit">
                     {accidente.accidenteTitle}
                   </button>
