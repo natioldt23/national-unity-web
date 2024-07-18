@@ -71,7 +71,7 @@ const BlockContact = () => {
               <img src={block.icon} alt="icon" />
             </div>
             <h5 className="title">{block.title}</h5>
-            <p>
+            <p className="mb-0">
               {block.content} <br />
               {block.link && (
                 <a

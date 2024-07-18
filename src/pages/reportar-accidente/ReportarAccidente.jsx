@@ -22,11 +22,11 @@ const ReportarAccidente = () => {
 				Feature Section Fifty One
 			============================================== 
 			*/}
-      <div className="fancy-feature-fiftyOne position-relative mt-200">
+      <div className="fancy-feature-fiftyOne position-relative accidente-hero">
         <div className="container">
           <div className="row">
             <div className="col-xxl-7 col-lg-6" data-aos="fade-right">
-              <div className="title-style-five mb-45 md-mb-10">
+              <div className="title-style-five mb-30 md-mb-10">
                 <div className="sc-title-two fst-italic position-relative">
                   {accidente.accidenteEtiqueta}
                 </div>
@@ -179,7 +179,7 @@ const ReportarAccidente = () => {
                         {accidente.accidenteImportanteFooter}
                       </h4>
                       <div className="sc-title fs-18 pb-10 text-white">
-                        <ul className="list-item">
+                        <ul className="list-item text-start mt-3">
                           <li className="mb-2">
                             {accidente.accidenteImportanteFooter1}  
                           </li>                        

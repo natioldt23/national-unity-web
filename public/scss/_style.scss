@@ -5650,7 +5650,7 @@ body .btn-twentySix:hover:after {
   font-weight: 500;
   font-size: 22px;
   line-height: 1.62em;
-  padding: 32px 0;
+  padding: 20px 0;
   box-shadow: none;
   border-radius: 0;
   color: #212427;
@@ -9627,16 +9627,16 @@ body .btn-twentySix:hover:after {
   background: transparent;
 }
 .address-block-two .title {
-  font-size: 24px;
+  font-size: 22px;
   padding: 20px 0 0;
 }
 .address-block-two p {
-  font-size: 19px;
+  font-size: 16px;
   line-height: 1.65em;
   color: #878787;
 }
 .address-block-two p .call {
-  font-size: 22px;
+  font-size: 19px;
   color: var(--prime-ten);
 }
 .address-block-two p .call:hover {
@@ -9805,7 +9805,7 @@ body .btn-twentySix:hover:after {
 }
 .block-style-eight .percent_text {
   font-weight: 500;
-  color: #212427f5c;
+  color: #212427;
   position: absolute;
   font-size: 20px;
   left: 50%;
@@ -10913,6 +10913,21 @@ circle:hover {
   transform: translateY(-10px);
 }
 
+.contacto-hero {
+  margin-top: 150px;
+}
+
+.accidente-hero {
+  margin-top: 150px;
+}
+
+.asistencia-p {
+  font-weight: 500;
+}
+
+.road-assistance {
+  height: 250px;
+}
 
 @media (min-width: 1100px) {
   .language-btn {
@@ -10924,7 +10939,7 @@ circle:hover {
   }
 
   .beneficios-item-car {
-    height: 400px !important;
+    height: 450px !important;
   }
 
   .asistencia-icons {
@@ -10935,8 +10950,6 @@ circle:hover {
     box-shadow: 0px 30px 15px rgba(19, 45, 73, 0.08) !important;
   }
   
-  
-
   .main-buttons {
     flex-direction: row;
     gap: 24px;
@@ -11006,7 +11019,7 @@ circle:hover {
   }
 
   .reportar-accidente-img {
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -11014,6 +11027,14 @@ circle:hover {
   .seguros-hero {
     height: 100vh;
     margin-top: 0px !important;
+  }
+
+  .address-block-two .title {
+    font-size: 24px;
+  }
+
+  .contacto-hero {
+    margin-top: 200px;
   }
 
   .logo-nu {
@@ -11030,5 +11051,37 @@ circle:hover {
 
   .text-hero-banner {
     font-size: 22px !important;
+  }
+
+  .beneficios-item-car {
+    height: 400px !important;
+  }
+
+  .address-block-two p {
+    font-size: 19px;
+  }
+
+  .address-block-two p .call {
+    font-size: 22px;
+  }
+
+  .accidente-hero {
+    margin-top: 200px;
+  }
+
+  .reportar-accidente-img {
+    height: 400px;
+  }
+
+  .asistencia-p {
+    font-weight: 400;
+  }
+
+  .accordion-style-two .accordion-button {
+    padding: 32px 0;
+  }
+  
+  .road-assistance {
+    height: inherit;
   }
 }

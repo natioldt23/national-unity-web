@@ -51,7 +51,7 @@ const AsistenciaVial = () => {
 				Feature Section Fifty One
 			============================================== 
 			*/}
-      <div className="fancy-feature-fiftyOne position-relative mt-200">
+      <div className="fancy-feature-fiftyOne position-relative mt-150 mt-lg-200">
         <div className="container">
           <div className="row">
             <div className="col-xxl-7 col-lg-6" data-aos="fade-right">
@@ -124,12 +124,12 @@ const AsistenciaVial = () => {
       </div>*/}
       {/* /.fancy-feature-thirtySeven */}
 
-      <div className="service-details position-relative mt-50 mb-170 md-mt-50 lg-mb-120 asistencia-feature">
+      <div className="service-details position-relative mb-170 lg-mb-120 asistencia-feature">
         <div className="container">
           <div className="row">
             <div className="col-xl-9 col-lg-8" data-aos="fade-right">
               <div className="service-details-meta">
-                <p className="text-lg tx-dark">
+                <p className="text-lg tx-dark asistencia-p">
                   {asistencia.asistenciaInfo}
                 </p>
                 <ul className="style-none list-item md-mb-40 tx-dark">
@@ -139,7 +139,7 @@ const AsistenciaVial = () => {
                   <li>{asistencia.asistenciaInfoFour}</li>
                 </ul>
 
-                <p className="text-lg tx-dark">
+                <p className="text-lg tx-dark asistencia-p">
                   {asistencia.asistenciaTel}
                 </p>
 

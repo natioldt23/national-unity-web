@@ -139,7 +139,7 @@ const CoberturaPremium = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('./phpWeb/send-mail-premium.php', {
+      const response = await fetch('/phpWeb/send-mail-premium.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',

@@ -59,18 +59,20 @@ const Service = () => {
           data-aos="fade-up"
           data-aos-delay={service.delayAnim}
         >
-          <div className="card-style-sixteen products-home tran3s text-center position-relative mt-30">
-            <div className="icon">
-              <img src={service.icon} alt="" className="lazy-img m-auto" />
-            </div>
-            <h4 className="tx-dark pt-20">{service.title}</h4>
-            <Link
-              to={service.url}
-              className="read-more rounded-circle text-start tran3s"
-            >
-              <i className="bi bi-arrow-right" />
-            </Link>
-          </div>{" "}
+          <Link
+            to={service.url}
+            
+          >
+            <div className="card-style-sixteen products-home tran3s text-center position-relative mt-30">
+              <div className="icon">
+                <img src={service.icon} alt="" className="lazy-img m-auto" />
+              </div>
+              <h4 className="tx-dark pt-20">{service.title}</h4>
+              <div className="read-more rounded-circle text-start tran3s">
+                <i className="bi bi-arrow-right" />
+              </div>
+            </div>{" "}
+          </Link>
           {/* /.card-style-sixteen */}
         </div>
       ))}

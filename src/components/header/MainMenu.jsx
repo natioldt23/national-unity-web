@@ -348,7 +348,7 @@ const MainMenu = () => {
         <div className="mobile-content d-block d-lg-none">
           <div className="d-flex flex-column align-items-center justify-content-center mt-20">
             <a
-              href="./indexlogin.asp"
+              href="/indexlogin.asp"
               className="btn-twentyOne fw-500 tran3s d-block d-lg-none"
             >
               {navbarLang.accesoAgente}
