@@ -32,7 +32,7 @@ const AsistenciaPlus = () => {
               {carro.carroAsistencia}
             </h2>
           </div>
-          <p className="fs-20 pt-30 pb-30 lg-pb-20">
+          <p className="asistencia-desc pt-30 pb-30 lg-pb-20">
             {carro.carroAsistenciaDesc}
           </p>
           <ul className="style-none list-item">
@@ -47,7 +47,7 @@ const AsistenciaPlus = () => {
             }
           </ul>
           {/* End list */}
-          <p className="fs-20 pt-30 pb-30 lg-pb-20">
+          <p className="asistencia-desc pt-30 pb-30 lg-pb-20">
             {carro.carroAsistenciaEtiqueta}
           </p>
          

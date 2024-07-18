@@ -31,22 +31,22 @@ const TruckerPlus = () => {
               {camion.camionTrucker}
             </h2>
           </div>
-          <p className="fs-20 pt-30 pb-30 lg-pb-20">
+          <p className="asistencia-desc pt-30 pb-30 lg-pb-20">
           {camion.camionTruckerDesc}
           </p>
           <ul className="style-none list-item">
             {
               lang === 'es'?
               features.map((feature, index) => (
-                <li className="fs-4" key={index}>{feature}</li>
+                <li key={index}>{feature}</li>
               )) : 
               featuresEng.map((feature, index) => (
-                <li className="fs-4" key={index}>{feature}</li>
+                <li key={index}>{feature}</li>
               ))
             }
           </ul>
           {/* End list */}
-          <p className="fs-20 pt-30 pb-30 lg-pb-20">
+          <p className="asistencia-desc pt-30 pb-30 lg-pb-20">
             {camion.camionTruckerEtiqueta}
           </p>
          

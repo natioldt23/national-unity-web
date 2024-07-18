@@ -7225,7 +7225,8 @@ body .btn-twentySix:hover:after {
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Feature Section Thirty Eight ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .block-style-seven .list-item li {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 500;
   color: #212427;
   margin-bottom: 20px;
   position: relative;
@@ -10665,11 +10666,9 @@ circle:hover {
   padding: 30px 70px 50px;
   border: 1px solid transparent;
   transition: 0.3s ease-out;
-  height: 470px;
 }
 
 .beneficios-item-renta {
-  height: 465px !important;
   box-shadow: 0px 30px 15px rgba(19, 45, 73, 0.08);
   padding: 50px 70px;
   border: 1px solid transparent;
@@ -10929,7 +10928,37 @@ circle:hover {
   height: 250px;
 }
 
+.coberturas {
+  font-size: 32px !important;
+}
+
+.coberturas-desc {
+  font-size: 18px !important;
+}
+
+.asistencia-desc {
+  font-size: 18px;
+}
+
+.renta-p {
+  font-size: 18px !important;
+}
+
+.pasos-unity-img {
+  border-radius: 15% 0 15%;
+  width: 400px !important;
+}
+
 @media (min-width: 1100px) {
+
+  .beneficios-item-renta {
+    height: 350px !important;
+  }
+
+  .beneficios-item-unity {
+    height: 470px;
+  }
+
   .language-btn {
     padding-left: 0px;
   } 
@@ -11021,12 +11050,21 @@ circle:hover {
   .reportar-accidente-img {
     height: 300px;
   }
+
+  .beneficios-item-premium p {
+    font-size: 20px;
+  }
+  
 }
 
 @media (min-width: 1400px) {
   .seguros-hero {
     height: 100vh;
     margin-top: 0px !important;
+  }
+
+  .beneficios-item-unity {
+    height: 430px;
   }
 
   .address-block-two .title {
@@ -11083,5 +11121,42 @@ circle:hover {
   
   .road-assistance {
     height: inherit;
+  }
+
+  .coberturas {
+    font-size: 40px !important;
+  }
+
+  .coberturas-desc {
+    font-size: 20px !important;
+  }
+
+  .asistencia-desc {
+    font-size: 20px;
+  }
+
+  .block-style-seven .list-item li {
+    font-size: 24px;
+    font-weight: 400;
+    color: #212427;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 40px;
+  }
+
+  .renta-p {
+    font-size: 20px !important;
+  }
+
+  .beneficios-item-renta {
+    height: 400px !important;
+  }
+
+  .beneficios-item-premium p {
+    font-size: 22px;
+  }
+
+  .pasos-unity-img {
+    width: 500px !important;
   }
 }

@@ -92,7 +92,7 @@ const AutoRenta = () => {
                       <h3 className="tx-dark m0 pb-20">{item.title}</h3>
                     </div>
                   </div>
-                  <p className="tx-dark m-0 p-0" style={{fontSize: '20px'}}>{item.text1}</p>
+                  <p className="tx-dark m-0 p-0 renta-p">{item.text1}</p>
                 </div>
               </div>
               )) : 
@@ -104,7 +104,7 @@ const AutoRenta = () => {
                         <h3 className="tx-dark m0 pb-20">{item.title}</h3>
                       </div>
                     </div>
-                    <p className="tx-dark m-0 p-0" style={{fontSize: '20px'}}>{item.text1}</p>
+                    <p className="tx-dark m-0 p-0 renta-p">{item.text1}</p>
                   </div>
                 </div>
               ))

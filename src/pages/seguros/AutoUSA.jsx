@@ -90,8 +90,8 @@ const AutosUSA = () => {
           </TabList>
 
           <TabPanel>
-            <h2 className="pb-30">{carro.coberturaSplit}</h2>
-            <p className="tx-dark fs-5">
+            <h3 className="pb-30 coberturas">{carro.coberturaSplit}</h3>
+            <p className="tx-dark coberturas-desc">
               {carro.coberturaSplitDesc}            
             </p>
             <div className="row">
@@ -99,7 +99,7 @@ const AutosUSA = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <h2 className="pb-30">{carro.coberturaLuc}</h2>
+            <h3 className="pb-30 coberturas">{carro.coberturaLuc}</h3>
             <div className="row">
               <div className="col-lg-6">
                 <div className="block-style-seven" data-aos="fade-right">
@@ -125,7 +125,7 @@ const AutosUSA = () => {
 
       <div className="feedback-section-eleven position-relative pb-70 lg-pb-50 beneficios-slider" data-aos="fade-up">
         <div className="container">
-          <h2 className="tx-dark mt-100 mb-50 lg-mt-50 text-center">
+          <h2 className="tx-dark mt-100 lg-mt-50 text-center">
             {carro.carroBeneficios}
           </h2>
         </div>

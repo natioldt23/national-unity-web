@@ -51,7 +51,7 @@ const PasosUnityCard = () => {
       {/* End col-6 */}
 
       <div className="col-lg-6 d-flex justify-content-center align-items-center aos-init aos-animate" data-aos="fade-left">
-        <img className="asistencia-plus" src="/images/assets/unity-card-trip.webp"/>
+        <img className="pasos-unity-img" src="/images/assets/unity-card-trip.webp"/>
       </div>
     </div>
   );

@@ -267,7 +267,7 @@ const CoberturaPremium = () => {
       <div className="feedback-section-eleven position-relative mt-0 pt-70 lg-pt-50 pb-70 bg-gray lg-pb-50 beneficios-slider" data-aos="fade-up">
         <div className="container d-flex flex-column align-items-center">
           <img src="/images/icon/logo-cobertura-premium.svg" alt="" width={300}/>
-          <p className=" text-lg tx-dark mt-100 mb-50 lg-mt-50 text-center">
+          <p className=" text-lg tx-dark mt-50 mb-40 lg-mt-50 text-center">
             {premium.premiumItems}
           </p>
         </div>
@@ -282,11 +282,13 @@ const CoberturaPremium = () => {
                   <div className="top-header d-flex align-items-center justify-content-between">
                     <div className="d-flex justify-content-between align-items-center w-100">
                       <h3 className="tx-dark m0">{item.title}</h3>
+                      <div className="d-flex" style={{height: '90px'}}>
                         <img
-                        src={item.image}
-                        alt="tesimonial avatar"
-                        width={90}
-                      />
+                          src={item.image}
+                          alt="tesimonial avatar"
+                          width={90}
+                        />
+                      </div>
                     </div>
                   </div>
                   <p className="tx-dark m-0 p-0">{item.text1}</p>
@@ -299,11 +301,13 @@ const CoberturaPremium = () => {
                     <div className="top-header d-flex align-items-center justify-content-between">
                       <div className="d-flex justify-content-between align-items-center w-100">
                         <h3 className="tx-dark m0">{item.title}</h3>
+                        <div style={{height: '90px'}}>
                           <img
-                          src={item.image}
-                          alt="tesimonial avatar"
-                          width={90}
-                        />
+                            src={item.image}
+                            alt="tesimonial avatar"
+                            width={90}
+                          />
+                        </div>
                       </div>
                     </div>
                     <p className="tx-dark m-0 p-0">{item.text1}</p>

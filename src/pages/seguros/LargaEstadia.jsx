@@ -92,8 +92,8 @@ const LargaEstadia = () => {
           </TabList>
 
           <TabPanel>
-            <h2 className="pb-30">{longterm.coberturaSplit}</h2>
-            <p className="tx-dark fs-5">
+            <h2 className="pb-30 coberturas">{longterm.coberturaSplit}</h2>
+            <p className="tx-dark coberturas-desc">
               {longterm.coberturaSplitDesc}   
             </p>
             {/*<p className="tx-dark fs-5">
@@ -104,21 +104,21 @@ const LargaEstadia = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <h2 className="pb-30">{longterm.coberturaLuc}</h2>
+            <h2 className="pb-30 coberturas">{longterm.coberturaLuc}</h2>
             <div className="row">
               <div className="col-lg-6">
                 <div className="block-style-seven" data-aos="fade-right">
                   <ul className="style-none list-item">
-                    <li className="fs-5">
+                    <li>
                       {longterm.coberturaLucDesc1}
                     </li>
-                    <li className="fs-5">
+                    <li>
                       {longterm.coberturaLucDesc2}
                     </li>
-                    <li className="fs-5">
+                    <li>
                       {longterm.coberturaLucDesc3}
                     </li>
-                    <li className="fs-5">
+                    <li>
                       {longterm.coberturaLucDesc4}
                     </li>
                   </ul>

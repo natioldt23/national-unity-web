@@ -80,8 +80,8 @@ const UnityCard = () => {
           </TabList>
 
           <TabPanel>
-            <h2 className="pb-30 text-center">{card.coberturaSplit}</h2>
-            <p className="tx-dark fs-5">
+            <h2 className="pb-30 text-center coberturas">{card.coberturaSplit}</h2>
+            <p className="tx-dark coberturas-desc">
               {card.coberturaSplitDesc}
             </p>
             <div className="row">
