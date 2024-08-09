@@ -60,13 +60,13 @@ const TyC = () => {
                 </p>
 
                 <div className="d-flex asistencia-buttons mt-50">
-                  <a href="./F47C-202310.pdf" target="blank">
+                  <a href="../F47C-202310.pdf" target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">
                       Terms and Conditions
                     </button>
                   </a>
 
-                  <a href="./F47C-es-202310.pdf" target="blank">
+                  <a href="../F47C-es-202310.pdf" target="blank">
                     <button className="fw-500 text-white tran3s button-primary" type="submit">
                       Términos y Condiciones
                     </button>

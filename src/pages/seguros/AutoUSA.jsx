@@ -152,6 +152,7 @@ const AutosUSA = () => {
                     <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text2}</p>
                     <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text3}</p>
                     <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text4}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text5}</p>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="cost fw-500 tx-dark fs-20">
                         {item.author}
@@ -180,6 +181,7 @@ const AutosUSA = () => {
                     <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text2}</p>
                     <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text3}</p>
                     <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text4}</p>
+                    <p className="tx-dark m-0 p-0" style={{fontSize: "20px",}}>{item.text5}</p>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="cost fw-500 tx-dark fs-20">
                         {item.author}

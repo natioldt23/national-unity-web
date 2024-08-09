@@ -1,9 +1,8 @@
 import Aos from "aos";
 import { createContext, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "aos/dist/aos.css";
 import "./styles/index.scss";
-//import ScrollToTop from "./components/common/ScrollTop";
-import "bootstrap/dist/js/bootstrap";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import NotFound from "./pages/404";
@@ -23,10 +22,11 @@ import NuestrosAgentes from "./pages/pages-menu/agentes/NuestrosAgentes";
 import { Zendesk } from "./components/chat/Zendesk";
 import { Whatsapp } from "./components/chat/Whatsapp";
 
-export const LanguageContext = createContext()
+export const LanguageContext = createContext();
 
 function App() {
-  const [lang, setLang] = useState('es')
+  const { i18n } = useTranslation();
+  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'es');
 
   useEffect(() => {
     Aos.init({
@@ -34,18 +34,17 @@ function App() {
     });
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem('lang', lang);
+    i18n.changeLanguage(lang);
+  }, [lang, i18n]);
+
   return (
-    <LanguageContext.Provider value={{
-      lang,
-      setLang
-    }}>
+    <LanguageContext.Provider value={{ lang, setLang }}>
       <div className="main-page-wrapper">
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
-
-  
-
             {/* Páginas de Main Menu */}
             <Route path="asistencia-vial" element={<AsistenciaVial />} />
             <Route path="contacto" element={<Contacto />} />
@@ -59,13 +58,10 @@ function App() {
             <Route path="seguros/cobertura-premium" element={<CoberturaPremium />} />
             <Route path="seguros/unity-card" element={<UnityCard />} />
             <Route path="agentes" element={<NuestrosAgentes />} />
-
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
         <ScrollTopBehaviour />
-
-        {/*<ScrollToTop />*/}
         <Zendesk />
         <Whatsapp />
       </div>
