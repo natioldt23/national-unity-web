@@ -54,7 +54,7 @@ const Service = () => {
     <>
       {services.map((service, index) => (
         <div
-          className="col-xl-3 col-sm-6"
+          className="col-xl-3 col-sm-6 d-flex justify-content-center"
           key={index}
           data-aos="fade-up"
           data-aos-delay={service.delayAnim}

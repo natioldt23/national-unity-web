@@ -128,6 +128,16 @@ export const segurosItemsEng = [
   { link: "/seguros/unity-card", text: "Unity Card" },
 ];
 
+export const accidenteItems = [
+  { link: "/reportar-accidente", text: "Reportar Accidente" },
+  { link: "/National/claimStatus.php", text: "Estatus de Claim", blank: true },
+];
+
+export const accidenteItemsEng = [
+  { link: "/reportar-accidente", text: "Report an Accident" },
+  { link: "/National/claimStatus.php", text: "Claim Status", blank: true  },
+];
+
 export const navItems = [
   {
     label: "Home",

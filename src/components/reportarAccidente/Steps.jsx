@@ -21,7 +21,7 @@ const Steps = () => {
               {accidente.accidentePasosOne}
             </p>
             <Link
-              to="/pages-menu/service-details"
+              to="#"
               className="step-number rounded-circle text-start tran3s"
             >
               1
@@ -50,7 +50,7 @@ const Steps = () => {
               <li>{accidente.accidentePasosTwo5}</li>
             </ul>
             <Link
-              to="/pages-menu/service-details"
+              to="#"
               className="step-number rounded-circle text-start tran3s"
             >
               2
@@ -68,25 +68,28 @@ const Steps = () => {
             {/*<div className="icon">
               <img src={step.icon} alt="" className="lazy-img m-auto" />
             </div>*/}
-            <p className="tx-steps pt-20">
+            <p className="tx-steps pt-20 m-0">
               {accidente.accidentePasosThree}
+            </p>
+            <p className="tx-steps" style={{fontSize: '12px', fontStyle: 'italic'}}>
+              {accidente.accidentePasosThreeUnder}
             </p>
             <ul className="style-none list-item ul-step">
               <li>
-                {accidente.accidentePasosThree1} 
+                {/*{accidente.accidentePasosThree1} 
+                <br />*/}
+                {accidente.accidentePasosThree1NoCost}
                 <br />
-                {accidente.accidentePasosThree1NoCost}<a href="tel:18663296734">1-866-329-6734</a>
-                <br />
-                {accidente.accidentePasosThree1Direct}<a href="tel:5128610992">512-861-0992</a>
+                <a href="tel:18663296734">1-866-329-6734</a>
               </li>
               <li>
                 {accidente.accidentePasosThree2}
                 <br />
-                {accidente.accidentePasosThree2Llama} <a href="tel:0015128610992">001-512-861-0992</a>
+                {accidente.accidentePasosThree2Llama} <a href="tel:5128610992">512-861-0992</a>
               </li>
             </ul>
             <Link
-              to="/pages-menu/service-details"
+              to="#"
               className="step-number rounded-circle text-start tran3s"
             >
               3
@@ -113,7 +116,7 @@ const Steps = () => {
               <li>{accidente.accidentePasosFour3}</li>
             </ul>
             <Link
-              to="/pages-menu/service-details"
+              to="#"
               className="step-number rounded-circle text-start tran3s"
             >
               4

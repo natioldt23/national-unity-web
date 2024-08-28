@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import {
   segurosItems,
-  segurosItemsEng
+  segurosItemsEng,
+  accidenteItems,
+  accidenteItemsEng
 } from "../../data/menu";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -319,6 +321,57 @@ const MainMenu = () => {
             
           </li>
           {/* End li (reportar-accidente) */}
+
+          {/*
+          <li className="nav-item dropdown d-flex flex-column align-items-center d-lg-block">
+            <a
+              className={
+                segurosItems.some((elm) => isActive(elm.link))
+                  ? "nav-link dropdown-toggle active-menu"
+                  : "nav-link dropdown-toggle"
+              }
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              
+            >
+              {navbarLang.reportarAccidente}
+            </a>
+            <ul className="dropdown-menu dropdown-menu-shadow">
+              
+              {
+                lang === 'es'?
+                accidenteItems.map((accidente, index) => (
+                  <li key={index}>
+                    <Link
+                      to={accidente.link}
+                      className={`dropdown-item ${
+                        isActive(accidente.link) ? "active" : ""
+                      }`}
+                      target={accidente.blank? `_blank`: `_self`}
+                    >
+                      <span>{accidente.text}</span>
+                    </Link>
+                  </li>
+                )) :
+                accidenteItemsEng.map((accidente, index) => (
+                  <li key={index}>
+                    <Link
+                      to={accidente.link}
+                      className={`dropdown-item ${
+                        isActive(accidente.link) ? "active" : ""
+                      }`}
+                      target={accidente.blank? `_blank`: `_self`}
+                    >
+                      <span>{accidente.text}</span>
+                    </Link>
+                  </li>
+                ))
+              }
+            </ul>
+          </li>
+
+          {/* End li (reportar-accidente-dropdown) */}
 
           <li className="nav-item">
             <Link

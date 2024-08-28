@@ -21,7 +21,7 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     transition: '0.3s ease-in-out',
     borderRadius: '7px',
-    fontFamily: 'gordita',
+    fontFamily: 'Gordita',
     transition: 'opacity 300ms ease-in-out, transform 300ms ease-in-out'
   }
 };

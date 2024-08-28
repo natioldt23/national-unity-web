@@ -161,7 +161,7 @@
   overflow-x: hidden;
 }
 body {
-  font-family: "gordita";
+  font-family: "Gordita" !important;
   font-weight: normal;
   font-size: 16px;
   position: relative;
@@ -212,6 +212,9 @@ h6 {
 }
 p {
   line-height: 1.87em;
+}
+a {
+  text-decoration: none !important;
 }
 ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
@@ -8141,6 +8144,15 @@ body .btn-twentySix:hover:after {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
+.footer-style-eleven .footer-nav-link a {
+  font-size: 17px;
+  line-height: 40px;
+  transition: all 0.3s ease-in-out;
+  color: #000;
+  text-decoration: none;
+}
+
 .footer-style-eleven .footer-nav-link a:hover {
   color: var(--prime-ten);
 }

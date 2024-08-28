@@ -62,6 +62,16 @@ const NuestrosAgentes = () => {
             <div className="col-6 col-lg-2">
               <a href={
                 lang =='es'?
+                "https://www.nuagentesonline.com/agents/4bc83f66d7350f6ffe8f86950f600c7c/" 
+                :
+                "https://www.nuagentesonline.com/agents/4bc83f66d7350f6ffe8f86950f600c7c/index.php?lang=en"
+              } target="_blank">
+                <img src="/images/agentes/firmaSeguros.png" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href={
+                lang =='es'?
                 "https://www.nuagentesonline.com/agents/23ca84adae4018f201597cb0a340a885/index.php" 
                 :
                 "https://www.nuagentesonline.com/agents/23ca84adae4018f201597cb0a340a885/index.php?lang=en"
@@ -77,16 +87,6 @@ const NuestrosAgentes = () => {
                 "https://www.nuagentesonline.com/agents/1ce9398f18d7f32ccb2522dc8f07e530/index.php?lang=en" 
               } target="_blank">
                 <img src="/images/agentes/aps.jpg" alt="" />
-              </a>
-            </div>
-            <div className="col-6 col-lg-2">
-              <a href={
-                lang =='es'?
-                "https://www.nuagentesonline.com/agents/88a0d923336c547bcc423b173960c494/index.php" 
-                :
-                "https://www.nuagentesonline.com/agents/88a0d923336c547bcc423b173960c494/index.php?lang=en"
-              } target="_blank">
-                <img src="/images/agentes/ata.jpg" alt="" />
               </a>
             </div>
             <div className="col-6 col-lg-2">
@@ -378,6 +378,16 @@ const NuestrosAgentes = () => {
                 "https://www.nuagentesonline.com/agents/3c1a20dc53e89e97c5f8eae5aee0f9a0/index.php?lang=en" 
               } target="_blank">
                 <img src="/images/agentes/SeguroVamos.jpg" alt="" />
+              </a>
+            </div>
+            <div className="col-6 col-lg-2">
+              <a href={
+                lang =='es'?
+                "https://www.nuagentesonline.com/agents/88a0d923336c547bcc423b173960c494/index.php" 
+                :
+                "https://www.nuagentesonline.com/agents/88a0d923336c547bcc423b173960c494/index.php?lang=en"
+              } target="_blank">
+                <img src="/images/agentes/ata.jpg" alt="" />
               </a>
             </div>
             <div className="col-6 col-lg-2">

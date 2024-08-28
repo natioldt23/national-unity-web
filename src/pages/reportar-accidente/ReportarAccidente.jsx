@@ -56,7 +56,7 @@ const ReportarAccidente = () => {
                   {accidente.accidenteCTA}
                 </p>
                 <a href="/national/reporte_accidente/package/html/main/" target="blank">
-                  <button className="fw-500 text-white tran3s button-primary" type="submit">
+                  <button className="fw-500 text-white tran3s button-primary" type="submit" style={{width: 'inherit !important'}}>
                     {accidente.accidenteTitle}
                   </button>
                 </a>

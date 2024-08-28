@@ -6,13 +6,13 @@ const BlockContact = () => {
 
   const addressBlocks = [
     {
-      icon: "/images/icon/icon_178.svg",
-      title: "Nuestra dirección",
-      content: "One Huebner Parke, 15303 Huebner Road San Antonio, TX 78248",
+      icon: "/images/icon/icon_179.svg",
+      title: "Nuestro Correo",
+      content: "servicioalcliente@nationalunity.com.mx",
       delay: "100",
     },
     {
-      icon: "/images/icon/icon_179.svg",
+      icon: "/images/icon/icon_178.svg",
       title: "Información de contacto",
       content: "Llámanos en México al",
       link: "tel:+52-800-062-0460",
@@ -31,13 +31,13 @@ const BlockContact = () => {
   ];
   const addressBlocksEng = [
     {
-      icon: "/images/icon/icon_178.svg",
-      title: "Our Address",
-      content: "One Huebner Parke, 15303 Huebner Road San Antonio, TX 78248",
+      icon: "/images/icon/icon_179.svg",
+      title: "Our Email",
+      content: "customerservice@nationalunity.com",
       delay: "100",
     },
     {
-      icon: "/images/icon/icon_179.svg",
+      icon: "/images/icon/icon_178.svg",
       title: "Contact Information",
       content: "Call us in Mexico at",
       link: "tel:+52-800-062-0460",
@@ -81,7 +81,11 @@ const BlockContact = () => {
                     block.link.includes("tel:") ? "call" : "webaddress"
                   }
                 >
-                  {block.link.replace("tel:", "")}
+                  
+                  {
+                    block.link === 'https://wa.me/8134039138' ?
+                    'Whatsapp': block.link.replace("tel:", "")
+                  }
                 </a>
               )}
             </p>
