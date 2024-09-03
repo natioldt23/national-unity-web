@@ -130,12 +130,12 @@ export const segurosItemsEng = [
 
 export const accidenteItems = [
   { link: "/reportar-accidente", text: "Reportar Accidente" },
-  { link: "/National/claimStatus.php", text: "Estatus de Claim", blank: true },
+  { link: "/claims", text: "Estatus de Reporte", blank: true },
 ];
 
 export const accidenteItemsEng = [
   { link: "/reportar-accidente", text: "Report an Accident" },
-  { link: "/National/claimStatus.php", text: "Claim Status", blank: true  },
+  { link: "/claims", text: "Claim Status", blank: true  },
 ];
 
 export const navItems = [

@@ -311,7 +311,7 @@ const MainMenu = () => {
           
           {/* End li (contacto) */}
 
-          <li className="nav-item">
+          {/*<li className="nav-item">
             <Link
               className="nav-link text-center"
               to='/reportar-accidente'
@@ -322,7 +322,7 @@ const MainMenu = () => {
           </li>
           {/* End li (reportar-accidente) */}
 
-          {/*
+          
           <li className="nav-item dropdown d-flex flex-column align-items-center d-lg-block">
             <a
               className={
@@ -348,7 +348,7 @@ const MainMenu = () => {
                       className={`dropdown-item ${
                         isActive(accidente.link) ? "active" : ""
                       }`}
-                      target={accidente.blank? `_blank`: `_self`}
+                      target={accidente.blank}
                     >
                       <span>{accidente.text}</span>
                     </Link>
@@ -361,7 +361,7 @@ const MainMenu = () => {
                       className={`dropdown-item ${
                         isActive(accidente.link) ? "active" : ""
                       }`}
-                      target={accidente.blank? `_blank`: `_self`}
+                      target={accidente.blank}
                     >
                       <span>{accidente.text}</span>
                     </Link>

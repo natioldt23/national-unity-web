@@ -211,5 +211,24 @@
     "agentesTitle": "Select an agent",
     "agentesDesc1": "Through our agents we offer you a close and personalized service.",
     "agentesDesc2": "Select the agent you prefer, all of them will offer you the full benefits of the coverage and service you choose in your quote."
+  },
+  "claims": {
+    "claimsTitle": "Claim Status",
+    "input1": "Claim Number",
+    "input2": "Date of the Incident",
+    "input3": "Phone Number (10 digits)",
+    "input4": "E-mail",
+    "inputName": "Name",
+    "buscar": "Consult",
+    "modalTitle": "Claim Information",
+    "modalInfo1": "Claim Number",
+    "modalInfo2": "National Unity Policy Number",
+    "modalInfo3": "Status",
+    "modalInfo4": "Asjuster's Name",
+    "modalInfo5": "Adjuster's Email",
+    "modalInfo6": "Asjuster's Phone",
+    "modalBtn": "Request Information",
+    "contactInfo1": "If you do not have the requested data, you can contact our customer service through our email:",
+    "contactInfo2": "You can also reach out through our "
   }
 }

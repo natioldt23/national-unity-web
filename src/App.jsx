@@ -21,6 +21,7 @@ import UnityCard from "./pages/seguros/UnityCard";
 import NuestrosAgentes from "./pages/pages-menu/agentes/NuestrosAgentes";
 import { Zendesk } from "./components/chat/Zendesk";
 import { Whatsapp } from "./components/chat/Whatsapp";
+import Claims from "./pages/reportar-accidente/Claims";
 
 export const LanguageContext = createContext();
 
@@ -50,6 +51,7 @@ function App() {
             <Route path="contacto" element={<Contacto />} />
             <Route path="tyc" element={<TyC />} />
             <Route path="reportar-accidente" element={<ReportarAccidente />} />
+            <Route path="claims" element={<Claims />} />
             <Route path="seguros/seguro-auto" element={<AutosUSA />} />
             <Route path="seguros/seguro-camion" element={<CamionUSA />} />
             <Route path="seguros/seguro-moto" element={<MotoUSA />} />
