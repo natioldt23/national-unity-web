@@ -7,6 +7,8 @@ import Modal from "react-modal";
 import Swal from 'sweetalert2';
 import { LanguageContext } from "@/App";
 import { useContext } from "react";
+import { AiFillCheckCircle } from "react-icons/ai";
+import { AiFillClockCircle } from "react-icons/ai";
 
 const customStyles = {
   content: {
@@ -75,22 +77,47 @@ const Claims = () => {
     }
   };
 
-  const guardarDatos = async (data, tipo) => {
+  const guardarDatos = async (data, tipo, evento) => {
     try {
-      const response = await fetch('/phpWeb/guardar_encuesta_daily_claims.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({
+
+      let bodyParams = {};
+
+      if (evento === 1) {
+        bodyParams = {
           No_Claim: data.No_Claim,
           No_Poliza: data.No_Poliza,
           Estatus: data.Estatus,
           Nombre_Ajustador: data.Nombre_Ajustador,
           Correo_Ajustador: data.Correo_Ajustador,
           Telefono_Ajustador: data.Telefono_Ajustador,
-          Tipo_Consulta: tipo
-        }).toString(),
+          Tipo_Consulta: tipo, 
+          Fecha_Siniestro: '',
+          Nombre: null,
+          Telefono_Celular: null,
+          Correo: null
+        };
+      } else if (evento === 0) {
+        bodyParams = {
+          No_Claim: data.claimNum,
+          No_Poliza: null,
+          Estatus: null,
+          Nombre_Ajustador: null,
+          Correo_Ajustador: null,
+          Telefono_Ajustador: null,
+          Tipo_Consulta: tipo, 
+          Fecha_Siniestro: data.fecha_Siniestro,
+          Nombre: data.name,
+          Telefono_Celular: data.tel_cel,
+          Correo: data.email
+        };
+      }
+
+      const response = await fetch('/phpWeb/guardar_encuesta_daily_claims.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(bodyParams).toString(),
       });
 
       if (!response.ok) {
@@ -108,7 +135,7 @@ const Claims = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       const response = await fetch('/phpWeb/buscar_encuesta_daily_claims.php', { // Ruta al script PHP
         method: 'POST',
@@ -124,6 +151,8 @@ const Claims = () => {
       
       const result = await response.json();
       if (result.length === 0) {
+        guardarDatos(formData, 'Error', 0)
+        //console.log(formData)
         if(lang == 'es'){
           Swal.fire({
             title: 'Datos no encontrados',
@@ -141,7 +170,7 @@ const Claims = () => {
         }        
       } else {
         setClaimData(result[0]);
-        guardarDatos(result[0], 'consulta');
+        guardarDatos(result[0], 'consulta', 1);
         openModal();
       }
   
@@ -152,6 +181,11 @@ const Claims = () => {
 
   const handleModalSubmit = async () => {
     try {
+
+      if (claimData) {
+        await guardarDatos(claimData, 'email', 1);
+      }
+
         const response = await fetch('/phpWeb/send-mail-ajustador.php', {
             method: 'POST',
             headers: {
@@ -176,7 +210,7 @@ const Claims = () => {
           if(lang == 'es'){
             Swal.fire({
                 title: 'Éxito',
-                text: 'Se ha enviado un correo al ajustador con los datos, se contactará contigo para brindarte información',
+                text: 'Se ha enviado un correo al ajustador con los datos proporcionados, se contactará contigo para brindarte información',
                 icon: 'success',
                 confirmButtonText: 'OK'
             }).then(() => {
@@ -216,8 +250,6 @@ const Claims = () => {
       
     }
   };
-
-
 
   return (
     <>
@@ -268,7 +300,10 @@ const Claims = () => {
       >
         {claimData && (
           <div>
-            <h2 className="pt-20 pb-20 text-center">{claims.modalTitle}</h2>
+            {/*<h2 className="pt-20 pb-20 text-center">{claims.modalTitle}</h2>*/}
+            <div className="d-flex justify-content-center mb-3">
+              <img src="/images/logo/logo-nu.webp" width={150}/>
+            </div>
             <p className="mb-4"><strong>{claims.modalInfo1}:</strong> {claimData.No_Claim}</p>
             <div className="d-flex flex-column">
               <p className="mb-1"><strong>{claims.modalInfo2}:</strong></p>
@@ -279,28 +314,39 @@ const Claims = () => {
               {
                 lang == 'es' ? 
                   claimData.Estatus =='ABIERTO' ? 
-                  <div className="mb-4 bg-success rounded-1 d-flex justify-content-center p-2">
-                    <p className="text-white m-0 fw-bold">
-                      {claimData.Estatus}
-                    </p>
+                  <div className="mb-4 rounded-1 d-flex justify-content-center p-2">
+                    <div className="rounded-pill d-flex align-items-center gap-2 border border-success" style={{padding: '10px 20px'}}>
+                      <AiFillClockCircle size='2em' />
+                      <p className="text-success m-0 fw-bold" style={{fontSize: 'large'}}>
+                        {claimData.Estatus}
+                      </p>
+                    </div>
                   </div> : 
-                  <div className="mb-4 bg-danger rounded-1 d-flex justify-content-center p-2">
-                    <p className="text-white m-0 fw-bold">
-                      {claimData.Estatus}
-                    </p>
+                  <div className="mb-4 rounded-1 d-flex justify-content-center p-2">
+                    <div className="rounded-pill d-flex align-items-center gap-2 border border-primary" style={{padding: '10px 20px'}}>
+                      <AiFillCheckCircle size='2em' />
+                      <p className="text-primary m-0 fw-bold" style={{fontSize: 'large'}}>
+                        {claimData.Estatus}
+                      </p>
+                    </div>
                   </div>
                  : claimData.Estatus =='ABIERTO' ? 
-                 <div className="mb-4 bg-success rounded-1 d-flex justify-content-center p-2">
-                    <p className="text-white m-0 fw-bold">
-                      OPEN
-                    </p>
+                 <div className="mb-4 rounded-1 d-flex justify-content-center p-2">
+                    <div className="rounded-pill d-flex align-items-center gap-2 border border-success" style={{padding: '10px 20px'}}>
+                      <AiFillClockCircle size='2em' />
+                      <p className="text-success m-0 fw-bold" style={{fontSize: 'large'}}>
+                        OPEN
+                      </p>
+                    </div>
                   </div> : 
-                  <div className="mb-4 bg-danger rounded-1 d-flex justify-content-center p-2">
-                    <p className="text-white m-0 fw-bold">
-                      CLOSED
-                    </p>
+                  <div className="mb-4 rounded-1 d-flex justify-content-center p-2">
+                    <div className="rounded-pill d-flex align-items-center gap-2 border border-primary" style={{padding: '10px 20px'}}>
+                      <AiFillCheckCircle size='2em'/>
+                      <p className="text-primary m-0 fw-bold" style={{fontSize: 'large'}}>
+                        CLOSED
+                      </p>
+                    </div>
                   </div>
-                
               }
             </div>
             <p className="mb-4"><strong>{claims.modalInfo4}:</strong> {claimData.Nombre_Ajustador}</p>
@@ -355,7 +401,7 @@ const Claims = () => {
 
           </div>
           <div className="row align-items-start justify-content-start mt-3">
-            <div className="col-12 col-lg-6 mt-3 border-top" data-aos="fade-right">
+            <div className="col-12 col-lg-6 mt-3 border-top">
               <p className="mt-3">
                 {claims.contactInfo1}
               </p>
