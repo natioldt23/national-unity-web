@@ -9,6 +9,7 @@ import { LanguageContext } from "@/App";
 import { useContext } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { AiFillClockCircle } from "react-icons/ai";
+import { AiOutlineClose } from 'react-icons/ai'
 
 const customStyles = {
   content: {
@@ -38,6 +39,8 @@ const Claims = () => {
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [claimData, setClaimData] = useState(null);
+
+  
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -179,77 +182,78 @@ const Claims = () => {
     }
   };
 
-  const handleModalSubmit = async () => {
-    try {
 
+  const handleModalSubmit = async () => {
+    // Muestra el alert de carga
+    Swal.fire({
+      title: lang === 'es' ? 'Cargando...': 'Processing...',
+      text: lang === 'es' ? 'Por favor, espere mientras se procesa la solicitud.': 'Pleas, wait until the petition is processed',
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      didOpen: () => {
+        Swal.showLoading(); // Muestra el spinner de carga
+      }
+    });
+
+    try {
       if (claimData) {
         await guardarDatos(claimData, 'email', 1);
       }
 
-        const response = await fetch('/phpWeb/send-mail-ajustador.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: new URLSearchParams({
-                claimNum: formData.claimNum,
-                correoAjustador: 'ecarrizales@nationalunity.com.mx',
-                contactName: formData.name,
-                tel_cel: formData.tel_cel,
-                email: formData.email,
-            }).toString(),
+      const response = await fetch('/phpWeb/send-mail-ajustador.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          claimNum: formData.claimNum,
+          correoAjustador: 'ecarrizales@nationalunity.com.mx',
+          contactName: formData.name,
+          tel_cel: formData.tel_cel,
+          email: formData.email,
+        }).toString(),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+
+      // Cierra el alert de carga
+      Swal.close();
+
+      if (result.success) {
+        await Swal.fire({
+          title: lang === 'es' ? 'Éxito' : 'Success',
+          text: lang === 'es' 
+            ? 'Se ha enviado un correo al ajustador con los datos proporcionados, se contactará contigo para brindarte información'
+            : 'An email has been sent to the adjuster with the details. They will contact you to provide information.',
+          icon: 'success',
+          confirmButtonText: 'OK',
         });
 
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-
-        const result = await response.json();
-
-        if (result.success) {
-          if(lang == 'es'){
-            Swal.fire({
-                title: 'Éxito',
-                text: 'Se ha enviado un correo al ajustador con los datos proporcionados, se contactará contigo para brindarte información',
-                icon: 'success',
-                confirmButtonText: 'OK'
-            }).then(() => {
-                closeModal(); // Cierra el modal
-            });
-          } else {
-            Swal.fire({
-                title: 'Success',
-                text: 'An email has been sent to the adjuster with the details. They will contact you to provide information.',
-                icon: 'success',
-                confirmButtonText: 'OK'
-            }).then(() => {
-                closeModal(); // Cierra el modal
-            });
-          }        
-        } else {
-            throw new Error(result.message || 'Failed to send the email');
-        }
-
+        closeModal(); // Cierra el modal después de que el usuario haga clic en "OK"
+      } else {
+        throw new Error(result.message || 'Failed to send the email');
+      }
     } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
-        if(lang == 'es'){
-          Swal.fire({
-              title: 'Error',
-              text: 'Hubo un problema al enviar el correo.',
-              icon: 'error',
-              confirmButtonText: 'OK'
-          });
-        } else {
-            Swal.fire({
-                title: 'Error',
-                text: 'There was a problem sending the email.',
-                icon: 'error',
-                confirmButtonText: 'OK'
-            });
-        }
+      console.error('There was a problem with the fetch operation:', error);
       
+      // Cierra el alert de carga
+      Swal.close();
+      
+      await Swal.fire({
+        title: lang === 'es' ? 'Error' : 'Error',
+        text: lang === 'es' 
+          ? 'Hubo un problema al enviar el correo.'
+          : 'There was a problem sending the email.',
+        icon: 'error',
+        confirmButtonText: 'OK',
+      });
     }
   };
+
 
   return (
     <>
@@ -300,6 +304,11 @@ const Claims = () => {
       >
         {claimData && (
           <div>
+            <div className="d-flex justify-content-end">
+              <button className="btn p-0 border-0 bg-transparent" onClick={closeModal}>
+                <AiOutlineClose size={24} />
+              </button>
+            </div>
             {/*<h2 className="pt-20 pb-20 text-center">{claims.modalTitle}</h2>*/}
             <div className="d-flex justify-content-center mb-3">
               <img src="/images/logo/logo-nu.webp" width={150}/>
