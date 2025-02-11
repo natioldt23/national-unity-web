@@ -30,6 +30,13 @@
     "productoPremium": "Cobertura Premium",
     "productoMoto": "Seguro de Moto USA",
     "productoCamion": "Seguro Camión USA",
+    "productoRental": "Auto Renta USA",
+    "productoCard": "Unity Card",
+    "accidentTitle": "Accede rápidamente a tus reportes de accidente",
+    "accidentOption1": "Reporta un accidente en línea",
+    "accidentOption2": "Estatus de Reporte",
+    "accidentOption1Desc": "Reporta cualquier accidente que hayas tenido en tu viaje",
+    "accidentOption2Desc": "Solicita información de tu reporte de manera inmediata",
     "crucesTitle": "Tiempo de Cruces",
     "curcesSubtitle": "Consulta el tiempo de cruce de los puentes internacionales a Estados Unidos.",
     "mapaCoberturas": "Mapa de Coberturas"
@@ -216,9 +223,9 @@
     "claimsTitle": "Estatus de Reporte",
     "input1": "Número de Reporte",
     "input2": "Fecha del Siniestro",
-    "input3": "Teléfono Celular (10 dígitos)",
-    "input4": "Correo Electrónico",
-    "inputName": "Nombre",
+    "input3": "Tu Teléfono Celular (10 dígitos)",
+    "input4": "Tu Correo Electrónico",
+    "inputName": "Tu Nombre",
     "buscar": "Consultar",
     "modalTitle": "Información de Reclamo",
     "modalInfo1": "Número de Claim",
@@ -227,8 +234,9 @@
     "modalInfo4": "Nombre Ajustador",
     "modalInfo5": "Correo Ajustador",
     "modalInfo6": "Teléfono Ajustador",
-    "modalBtn": "Solicitar Actualización",
+    "modalBtn": "Solicitar Información Detallada",
     "contactInfo1": "En caso de no contar con los datos solicitados, puede comunicarse con nuestro servicio al cliente por medio de nuestro correo electrónico:",
-    "contactInfo2": "Así mismo puede comunicarse a través de nuestro "
+    "contactInfo2": "Así mismo puede comunicarse a través de nuestro ",
+    "requiredField": "Campo Requerido"
   }
 }

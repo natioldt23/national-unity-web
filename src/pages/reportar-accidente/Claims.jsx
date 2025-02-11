@@ -94,19 +94,19 @@ const Claims = () => {
           Correo_Ajustador: data.Correo_Ajustador,
           Telefono_Ajustador: data.Telefono_Ajustador,
           Tipo_Consulta: tipo, 
-          Fecha_Siniestro: '',
-          Nombre: null,
-          Telefono_Celular: null,
-          Correo: null
+          Fecha_Siniestro: formData.fecha_Siniestro,
+          Nombre: formData.name,
+          Telefono_Celular: formData.tel_cel,
+          Correo: formData.email
         };
       } else if (evento === 0) {
         bodyParams = {
           No_Claim: data.claimNum,
-          No_Poliza: null,
-          Estatus: null,
-          Nombre_Ajustador: null,
-          Correo_Ajustador: null,
-          Telefono_Ajustador: null,
+          No_Poliza: '',
+          Estatus: '',
+          Nombre_Ajustador: '',
+          Correo_Ajustador: '',
+          Telefono_Ajustador: '',
           Tipo_Consulta: tipo, 
           Fecha_Siniestro: data.fecha_Siniestro,
           Nombre: data.name,
@@ -155,18 +155,34 @@ const Claims = () => {
       const result = await response.json();
       if (result.length === 0) {
         guardarDatos(formData, 'Error', 0)
-        //console.log(formData)
+      
+        const emailLinkEs = "<a href='mailto:servicioalcliente@nationalunity.com.mx' target='_blank'>servicioalcliente@nationalunity.com.mx</a>";
+        const emailLinkEn = "<a href='mailto:customerservice@nationalunity.com' target='_blank'>customerservice@nationalunity.com</a>";
+        const whatsappLink = "<a href='https://api.whatsapp.com/send/?phone=8134039138&text=Hola%2C+estoy+en+la+p%C3%A1gina+de+National+Unity+y+necesito+ayuda.&type=phone_number&app_absent=0'>Whatsapp</a>";
+
         if(lang == 'es'){
           Swal.fire({
             title: 'Datos no encontrados',
-            text: 'No se han encontrado datos que coincidan con la información ingresada. Póngase en contacto con nuestro servicio al cliente.',
+            html: `
+              No se han encontrado datos que coincidan con la información ingresada.<br/>
+              Póngase en contacto con nuestro servicio al cliente<br/>
+              Vía correo: ${emailLinkEs}<br/>
+              O vía Whatsapp: ${whatsappLink}
+            `,
+            //text: '',
             icon: 'error',
             confirmButtonText: 'OK'
           });
         }else {
           Swal.fire({
             title: 'Data not found',
-            text: 'No data was found that matches the information entered. Please contact our customer service.',
+            html: `
+              No data was found that matches the information entered.<br/>
+              Please contact our customer service<br/>
+              Via email: ${emailLinkEn}<br/>
+              Or via Whatsapp: ${whatsappLink}
+            `,
+            //text: 'No data was found that matches the information entered.\n  Please contact our customer service.',
             icon: 'error',
             confirmButtonText: 'OK'
           });
@@ -184,6 +200,9 @@ const Claims = () => {
 
 
   const handleModalSubmit = async () => {
+
+    const languageMail = lang == 'es'? 'es' : 'en';
+
     // Muestra el alert de carga
     Swal.fire({
       title: lang === 'es' ? 'Cargando...': 'Processing...',
@@ -207,10 +226,11 @@ const Claims = () => {
         },
         body: new URLSearchParams({
           claimNum: formData.claimNum,
-          correoAjustador: 'ecarrizales@nationalunity.com.mx',
+          correoAjustador: claimData.Correo_Ajustador,
           contactName: formData.name,
           tel_cel: formData.tel_cel,
           email: formData.email,
+          language: languageMail
         }).toString(),
       });
 
@@ -227,8 +247,8 @@ const Claims = () => {
         await Swal.fire({
           title: lang === 'es' ? 'Éxito' : 'Success',
           text: lang === 'es' 
-            ? 'Se ha enviado un correo al ajustador con los datos proporcionados, se contactará contigo para brindarte información'
-            : 'An email has been sent to the adjuster with the details. They will contact you to provide information.',
+            ? 'Se ha enviado un correo electrónico al ajustador con tu información.\nNos pondremos en contacto contigo en las próximas 24 horas laborables.\nNuestro horario laboral es de Lunes a Viernes'
+            : 'An email has been sent to the adjuster with the details.\nWe will contact you within the next 24 business hours.\nOur working hours are Monday to Friday',
           icon: 'success',
           confirmButtonText: 'OK',
         });
@@ -377,28 +397,31 @@ const Claims = () => {
               <div className="service-details-meta">
               <form onSubmit={handleSubmit}>
                 <div className="d-flex flex-column gap-2 mb-3">
-                  <label htmlFor="claimNum">{claims.input1}</label>
+                  <label htmlFor="claimNum">{claims.input1}*</label>
                   <input className="p-2" type="text" id="claimNum" name="claimNum" value={formData.claimNum} onChange={handleChange} style={{borderRadius: '8px', border: 'solid 1px'}} placeholder="NUIT000000" required/>
                 </div>
                 <div className="d-flex flex-column gap-2 mb-3">
-                  <label htmlFor="fecha_Siniestro">{claims.input2}</label>
+                  <label htmlFor="fecha_Siniestro">{claims.input2}*</label>
                   <input className="p-2" type="date" id="fecha_Siniestro" name="fecha_Siniestro" value={formData.fecha_Siniestro} onChange={handleChange} style={{borderRadius: '8px', border: 'solid 1px'}} required/>
                 </div>
                 <div className="d-flex flex-column gap-2 mb-3">
-                  <label htmlFor="name">{claims.inputName}</label>
+                  <label htmlFor="name">{claims.inputName}*</label>
                   <input className="p-2" type="text" id="name" name="name" value={formData.name} onChange={handleChange} style={{borderRadius: '8px', border: 'solid 1px'}} required/>
                 </div>
                 <div className="d-flex flex-column gap-2 mb-3">
-                  <label htmlFor="tel_cel">{claims.input3}</label>
+                  <label htmlFor="tel_cel">{claims.input3}*</label>
                   <input className="p-2" type="tel" id="tel_cel" name="tel_cel" value={formData.tel_cel} onChange={handleChange} style={{borderRadius: '8px', border: 'solid 1px'}} required/>
                 </div>
                 <div className="d-flex flex-column gap-2 mb-3">
-                  <label htmlFor="email">{claims.input4}</label>
+                  <label htmlFor="email">{claims.input4}*</label>
                   <input className="p-2" type="email" id="email" name="email" value={formData.email} onChange={handleChange} style={{borderRadius: '8px', border: 'solid 1px'}} required/>
                 </div>
                 <button className="mt-15 w-100 fw-500 text-white tran3s button-primary" type="submit" style={{width: 'inherit !important'}}>
                   {claims.buscar}
                 </button>
+                <div className="mt-10">
+                  <p className="mb-0">(*) - {claims.requiredField}</p>
+                </div>
               </form>
               </div>
               {/* /.service-details-meta */}

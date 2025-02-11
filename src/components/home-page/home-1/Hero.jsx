@@ -21,12 +21,12 @@ const Hero1 = () => {
       <img
         src="/images/assets/hero-camion.webp"
         alt="ilustration"
-        className="hero-camion lazy-img illustration-one"
+        className="hero-camion lazy-img illustration-one gifts"
       />
       <img
         src="/images/assets/hero-auto.webp"
         alt="ilustration"
-        className="lazy-img illustration-two"
+        className="lazy-img illustration-two "
       />
       <div className="container">
         <div className="row">

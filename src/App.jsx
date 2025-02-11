@@ -23,6 +23,7 @@ import { Zendesk } from "./components/chat/Zendesk";
 import { Whatsapp } from "./components/chat/Whatsapp";
 import Claims from "./pages/reportar-accidente/Claims";
 
+
 export const LanguageContext = createContext();
 
 function App() {

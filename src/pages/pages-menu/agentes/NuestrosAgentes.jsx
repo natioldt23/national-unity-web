@@ -216,9 +216,9 @@ const NuestrosAgentes = () => {
             <div className="col-6 col-lg-2">
               <a href={
                 lang =='es'?
-                "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/" 
+                "https://www.nuagentesonline.com/agents/f5bc18682d0c8401f5de734291ffec46/" 
                 :
-                "https://www.nuagentesonline.com/agents/676164158d24efd000af9799d82f8b36/index.php?lang=en" 
+                "https://www.nuagentesonline.com/agents/f5bc18682d0c8401f5de734291ffec46//index.php?lang=en" 
               } target="_blank">
                 <img src="/images/agentes/LogoSalga.png" alt="" />
               </a>

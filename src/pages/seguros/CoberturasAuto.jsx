@@ -28,10 +28,10 @@ const CoberturasAuto = () => {
       delayAnim: 200,
     },
     {
-      title: "Cobertura RC 15/30/5",
-      content1: "$15,000 USD de cobertura máxima por lesiones corporales por cada tercero afectado.",
-      content2: "$30,000 USD es la suma máxima a cubrir por lesiones corporales al total de los terceros afectados.",
-      content3: "$5,000 USD de cobertura máxima en daños a bienes materiales de terceros.",
+      title: "Cobertura RC 30/60/15",
+      content1: "$30,000 USD de cobertura máxima por lesiones corporales por cada tercero afectado.",
+      content2: "$60,000 USD es la suma máxima a cubrir por lesiones corporales al total de los terceros afectados.",
+      content3: "$15,000 USD de cobertura máxima en daños a bienes materiales de terceros.",
       delayAnim: 300,
     },
   ];
@@ -59,10 +59,10 @@ const CoberturasAuto = () => {
       delayAnim: 200,
     },
     {
-      title: "CR Coverage 15/30/5",
-      content1: "$15,000 USD maximum bodily injury coverage for each third party affected.",
-      content2: "$30,000 USD is the maximum amount to be covered for bodily injury to the total of affected third parties.",
-      content3: "$5,000 USD maximum coverage for damage to third party property.",
+      title: "CR Coverage 30/60/15",
+      content1: "$30,000 USD maximum bodily injury coverage for each third party affected.",
+      content2: "$60,000 USD is the maximum amount to be covered for bodily injury to the total of affected third parties.",
+      content3: "$15,000 USD maximum coverage for damage to third party property.",
       delayAnim: 300,
     },
   ];

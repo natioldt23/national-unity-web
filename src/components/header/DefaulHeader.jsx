@@ -41,6 +41,10 @@ const DefaulHeader = () => {
         navbar ? "fixed" : ""
       }`}
     >
+      {/*<div className="christmas-deco">
+        <img src="/images/assets/christmas-deco.png" alt="" />
+      </div>*/}
+      
       <div className="inner-content position-relative">
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-0">

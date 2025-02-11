@@ -9,6 +9,8 @@ import Hero from "../../components/home-page/home-1/Hero";
 import IntroAbout from "../../components/home-page/home-1/IntroAbout";
 import Service from "../../components/home-page/home-1/Service";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import HeroSlider from "@/components/home-page/home-1/HeroSlider";
 
 const Insurance = () => {
   const { t } = useTranslation()
@@ -29,8 +31,8 @@ const Insurance = () => {
 			Theme Hero Banner
 			============================================== 
 			--> */}
-      <Hero />
-
+      {/*<Hero />*/}
+      <HeroSlider />
       {/* 
 			=============================================
 				Productos Section Thirty Six
@@ -70,6 +72,99 @@ const Insurance = () => {
         {/* /.container */}
       </div>
       {/* /.fancy-feature-thirtySix */}
+
+      {/* <!-- 
+			=============================================
+				Feature Section Thirty Four
+			============================================== 
+			--> */}
+      <div className="fancy-feature-thirtySix mt-190 lg-mt-140 pb-40">
+        <div className="container">
+          <div className="wrapper position-relative">
+            <div className="row justify-content-start">
+              <div className="col-lg-6">
+                <div
+                  className="title-style-one text-center text-lg-start mb-40 md-mb-20"
+                  data-aos="fade-right"
+                >
+                  <h2 className="main-title fw-500 tx-dark m0">
+                    {home.accidentTitle}
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12 col-md-6 gap-3 d-flex flex-column">
+                  <div
+                    className="justify-content-center h-50"
+                    
+                    data-aos="fade-up"
+                    data-aos-delay={100}
+                  >
+                    <a
+                      href='/national/reporte_accidente/package/html/main/'
+                      class="w-100 h-100"
+                    >
+                      <div className="card-style-sixteen flex-column card-feature tran3s text-center position-relative h-100">
+                        <h4 className="tx-dark pt-20">{home.accidentOption1}</h4>
+                        <div>
+                          <h6 className="mb-4 tx-dark">
+                            {home.accidentOption1Desc}
+                          </h6>
+                        </div>
+                        <div className="read-more rounded-circle text-start tran3s">
+                          <i className="bi bi-arrow-right" />
+                        </div>
+                      </div>{" "}
+                    </a>
+                    {/* /.card-style-sixteen */}
+                  </div>
+
+                  <div
+                    className="justify-content-center h-50"
+                    
+                    data-aos="fade-up"
+                    data-aos-delay={200}
+                  >
+                    <Link
+                      to='/claims'
+                      class="w-100 h-100"
+                    >
+                      <div className="card-style-sixteen flex-column card-feature tran3s text-center position-relative h-100">
+                        <h4 className="tx-dark pt-20">{home.accidentOption2}</h4>
+                        <div>
+                          <h6 className="mb-4 tx-dark">
+                            {home.accidentOption2Desc}
+                          </h6>
+                        </div>
+                        <div className="read-more rounded-circle text-start tran3s">
+                          <i className="bi bi-arrow-right" />
+                        </div>
+                      </div>{" "}
+                    </Link>
+                    {/* /.card-style-sixteen */}
+                  </div>
+              </div>
+              <div className="col-12 col-md-6"  data-aos="fade-left">
+                <img src="/images/assets/home-accident.jpg" alt="" className="rounded-4"/>
+              </div>
+            </div>
+            {/* /.row */}
+
+            {/*<div className="text-center md-mt-50">
+              <Link
+                to="/pages-menu/service-v1"
+                className="btn-twentyTwo fw-500 tran3s"
+                data-aos="fade-left"
+              >
+                Ver nuestros Servicios
+              </Link>
+            </div>*/}
+          </div>
+        </div>
+        {/* /.container */}
+      </div>
+      {/*  <!-- /.fancy-feature-thirtyFour --> */}
 
 
       {/* <!-- 
