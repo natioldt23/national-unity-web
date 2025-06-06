@@ -31,8 +31,8 @@ const Insurance = () => {
 			Theme Hero Banner
 			============================================== 
 			--> */}
-      {/*<Hero />*/}
-      <HeroSlider />
+      <Hero />
+      {/*<HeroSlider />*/}
       {/* 
 			=============================================
 				Productos Section Thirty Six
@@ -103,7 +103,7 @@ const Insurance = () => {
                   >
                     <a
                       href='/national/reporte_accidente/package/html/main/'
-                      class="w-100 h-100"
+                      className="w-100 h-100"
                     >
                       <div className="card-style-sixteen flex-column card-feature tran3s text-center position-relative h-100">
                         <h4 className="tx-dark pt-20">{home.accidentOption1}</h4>
@@ -128,7 +128,7 @@ const Insurance = () => {
                   >
                     <Link
                       to='/claims'
-                      class="w-100 h-100"
+                      className="w-100 h-100"
                     >
                       <div className="card-style-sixteen flex-column card-feature tran3s text-center position-relative h-100">
                         <h4 className="tx-dark pt-20">{home.accidentOption2}</h4>

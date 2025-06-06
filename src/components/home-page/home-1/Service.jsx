@@ -81,7 +81,7 @@ const Service = () => {
         >
           <Link
             to={service.url}
-            class="w-100"
+            className="w-100"
           >
             <div className="card-style-sixteen card-feature products-home tran3s text-center position-relative mt-30">
               <div className="icon">

@@ -21,7 +21,7 @@ const Hero1 = () => {
       <img
         src="/images/assets/hero-camion.webp"
         alt="ilustration"
-        className="hero-camion lazy-img illustration-one gifts"
+        className="hero-camion lazy-img illustration-one"
       />
       <img
         src="/images/assets/hero-auto.webp"

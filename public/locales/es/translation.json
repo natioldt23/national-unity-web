@@ -67,7 +67,8 @@
     "asistenciaImportante": "Importante",
     "asistenciaImportanteDesc": "Toda cobertura hasta un máximo de $100.00 dólares, otorgando 1 servicio en pólizas de 1 a 179 días y 2 servicios en pólizas semestrales y anuales.",
     "asistenciaImportanteSpan": "Servicio exclusivo dentro de los Estados Unidos y Canadá.",
-    "asistenciaWhatsapp": "Vía: "
+    "asistenciaWhatsapp": "Vía: ",
+    "asistenciaRsa": "Para cualquier duda o aclaración escríbenos a: "
   },
   "accidente":{
     "accidenteEtiqueta": "Servicios",

@@ -162,6 +162,12 @@ const AsistenciaVial = () => {
                        Whatsapp
                     </a>
                   </li>
+                  <li>
+                    {asistencia.asistenciaRsa} 
+                    <a href="mailto:rsa@nationalunity.com" className="asistenciaVial-link">
+                      rsa@nationalunity.com
+                    </a>
+                  </li>
                 </ul>
               </div>
               {/* /.service-details-meta */}

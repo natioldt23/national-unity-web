@@ -12,13 +12,13 @@ const LinkItem = ({ title, href }) => {
 };
 
 LinkItem.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
 };
-const IconItem = ({ icon, href }) => {
+const IconItem = ({ icon, href, ariaLabel }) => {
   return (
     <li>
-      <Link to={href} target="_blank" rel="noopener noreferrer">
+      <Link to={href} target="_blank" rel="noopener noreferrer" aria-label={ariaLabel} alt={ariaLabel}>
         <i className={icon} />
       </Link>
     </li>
@@ -57,14 +57,17 @@ const Footer = () => {
     {
       icon: "fab fa-facebook-f",
       href: "https://www.facebook.com/NationalUnityIC/",
+      label: "Facebook Logo"
     },
     {
       icon: "fab fa-instagram",
       href: "https://www.instagram.com/nationalunity_seguros/",
+      label: "Instagram Logo"
     },
     {
       icon: "fab fa-linkedin-in",
       href: "https://mx.linkedin.com/company/national-unity-insurance-company?trk=ppro_cprof",
+      label: "Linkedin Logo"
     },
   ];
   return (
@@ -81,19 +84,16 @@ const Footer = () => {
           <div className="col-lg-4 order-lg-2 mt-15">
             <ul className="d-flex justify-content-center justify-content-lg-end social-icon style-none">
               {icons.map((icon, index) => (
-                <IconItem key={index} icon={icon.icon} href={icon.href} />
+                <IconItem key={index} icon={icon.icon} href={icon.href} ariaLabel={icon.label}/>
               ))}
             </ul>
           </div>
           <div className="col-lg-4 order-lg-1 mt-15">
             <p className="copyright text-center m0">
               Copyright © {new Date().getFullYear()}{" "}
-              <a
-                style={{ color: "inherit" }}
-                rel="noopener noreferrer"
-              >
+              
                 National Unity Insurance Company
-              </a>
+              
             </p>
           </div>
         </div>

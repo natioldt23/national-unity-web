@@ -39,7 +39,7 @@
     "sass": "^1.70.0",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
-    "sweetalert2": "^11.12.4",
+    "sweetalert2": "^11.17.2",
     "usa-map-react": "^0.1.4"
   },
   "devDependencies": {

@@ -67,7 +67,8 @@
     "asistenciaImportante": "Important",
     "asistenciaImportanteDesc": "All coverage up to a maximum of $100.00 dollars, granting 1 service in policies from 1 to 179 days and 2 services in semi-annual and annual policies.",
     "asistenciaImportanteSpan": "Exclusive service within the United States and Canada.",
-    "asistenciaWhatsapp": "Via: "
+    "asistenciaWhatsapp": "Via: ",
+    "asistenciaRsa": "For any other inquiries, please contact us at: "
   },
   "accidente":{
     "accidenteEtiqueta": "Services",

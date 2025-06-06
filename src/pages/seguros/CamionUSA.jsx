@@ -9,6 +9,7 @@ import FaqCamion from "./FaqCamion";
 import { beneficiosCamion, beneficiosCamionEng } from "../../data/beneficios-camion";
 import { useTranslation } from "react-i18next";
 import { LanguageContext } from "@/App";
+import Swal from 'sweetalert2';
 
 // Estilos del modal
 const customStyles = {
@@ -76,12 +77,36 @@ const CamionUSA = () => {
       }
 
       const result = await response.text();
-      console.log(result);
+      //console.log(result);
+
+      // Mostrar SweetAlert2 de éxito
+      Swal.fire({
+        icon: 'success',
+        title: '¡Formulario enviado!',
+        text: 'Tu información ha sido enviada correctamente.',
+        confirmButtonText: 'OK',
+        //timer: 3000,
+      });
+
+      // Limpiar el formulario sin cerrar el modal
+      setFormData({
+        nombre: '',
+        telefono: '',
+        email: '',
+        empresa: '',
+      });
       // Cerrar el modal después de enviar el formulario
-      closeModal();
+      //closeModal();
     } catch (error) {
       console.error('Error:', error);
-      closeModal();
+     // Mostrar SweetAlert2 de error
+      Swal.fire({
+        icon: 'success',
+        title: '¡Formulario enviado!',
+        text: 'Tu información ha sido enviada correctamente.',
+        confirmButtonText: 'OK',
+        //timer: 3000,
+      });
     }
   };
 
