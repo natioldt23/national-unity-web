@@ -72,6 +72,8 @@
   },
   "accidente":{
     "accidenteEtiqueta": "Services",
+    "accidente0Tutorial": "Accident Reporting Tutorial",
+    "accidenteReplayTutorial": "View Tutorial",
     "accidenteTitle": "Report an Accident online",
     "accidenteDescOne": "In the United States and Canada, it is mandatory to have unlimited liability insurance coverage for all vehicles traveling on their roads.",
     "accidenteDescTwo": "If we are involved in an accident in the USA, there are a series of steps that we must follow to report the accident:",

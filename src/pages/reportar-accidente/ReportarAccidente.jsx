@@ -3,10 +3,21 @@ import DefaulHeader from "../../components/header/DefaulHeader";
 import DefaultFooter from "../../components/footer/DefaultFooter";
 import Steps from "@/components/reportarAccidente/Steps";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import  ModalVideo from "../../components/modalVideo/modalVide";
+import VideoButton from "../../components/modalVideo/videoButton";
 
 const ReportarAccidente = () => {
   const { t } = useTranslation()
   const accidente = t("accidente")
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
 
   return (
     <>
@@ -16,6 +27,20 @@ const ReportarAccidente = () => {
       Theme Default Menu
       ============================================== 	
       --> */}
+
+     <ModalVideo 
+        videoId="VideoSiniestrosV3"
+        showOnFirstVisit={true}
+        title={accidente.accidente0Tutorial}
+      />
+      
+      {/* Modal controlado por botón */}
+      <ModalVideo 
+        videoId="VideoSiniestrosV3"
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        title={accidente.accidente0Tutorial}
+      />
       <DefaulHeader />
       {/* 
 			=============================================
@@ -60,6 +85,11 @@ const ReportarAccidente = () => {
                     {accidente.accidenteTitle}
                   </button>
                 </a>
+                <VideoButton 
+                buttonText={accidente.accidenteReplayTutorial}
+                className="mt-4"
+                onClick={openModal}
+              />
                 <p className="text-hero-banner tx-dark pt-30">
                   {accidente.accidenteDescOne}
                 </p>
