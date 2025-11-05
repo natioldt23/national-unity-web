@@ -29,14 +29,14 @@ const ReportarAccidente = () => {
       --> */}
 
      <ModalVideo 
-        videoId="VideoSiniestrosV3"
+        videoId={accidente.accidenteVideoName}
         showOnFirstVisit={true}
         title={accidente.accidente0Tutorial}
       />
       
       {/* Modal controlado por botón */}
       <ModalVideo 
-        videoId="VideoSiniestrosV3"
+        videoId={accidente.accidenteVideoName}
         isOpen={isModalOpen}
         onClose={closeModal}
         title={accidente.accidente0Tutorial}
